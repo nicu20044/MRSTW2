@@ -101,6 +101,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\..\..\..\Desktop\beta\Web\Views\Home\AboutUs.cshtml">
+      <Link>Views\Home\AboutUs.cshtml</Link>
+    </Content>
+    <Content Include="..\..\..\..\Desktop\beta\Web\Views\Home\Index.cshtml">
+      <Link>Views\Home\Index.cshtml</Link>
+    </Content>
+    <Content Include="..\..\..\..\Desktop\beta\Web\Views\Library\AddProduct.cshtml">
+      <Link>Views\Library\AddProduct.cshtml</Link>
+    </Content>
+    <Content Include="..\..\..\..\Desktop\beta\Web\Views\Library\Library.cshtml">
+      <Link>Views\Library\Library.cshtml</Link>
+    </Content>
+    <Content Include="..\..\..\..\Desktop\beta\Web\Views\Product\ProductPage.cshtml">
+      <Link>Views\Product\ProductPage.cshtml</Link>
+    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -237,9 +252,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\Auth\" />
-    <Folder Include="Views\Home\" />
-    <Folder Include="Views\Library\" />
-    <Folder Include="Views\Product\" />
     <Folder Include="Views\Shared\" />
     <Folder Include="Views\ShoppingCart\" />
   </ItemGroup>
