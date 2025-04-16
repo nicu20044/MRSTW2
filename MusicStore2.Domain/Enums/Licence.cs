@@ -1,6 +1,8 @@
-﻿namespace MusicStore2.Domain.Enums
+﻿namespace MusicStore.Domain.Entities.Enums
 {
-    public enum Licence
+    public enum PLicense
     {
+        UnlimitedLease,
+        ExclusiveRights
     }
 }
