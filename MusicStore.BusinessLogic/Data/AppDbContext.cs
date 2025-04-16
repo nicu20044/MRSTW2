@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity;
 
-namespace MusicStore.BusinessLogic.Data
+using MusicStore.Domain.Entities.Product;
+
+namespace MusicStore.BussinesLogic.Data
 {
-	public class AppDbContext
-	{
-	}
+    public class AppDbContext : DbContext
+    {
+        public AppDbContext() : base("name=MusicStoreDB") { }
+        public DbSet<ProductData> Products { get; set; }
+    }
 }
