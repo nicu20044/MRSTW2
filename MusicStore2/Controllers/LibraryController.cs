@@ -14,7 +14,7 @@ namespace MusicStore.web.Controllers
 
         public LibraryController()
         {
-            var bl = new BussinesLogic.BussinesLogic();
+            var bl = new BusinessLogic.BusinessLogic();
             _product = bl.GetProductBl();
         }
 
