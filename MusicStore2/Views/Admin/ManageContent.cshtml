@@ -1,0 +1,214 @@
+﻿@model IEnumerable<MusicStore2.Domain.Entities.Product.ProductData>
+@{
+    ViewBag.Title = "Manage Songs";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Songs</title>
+    <link rel="stylesheet" href="~/Scripts/css/Admin.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<nav>
+    <a href="@Url.Action("Dashboard", "Admin")" class="nav-btn">Dashboard</a>
+    <a href="@Url.Action("ManageContent", "Admin")" class="nav-btn">Manage Songs</a>
+    <a href="@Url.Action("ManageUsers", "Admin")" class="nav-btn">Manage Users</a>
+</nav>
+
+<div class="container">
+    <h2>Manage Songs</h2>
+    <a href="@Url.Action("AddProduct", "Admin")" class="add-btn">Add New Song</a>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Genre</th>
+            <th>Price ($)</th>
+            <th>Actions</th>
+        </tr>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var product in Model)
+            {
+                <tr data-id="@product.Id">
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.ArtistName</td>
+                    <td>@product.Genre</td>
+                    <td>
+                        <input type="number" value="@product.Price" class="price-input" min="0" step="0.01">
+                    </td>
+                    <td>
+                        <a href="@Url.Action("EditProduct", "Admin", new { id = product.Id })" class="edit-btn">Edit</a>
+                        <button class="delete-btn" data-id="@product.Id">Delete</button>
+                        @if (!string.IsNullOrEmpty(product.AudioFileUrl))
+                        {
+                            <button class="play-btn" data-audio="@Url.Content(product.AudioFileUrl)" data-title="@product.Name" data-artist="@product.ArtistName">Play</button>
+                        }
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" style="text-align: center;">No songs available</td>
+            </tr>
+        }
+    </table>
+</div>
+
+<!-- Audio player controls at bottom -->
+<div class="audio-controls" id="audioControls">
+    <button class="control-btn" id="playPauseControl">▶</button>
+    <div class="now-playing" id="nowPlaying">No song playing</div>
+    <div class="progress-bar" id="progressBar">
+        <div class="progress-bar-filled" id="progressBarFilled"></div>
+    </div>
+    <span id="timeDisplay">0:00 / 0:00</span>
+</div>
+
+<!-- Hidden audio player -->
+<audio id="audioPlayer" style="display: none;"></audio>
+
+<script>
+    $(document).ready(function() {
+        var audioPlayer = document.getElementById("audioPlayer");
+        var audioControls = document.getElementById("audioControls");
+        var playPauseControl = document.getElementById("playPauseControl");
+        var progressBar = document.getElementById("progressBar");
+        var progressBarFilled = document.getElementById("progressBarFilled");
+        var timeDisplay = document.getElementById("timeDisplay");
+        var nowPlaying = document.getElementById("nowPlaying");
+        var currentButton = null;
+
+        // Price update
+        $(".price-input").change(function() {
+            var id = $(this).closest("tr").data("id");
+            var price = $(this).val();
+
+            $.ajax({
+                url: "@Url.Action("UpdateProductPrice", "Admin")",
+                type: "POST",
+                data: { id: id, price: price },
+                success: function(response) {
+                    if (response.success) {
+                        alert("Price updated successfully");
+                    } else {
+                        alert("Failed to update price");
+                    }
+                },
+                error: function() {
+                    alert("An error occurred while updating price");
+                }
+            });
+        });
+
+        // Delete song
+        $(".delete-btn").click(function() {
+            if (confirm("Are you sure you want to delete this song?")) {
+                var id = $(this).data("id");
+
+                $.ajax({
+                    url: "@Url.Action("DeleteProduct", "Admin")",
+                    type: "POST",
+                    data: { id: id },
+                    success: function() {
+                        location.reload();
+                    },
+                    error: function() {
+                        alert("An error occurred while deleting the song");
+                    }
+                });
+            }
+        });
+
+        // Play/Pause functionality
+        $(".play-btn").click(function() {
+            var audioUrl = $(this).data("audio");
+            var title = $(this).data("title");
+            var artist = $(this).data("artist");
+
+            if (currentButton === this && !audioPlayer.paused) {
+                // Pause current song
+                audioPlayer.pause();
+                $(this).text("Play").removeClass("playing");
+                playPauseControl.textContent = "▶";
+            } else {
+                // Play new song or resume
+                if (currentButton) {
+                    $(currentButton).text("Play").removeClass("playing");
+                }
+
+                audioPlayer.src = audioUrl;
+                audioPlayer.play();
+                $(this).text("Pause").addClass("playing");
+                playPauseControl.textContent = "❚❚";
+                nowPlaying.textContent = title + " - " + artist;
+                audioControls.style.display = "flex";
+                currentButton = this;
+            }
+        });
+
+        // Control panel play/pause
+        playPauseControl.addEventListener("click", function() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playPauseControl.textContent = "❚❚";
+                if (currentButton) {
+                    $(currentButton).text("Pause").addClass("playing");
+                }
+            } else {
+                audioPlayer.pause();
+                playPauseControl.textContent = "▶";
+                if (currentButton) {
+                    $(currentButton).text("Play").removeClass("playing");
+                }
+            }
+        });
+
+        // Update progress bar
+        audioPlayer.addEventListener("timeupdate", function() {
+            var progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+            progressBarFilled.style.width = progress + "%";
+
+            var currentTime = formatTime(audioPlayer.currentTime);
+            var duration = formatTime(audioPlayer.duration);
+            timeDisplay.textContent = currentTime + " / " + duration;
+        });
+
+        // Seek functionality
+        progressBar.addEventListener("click", function(e) {
+            var rect = progressBar.getBoundingClientRect();
+            var pos = (e.clientX - rect.left) / rect.width;
+            audioPlayer.currentTime = pos * audioPlayer.duration;
+        });
+
+        // Reset when audio ends
+        audioPlayer.addEventListener("ended", function() {
+            if (currentButton) {
+                $(currentButton).text("Play").removeClass("playing");
+            }
+            playPauseControl.textContent = "▶";
+            progressBarFilled.style.width = "0%";
+            timeDisplay.textContent = "0:00 / 0:00";
+        });
+
+        // Format time helper
+        function formatTime(seconds) {
+            var minutes = Math.floor(seconds / 60);
+            seconds = Math.floor(seconds % 60);
+            return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+        }
+    });
+</script>
+</body>
+</html>

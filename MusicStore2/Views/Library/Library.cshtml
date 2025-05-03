@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Library";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+    
+}
+
+<h2>Your Library</h2>
+<link rel="stylesheet" href="~/Scripts/css/library.css">
+<div class="library-container">
+    <input type="text" class="search-bar" placeholder="Search in library...">
+    <button class="btn-add">Add Tracks</button>
+    <ul class="track-list">
+        <li class="track-item">
+            <button class="play-button">▶</button>
+            <span class="track-info">
+                <strong>Track Name</strong>
+                <span>Artist Name</span>
+            </span>
+            <button class="favorite-button">♡</button>
+            <button class="more-options">⋮</button>
+        </li>
+        <li class="track-item">
+            <button class="play-button">▶</button>
+            <span class="track-info">
+                <strong>Track Name</strong>
+                <span>Artist Name</span>
+            </span>
+            <button class="favorite-button">♡</button>
+            <button class="more-options">⋮</button>
+        </li>
+    </ul>
+</div>
