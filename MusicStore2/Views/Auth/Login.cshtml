@@ -2,7 +2,7 @@
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@model MusicStore2.Models.UserAuth.LoginModel
+@model MusicStore2.Domain.Entities.User.UserLoginData
 
 <div class="auth-form">
     <h2>Welcome back</h2>
@@ -17,6 +17,7 @@
 
     @using (Html.BeginForm("LoginAction", "Auth", FormMethod.Post))
     {
+        @Html.AntiForgeryToken()
         <div class="form-group">
             @Html.LabelFor(u => u.Email)
             @Html.TextBoxFor(u => u.Email, new { @class = "form-control" })
@@ -28,6 +29,6 @@
             @Html.ValidationMessageFor(u => u.Password, "", new { @class = "text-danger" })
         </div>
         <button type="submit" class="submit-btn">Sign in</button>
-        <a class="register-button" href="@Url.Action("RegisterAction", "Auth")">Don't have an account? Sign up</a>
+        <a class="register-button" href="@Url.Action("Register", "Auth")">Don't have an account? Sign up</a>
     }
 </div>

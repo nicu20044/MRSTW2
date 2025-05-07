@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using MusicStore.BusinessLogic.Services;
 using MusicStore2.Domain.Entities.User;
-using MusicStore2.Models;
 
 
 namespace MusicStore2.Controllers
@@ -15,6 +14,15 @@ namespace MusicStore2.Controllers
         public AuthController(AuthService authService)
         {
             _authService = authService;
+        }
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        public ActionResult Register()
+        {
+            return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -28,34 +36,30 @@ namespace MusicStore2.Controllers
 
             if (!response.Status)
                 return Json(new { success = false, message = response.StatusMsg });
+            // //
+            // //
+            // // Session["UserId"] = response.Id;
+            // // Session["UserEmail"] = response.Email;
+            // // Session["Username"] = response.UserName;
+            // // Session["UserType"] = response.UserRole;
+            // // Session["UserLoginTime"] = response.LoginDateTime;
+            // // Session["Token"] = response.Token;
+            //
+            // string redirectUrl;
 
-    
-            Session["UserId"] = response.Id;
-            Session["UserEmail"] = response.Email;
-            Session["Username"] = response.UserName;
-            Session["UserType"] = response.UserRole;
-            Session["UserLoginTime"] = response.LoginDateTime;
-            Session["Token"] = response.Token;
-
-            string redirectUrl;
-
-            switch (response.UserRole)
+            if (response.UserRole == "Admin")
             {
-                case "Admin":
-                    redirectUrl = Url.Action("Dashboard", "Admin");
-                    break;
-                case "Artist":
-                    redirectUrl = Url.Action("Index", "Home");
-                    break;
-                case "Listener":
-                    redirectUrl = Url.Action("Index", "Home");
-                    break;
-                default:
-                    redirectUrl = Url.Action("Login", "Auth");
-                    break;
+                return RedirectToAction("Dashboard", "Admin");
             }
-
-            return Json(new { success = true, redirectUrl });
+            else if (response.UserRole == "Artist")
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -69,32 +73,22 @@ namespace MusicStore2.Controllers
 
             var response = await _authService.UserRegisterActionAsync(model);
 
-            if (!response.Status)
-            {
-                TempData["ErrorMessage"] = response.StatusMsg;
-                return Json(new { success = false, message = "Wrong Status Message for Register" });
-            }
-
-            Session["UserId"] = response.Id;
-            Session["UserEmail"] = response.Email;
-            Session["Username"] = response.UserName;
-            Session["UserType"] = response.UserRole;
-            Session["UserLoginTime"] = response.LoginDateTime;
-            Session["Token"] = response.Token;
-
             TempData["SuccessMessage"] = "Cont creat cu succes! Acum sunteți autentificat.";
 
-            switch (response.UserRole)
+            if (response.UserRole == "Admin")
             {
-                case "Admin":
-                    return RedirectToAction("Dashboard", "Admin");
-                case "Artist":
-                    return RedirectToAction("Index", "Home");
-                case "Listener":
-                    return RedirectToAction("Index", "Home");
-                default:
-                    return RedirectToAction("Index", "Home");
+                return RedirectToAction("Dashboard", "Admin");
             }
+            else if (response.UserRole == "Artist")
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            
+         
         }
         public ActionResult Logout()
         {

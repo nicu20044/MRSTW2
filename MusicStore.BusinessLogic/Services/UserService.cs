@@ -30,7 +30,7 @@ namespace MusicStore.BusinessLogic.Services
             var user = await _dbContext.Users
                 .FirstOrDefaultAsync(u => u.Email.ToLower() == email.ToLower());
                 
-            return user?.UserRole ?? "User";
+            return user?.UserRole ?? "Listener";
         }
 
         public async Task UpdateUserAsync(string email)

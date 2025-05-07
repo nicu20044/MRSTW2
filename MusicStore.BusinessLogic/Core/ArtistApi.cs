@@ -1,24 +1,26 @@
-﻿// using System;
-// using System.Collections.Generic;
-// using System.Linq;
-// using System.Threading.Tasks;
-// using System.Web;
-// using MusicStore2.BusinessLogic.Data.DataInterfaces;
-// using MusicStore2.BusinessLogic.Services;
-// using MusicStore2.Domain.Entities.Product;
-// using MusicStore2.Domain.Entities.User;
-//
-// namespace MusicStore.BusinessLogic.Core
-// {
-// 	public class ArtistApi
-// 	{
-// 		private readonly IProductRepository _productRepository;
-//
-//         public ArtistApi(IProductRepository productRepository,AuthService authService)
-//         {
-//             _productRepository = productRepository;
-//             _authService = authService;
-//         }
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Web;
+using MusicStore.BusinessLogic.Data.DataInterfaces;
+using MusicStore.BusinessLogic.Services;
+using MusicStore2.BusinessLogic.Data.DataInterfaces;
+using MusicStore2.BusinessLogic;
+using MusicStore2.Domain.Entities.Product;
+using MusicStore2.Domain.Entities.User;
+
+namespace MusicStore.BusinessLogic.Core
+{
+	public class ArtistApi
+	{
+		private readonly IProductRepository _productRepository;
+
+        public ArtistApi(IProductRepository productRepository,AuthService authService)
+        {
+            _productRepository = productRepository;
+            _authService = authService;
+        }
 //
 //         //-----------------------Arist beat actions--------------------
 //         internal async Task AddProduct(ProductData product)
@@ -127,16 +129,16 @@
 //         }
 //         
 //         
-//         //-----------------------Artist Authentication--------------------
-//         private readonly AuthService _authService;
-//         
-//         public async Task<UserAuthResp> LoginActionAsync(UserLoginData data)
-//         {
-//             return await _authService.UserLoginActionAsync(data);
-//         }
-//         public async Task<UserAuthResp> RegisterActionAsync(UserRegData data)
-//         {
-//             return await _authService.UserRegisterActionAsync(data);
-//         }
-// 	}
-// }
+        //-----------------------Artist Authentication--------------------
+        private readonly AuthService _authService;
+        
+        public async Task<UserAuthResp> LoginActionAsync(UserLoginData data)
+        {
+            return await _authService.UserLoginActionAsync(data);
+        }
+        public async Task<UserAuthResp> RegisterActionAsync(UserRegData data)
+        {
+            return await _authService.UserRegisterActionAsync(data);
+        }
+	}
+}

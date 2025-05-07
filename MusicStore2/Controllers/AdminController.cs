@@ -5,9 +5,11 @@ using System.Web;
 using System.Web.Mvc;
 using MusicStore.BusinessLogic.Data;
 using MusicStore.BusinessLogic.Data.Repositories;
+using MusicStore.BusinessLogic.Services;
 using MusicStore2.BusinessLogic.Data.DataInterfaces;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Domain.Entities.User;
+
 
 namespace MusicStore2.Controllers
 {
@@ -158,7 +160,10 @@ namespace MusicStore2.Controllers
         {
             if (ModelState.IsValid)
             {
+                string hashed_password = AuthService.ComputeHash(user.PasswordHash);
                 user.LastLoginTime = DateTime.Now;
+                user.Token = Guid.NewGuid().ToString();
+                user.PasswordHash = hashed_password;
                 _userRepository.Insert(user);
                 _userRepository.Save();
                 return RedirectToAction("ManageUsers");

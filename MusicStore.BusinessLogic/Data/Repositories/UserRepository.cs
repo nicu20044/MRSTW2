@@ -32,19 +32,6 @@ namespace MusicStore.BusinessLogic.Data.Repositories
 
             public async Task AddUserAsync(AppUser user)
             {
-                DateTime newLoginTime = DateTime.UtcNow;
-                var newUser = new AppUser
-                {
-                    Name=user.Name,
-                    Email = user.Email,
-                    PasswordHash = user.PasswordHash,
-                    LastLoginTime = user.LastLoginTime,
-                    UserRole = user.UserRole,
-                    Id=user.Id
-                    
-                    
-                };
-
                 _context.Users.Add(user);
                 await _context.SaveChangesAsync();
             }
@@ -66,19 +53,30 @@ namespace MusicStore.BusinessLogic.Data.Repositories
                     .Select(u => u.UserRole)
                     .FirstOrDefaultAsync();
 
-                return user ?? "Guest";
+                return user ?? "Listener";
             }
 
             public async Task UpdateUserAsync(string email)
             {
-                DateTime newLoginTime = DateTime.UtcNow;
+                if (string.IsNullOrWhiteSpace(email))
+                    throw new ArgumentException("Email cannot be null or empty.", nameof(email));
+
                 var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
 
                 if (user != null)
                 {
+                    DateTime newLoginTime = DateTime.UtcNow;
+                    string token = Guid.NewGuid().ToString();
+
                     user.LastLoginTime = newLoginTime;
+                    user.Token = token;
+
                     _context.Entry(user).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
+                }
+                else
+                {
+                    // Optionally log or handle the case where the user is not found
                 }
             }
     }

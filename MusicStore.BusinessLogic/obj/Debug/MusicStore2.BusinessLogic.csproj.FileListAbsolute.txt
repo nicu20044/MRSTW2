@@ -130,3 +130,5 @@ D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.Business
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.dll
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.pdb
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\bin\MusicStore.BusinessLogic.dll.config
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.test.resources
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache

@@ -94,6 +94,10 @@
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Interfaces\ISession.cs" />
+    <Compile Include="Migrations\202505071113147_test.cs" />
+    <Compile Include="Migrations\202505071113147_test.Designer.cs">
+      <DependentUpon>202505071113147_test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,6 +119,11 @@
       <Project>{3b664919-3beb-4eff-bbbb-64e1abb0653c}</Project>
       <Name>MusicStore2.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202505071113147_test.resx">
+      <DependentUpon>202505071113147_test.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

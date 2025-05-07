@@ -14,6 +14,9 @@ namespace MusicStore2.Domain.Entities.User
         [Display(Name="Name")]
         public string Name { get; set; }
         
+        
+        public string Token { get; set; }
+        
         [Required]
         [Display(Name="Email")]
         [DataType(DataType.EmailAddress)]
