@@ -1,0 +1,20 @@
+﻿<header class="sticky-top bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand text-white" href="@Url.Action("Index", "Home")">Harmonia</a>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="@Url.Action("Library", "Library")">Library</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="@Url.Action("Subscribtion", "ShoppingCart")">Plans</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="@Url.Action("About", "Home")">AboutUs</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="@Url.Action("Contact", "Home")">Contact</a></li>
+            </ul>
+        </nav>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search tracks, artists..." aria-label="Search">
+        </form>
+        <div>
+            <a class="btn btn-outline-light me-2" href="@Url.Action("Login", "Auth")">Login</a>
+            <a class="btn btn-success" href="@Url.Action("Register", "Auth")">Sign Up</a>
+        </div>
+    </div>
+</header>

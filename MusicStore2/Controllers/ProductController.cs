@@ -1,13 +1,14 @@
 ﻿using System.Web.Mvc;
 
-namespace MusicStore2.Controllers
-{
+namespace MusicStore2.Controllers{
     public class ProductController : Controller
     {
         // GET
-        public ActionResult Index()
+        public ActionResult ProductPage()
         {
             return View();
         }
+
+        
     }
 }

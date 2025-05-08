@@ -1,11 +1,22 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Threading.Tasks;
+
+
+using MusicStore2.Domain.Entities.User;
 
 namespace MusicStore.BusinessLogic.Data.DataInterfaces
 {
-	public class IUserRepository
-	{
-	}
+    public interface IUserRepository
+    {
+        Task DeleteUserAsync(string email);
+        Task AddUserAsync(AppUser user);
+        Task<IEnumerable<AppUser>> GetAllUsersAsync();
+        Task<AppUser> GetUserByEmailAsync(string email);
+        Task UpdateUserAsync(string email);
+        Task<string> GetUserRoleAsync(string dataEmail);
+    }
 }
+
+
+

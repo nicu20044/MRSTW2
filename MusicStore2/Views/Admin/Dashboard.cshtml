@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Admin Dashboard";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="~/Scripts/css/Admin.css">
+</head>
+<body>
+
+<nav>
+    <a href="@Url.Action("Dashboard", "Admin")" class="nav-btn">Dashboard</a>
+    <a href="@Url.Action("ManageContent", "Admin")" class="nav-btn">Manage Songs</a>
+    <a href="@Url.Action("ManageUsers", "Admin")" class="nav-btn">Manage Users</a>
+</nav>
+
+<div class="dashboard-container">
+    <h1>Admin Dashboard</h1>
+    <div class="dashboard-links">
+        <a href="@Url.Action("ManageContent", "Admin")" class="dashboard-btn">Manage Songs</a>
+        <a href="@Url.Action("ManageUsers", "Admin")" class="dashboard-btn">Manage Users</a>
+    </div>
+</div>
+
+</body>
+</html>

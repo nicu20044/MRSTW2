@@ -16,6 +16,8 @@ namespace MusicStore2
             // Code that runs on application startup
            AreaRegistration.RegisterAllAreas();
            RouteConfig.RegisterRoutes(RouteTable.Routes);
+           
+           DependencyConfig.RegisterDependencies();
         }
     }
 }
