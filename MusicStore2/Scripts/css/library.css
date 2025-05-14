@@ -1,0 +1,102 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.library-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.search-bar {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.btn-add {
+    width: 100%;
+    padding: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-add:hover {
+    background: #666;
+}
+
+.track-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.track-item:hover {
+    background: #444;
+}
+
+.track-info {
+    flex-grow: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.track-info strong {
+    font-size: 16px;
+}
+
+.track-info span {
+    font-size: 14px;
+    color: #bbb;
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: #aaa;
+}
+
+
+

@@ -7,5 +7,6 @@ namespace MusicStore.BusinessLogic.Interfaces
 {
 	public interface ISession
 	{
+
 	}
 }

@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MusicStore.BussinesLogic.Data;
-using MusicStore.Domain.Entities.Product;
+using System.Web;
+using MusicStore.BusinessLogic.Data.DataInterfaces;
+using MusicStore.BusinessLogic.Services;
+using MusicStore2.BusinessLogic.Data.DataInterfaces;
+using MusicStore2.BusinessLogic;
+using MusicStore2.Domain.Entities.Product;
+using MusicStore2.Domain.Entities.User;
 
 namespace MusicStore.BussinesLogic.Core.UserArtist
 {
@@ -120,6 +125,17 @@ namespace MusicStore.BussinesLogic.Core.UserArtist
                 throw new ArgumentException("Scale cannot be empty");
             }
             return await _productRepository.GetProductsByScaleAsync(scale);
+        }
+        //-----------------------Artist Authentication--------------------
+        private readonly AuthService _authService;
+        
+        public async Task<UserAuthResp> LoginActionAsync(UserLoginData data)
+        {
+            return await _authService.UserLoginActionAsync(data);
+        }
+        public async Task<UserAuthResp> RegisterActionAsync(UserRegData data)
+        {
+            return await _authService.UserRegisterActionAsync(data);
         }
     }
 }

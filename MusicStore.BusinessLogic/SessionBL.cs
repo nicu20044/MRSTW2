@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Security.Cryptography;
+using System.Text;
+using MusicStore.BusinessLogic.Interfaces;
 
-namespace MusicStore.BusinessLogic
+namespace MusicStore.BusinessLogic.Services
 {
-	public class SessionBL
-	{
-	}
+    public class SessionBL : ISession
+    {
+        
+    }
 }

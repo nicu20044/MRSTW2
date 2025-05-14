@@ -1,0 +1,103 @@
+﻿@model MusicStore2.Domain.Entities.Product.ProductData
+
+@{
+    ViewBag.Title = "Add Song";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Song</title>
+    <link rel="stylesheet" href="~/Scripts/css/Admin.css">
+</head>
+<body>
+
+<nav>
+    <a href="@Url.Action("Dashboard", "Admin")" class="nav-btn">Dashboard</a>
+    <a href="@Url.Action("ManageContent", "Admin")" class="nav-btn">Manage Songs</a>
+    <a href="@Url.Action("ManageUsers", "Admin")" class="nav-btn">Manage Users</a>
+</nav>
+
+<div class="container">
+    <h2>Add New Song</h2>
+    @using (Html.BeginForm("AddProduct", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, "Song Title")
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control", required = "required" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ArtistName, "Artist Name")
+            @Html.TextBoxFor(model => model.ArtistName, new { @class = "form-control", required = "required" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Price, "Price ($)")
+            @Html.TextBoxFor(model => model.Price, new { @class = "form-control", type = "number", min = "0", step = "0.01", required = "required" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Genre, "Genre")
+            @Html.TextBoxFor(model => model.Genre, new { @class = "form-control", required = "required" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, "Description")
+            @Html.TextAreaFor(model => model.Description, new { @class = "form-control", rows = "4" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Bpm, "BPM")
+            @Html.TextBoxFor(model => model.Bpm, new { @class = "form-control", type = "number", min = "0" })
+        </div>
+
+        <div class="form-group">
+            <label for="imageFile">Upload Cover Image</label>
+            <input type="file" name="imageFile" id="imageFile" accept=".jpg,.jpeg,.png,.gif" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ReleaseDate, "Release Date")
+            @Html.TextBoxFor(model => model.ReleaseDate, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Scale, "Scale")
+            @Html.TextBoxFor(model => model.Scale, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label for="audioFile">Upload Audio File</label>
+            <input type="file" name="audioFile" id="audioFile" accept=".mp3,.wav" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.License, "License")
+            @Html.TextBoxFor(model => model.License, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ArtistId, "Artist ID")
+            @Html.TextBoxFor(model => model.ArtistId, new { @class = "form-control", type = "number", min = "0", required = "required" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProducerId, "Producer ID")
+            @Html.TextBoxFor(model => model.ProducerId, new { @class = "form-control", type = "number", min = "0", required = "required" })
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" value="Save" class="btn-primary" />
+            <a href="@Url.Action("ManageContent", "Admin")" class="btn-cancel">Cancel</a>
+        </div>
+    }
+</div>
+
+</body>
+</html>
