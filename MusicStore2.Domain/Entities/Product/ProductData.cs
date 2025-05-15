@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MusicStore.Domain.Entities.Product
+namespace MusicStore2.Domain.Entities.Product
 {
     public class ProductData
     {

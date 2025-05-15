@@ -6,7 +6,7 @@ using MusicStore.BusinessLogic.Data.DataInterfaces;
 using MusicStore2.Domain.Entities.User;
 
 using System.Linq;
-using MusicStore2.BusinessLogic.Data;
+using MusicStore.BusinessLogic.Data;
 
 
 namespace MusicStore.BusinessLogic.Data.Repositories

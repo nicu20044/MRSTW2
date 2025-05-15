@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 using MusicStore.BusinessLogic.Data.DataInterfaces;
 using MusicStore.BusinessLogic.Services;
-using MusicStore2.BusinessLogic.Data.DataInterfaces;
-using MusicStore2.BusinessLogic;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Domain.Entities.User;
 
-namespace MusicStore.BussinesLogic.Core.UserArtist
+namespace MusicStore.BusinessLogic.Core
 {
     public class ArtistApi
     {
@@ -29,12 +26,12 @@ namespace MusicStore.BussinesLogic.Core.UserArtist
                 throw new ArgumentException("Product cannot be null");
             }
 
-            await _productRepository.AddAsync(product);
+            await _productRepository.AddAsyncToDatabase(product);
         }
 
         internal async Task DeleteProduct(int productId)
         {
-            var entity = await _productRepository.GetByIdAsync(productId);
+            var entity = await _productRepository.GetByIdAsyncFromDatabase(productId);
             if (entity == null)
             {
                 throw new ArgumentException("Product not found");
@@ -50,7 +47,7 @@ namespace MusicStore.BussinesLogic.Core.UserArtist
                 throw new ArgumentException("Product Id cannot be less than 0");
             }
 
-            return await _productRepository.GetByIdAsync(productId);
+            return await _productRepository.GetByIdAsyncFromDatabase(productId);
         }
 
         internal async Task UpdateProduct(ProductData product)
@@ -60,7 +57,7 @@ namespace MusicStore.BussinesLogic.Core.UserArtist
                 throw new ArgumentException("Product cannot be null");
             }
 
-            var productToUpdate = await _productRepository.GetByIdAsync(product.Id);
+            var productToUpdate = await _productRepository.GetByIdAsyncFromDatabase(product.Id);
 
             if (productToUpdate != null)
             {
@@ -72,12 +69,12 @@ namespace MusicStore.BussinesLogic.Core.UserArtist
                 productToUpdate.Bpm = product.Bpm;
             }
 
-            await _productRepository.UpdateAsync(productToUpdate);
+            await _productRepository.UpdateAsyncFromDatabase(productToUpdate);
         }
 
         internal async Task<List<ProductData>> GetProducts()
         {
-            var products = await _productRepository.GetAllAsync();
+            var products = await _productRepository.GetAllAsyncDatabse();
             return products.ToList();
         }
 
@@ -126,16 +123,6 @@ namespace MusicStore.BussinesLogic.Core.UserArtist
             }
             return await _productRepository.GetProductsByScaleAsync(scale);
         }
-        //-----------------------Artist Authentication--------------------
-        private readonly AuthService _authService;
-        
-        public async Task<UserAuthResp> LoginActionAsync(UserLoginData data)
-        {
-            return await _authService.UserLoginActionAsync(data);
-        }
-        public async Task<UserAuthResp> RegisterActionAsync(UserRegData data)
-        {
-            return await _authService.UserRegisterActionAsync(data);
-        }
+
     }
 }

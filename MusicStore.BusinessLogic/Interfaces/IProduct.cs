@@ -1,8 +1,8 @@
-﻿using MusicStore.Domain.Entities.Product;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using MusicStore2.Domain.Entities.Product;
 
-namespace MusicStore.BussinesLogic.Interfaces
+namespace MusicStore.BusinessLogic.Interfaces
 {
     public interface IProduct
     {

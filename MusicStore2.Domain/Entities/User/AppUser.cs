@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Web.DynamicData;
 
 namespace MusicStore2.Domain.Entities.User
 {

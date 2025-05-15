@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using MusicStore.BusinessLogic.Data.DataInterfaces;
-using MusicStore2.BusinessLogic.Data.DataInterfaces;
 
 // using MusicStore2.Models;
 namespace MusicStore.BusinessLogic.Data.Repositories
@@ -21,7 +21,7 @@ namespace MusicStore.BusinessLogic.Data.Repositories
             _dbSet = context.Set<T>();
         }
 
-        public IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAllAsyncFromDatabase()
         {
             return _dbSet.ToList();
         }
@@ -31,7 +31,7 @@ namespace MusicStore.BusinessLogic.Data.Repositories
             return _dbSet.Find(id);
         }
 
-        public void Insert(T entity)
+        public void Add(T entity)
         {
             _dbSet.Add(entity);
         }
@@ -53,6 +53,31 @@ namespace MusicStore.BusinessLogic.Data.Repositories
         public void Save()
         {
             _context.SaveChanges();
+        }
+
+        public async Task AddAsyncToDatabase(T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task DeleteAsync(T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<T>> GetAllAsyncDatabse()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<T> GetByIdAsyncFromDatabase(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task UpdateAsyncFromDatabase(T entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

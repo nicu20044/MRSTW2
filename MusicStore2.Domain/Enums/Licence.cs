@@ -1,4 +1,4 @@
-﻿namespace MusicStore.Domain.Entities.Enums
+﻿namespace MusicStore2.Domain.Enums
 {
     public enum PLicense
     {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MusicStore.BusinessLogic.Data;
+using MusicStore.BusinessLogic.Data.DataInterfaces;
 using MusicStore.BusinessLogic.Data.Repositories;
 using MusicStore.BusinessLogic.Services;
-using MusicStore2.BusinessLogic.Data.DataInterfaces;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Domain.Entities.User;
 
@@ -28,7 +28,7 @@ namespace MusicStore2.Controllers
             _productRepository = productRepository;
             _userRepository = userRepository;
             
-            if (!_userRepository.GetAll().Any(u => u.UserRole == "Admin"))
+            if (!_userRepository.GetAllAsyncFromDatabase().Any(u => u.UserRole == "Admin"))
             {
                 var adminUser = new AppUser
                 {
@@ -38,7 +38,7 @@ namespace MusicStore2.Controllers
                     UserRole = "Admin",
                     LastLoginTime = DateTime.Now
                 };
-                _userRepository.Insert(adminUser);
+                _userRepository.Add(adminUser);
                 _userRepository.Save();
             }
         }
@@ -50,7 +50,7 @@ namespace MusicStore2.Controllers
 
         public ActionResult ManageContent()
         {
-            var products = _productRepository.GetAll().ToList();
+            var products = _productRepository.GetAllAsyncFromDatabase().ToList();
             return View(products);
         }
 
@@ -96,7 +96,7 @@ namespace MusicStore2.Controllers
                 }
 
                 model.UploadDate = DateTime.Now;
-                _productRepository.Insert(model);
+                _productRepository.Add(model);
                 _productRepository.Save();
 
                 return RedirectToAction("ManageContent");
@@ -146,7 +146,7 @@ namespace MusicStore2.Controllers
 
         public ActionResult ManageUsers()
         {
-            var users = _userRepository.GetAll().ToList();
+            var users = _userRepository.GetAllAsyncFromDatabase().ToList();
             return View(users);
         }
 
@@ -164,7 +164,7 @@ namespace MusicStore2.Controllers
                 user.LastLoginTime = DateTime.Now;
                 user.Token = Guid.NewGuid().ToString();
                 user.PasswordHash = hashed_password;
-                _userRepository.Insert(user);
+                _userRepository.Add(user);
                 _userRepository.Save();
                 return RedirectToAction("ManageUsers");
             }

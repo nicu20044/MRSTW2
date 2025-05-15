@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services;
+using MusicStore.BusinessLogic.Services.Interfaces;
 using MusicStore2.Domain.Entities.User;
 
 
@@ -9,12 +11,13 @@ namespace MusicStore2.Controllers
 {
     public class AuthController : Controller
     {
-        private readonly AuthService _authService;
+        private readonly IAuthService _authService;
 
-        public AuthController(AuthService authService)
+        public AuthController(IAuthService authService)
         {
             _authService = authService;
         }
+        
         public ActionResult Login()
         {
             return View();
@@ -46,7 +49,6 @@ namespace MusicStore2.Controllers
             // // Session["Token"] = response.Token;
             //
             // string redirectUrl;
-
             if (response.UserRole == "Admin")
             {
                 return RedirectToAction("Dashboard", "Admin");

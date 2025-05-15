@@ -1,8 +1,8 @@
 ﻿using System.Web;
 
-namespace MusicStore.web.Models
+namespace MusicStore2.Models
 {
-    public class ProductViewModel
+    public class ProductData
     {
         public string Name { get; set; }
         public decimal Price { get; set; }

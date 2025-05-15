@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace MusicStore.web.Controllers
+namespace MusicStore2.Controllers
 {
     public class BeatsController : Controller
     {

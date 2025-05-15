@@ -1,80 +1,80 @@
 ﻿@{
-        ViewData["Title"] = "Home Page";
-        Layout = "~/Views/Shared/_Layout.cshtml";
-    }
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-    <div class="hero-section">
-        <div class="featured-track">
-            <span class="featured-label">FEATURED TRACK</span>
-            <h1 class="track-title">Track Title</h1>
-            <p class="artist-name">Artist Name</p>
-            <div class="track-actions">
-                <button class="btn btn-primary">
-                    <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
-                        <path d="M8 5v14l11-7z" fill="currentColor"/>
-                    </svg>
-                    Play Now
-                </button>
-                <button class="btn btn-outline">
-                    <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
-                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/>
-                    </svg>
-                    Add to Library
-                </button>
-            </div>
+<div class="hero-section">
+    <div class="featured-track">
+        <span class="featured-label">FEATURED TRACK</span>
+        <h1 class="track-title">Track Title</h1>
+        <p class="artist-name">Artist Name</p>
+        <div class="track-actions">
+            <button class="btn btn-primary">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
+                    <path d="M8 5v14l11-7z" fill="currentColor"/>
+                </svg>
+                Play Now
+            </button>
+            <button class="btn btn-outline">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/>
+                </svg>
+                Add to Library
+            </button>
         </div>
     </div>
+</div>
 
-    <div class="container">
-        <section class="tracks-section">
-            <div class="section-header">
-                <h2>Popular Tracks</h2>
-                <a href="/popular" class="view-all">View All</a>
-            </div>
-            <div class="tracks-grid">
-                @for (int i = 0; i < 5; i++)
-                {
-                    <div class="track-card">
-                        <div class="track-image">
-                            <img src="/images/placeholder.jpg" alt="Track artwork">
-                            <button class="play-button">
-                                <svg viewBox="0 0 24 24" width="24" height="24">
-                                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="track-info">
-                            <h3>Track Name</h3>
-                            <p>Artist Name</p>
-                        </div>
+<div class="container">
+    <section class="tracks-section">
+        <div class="section-header">
+            <h2>Popular Tracks</h2>
+            <a href="/popular" class="view-all">View All</a>
+        </div>
+        <div class="tracks-grid">
+            @for (int i = 0; i < 5; i++)
+            {
+                <div class="track-card">
+                    <div class="track-image">
+                        <img src="/images/placeholder.jpg" alt="Track artwork">
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M8 5v14l11-7z" fill="currentColor"/>
+                            </svg>
+                        </button>
                     </div>
-                }
-            </div>
-        </section>
+                    <div class="track-info">
+                        <h3>Track Name</h3>
+                        <p>Artist Name</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
 
-        <section class="tracks-section">
-            <div class="section-header">
-                <h2>New Releases</h2>
-                <a href="/new" class="view-all">View All</a>
-            </div>
-            <div class="tracks-grid">
-                @for (int i = 0; i < 5; i++)
-                {
-                    <div class="track-card">
-                        <div class="track-image">
-                            <img src="/images/placeholder.jpg" alt="Track artwork">
-                            <button class="play-button">
-                                <svg viewBox="0 0 24 24" width="24" height="24">
-                                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="track-info">
-                            <h3>Track Name</h3>
-                            <p>Artist Name</p>
-                        </div>
+    <section class="tracks-section">
+        <div class="section-header">
+            <h2>New Releases</h2>
+            <a href="/new" class="view-all">View All</a>
+        </div>
+        <div class="tracks-grid">
+            @for (int i = 0; i < 5; i++)
+            {
+                <div class="track-card">
+                    <div class="track-image">
+                        <img src="/images/placeholder.jpg" alt="Track artwork">
+                        <button class="play-button">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M8 5v14l11-7z" fill="currentColor"/>
+                            </svg>
+                        </button>
                     </div>
-                }
-            </div>
-        </section>
-    </div>
+                    <div class="track-info">
+                        <h3>Track Name</h3>
+                        <p>Artist Name</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+</div>

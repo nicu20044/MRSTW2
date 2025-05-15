@@ -1,20 +1,15 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MusicStore.Domain.Entities.Product;
+using MusicStore2.Domain.Entities.Product;
 
-namespace MusicStore.BussinesLogic.Data
+namespace MusicStore.BusinessLogic.Data.DataInterfaces
 {
-    public abstract class IProductRepository : IGenericRepository<ProductData>
+    public interface IProductRepository : IGenericRepository<ProductData>
     {
-        public abstract Task<List<ProductData>> GetProductsByArtistAsync(int artistId);
-        public abstract Task<List<ProductData>> GetProductsByGenreAsync(string genre);
-        public abstract Task<List<ProductData>> GetProductsByBpmAsync(int bpm);
-        public abstract Task<List<ProductData>> GetProductsByScaleAsync(string scale);
-        public abstract Task<List<ProductData>> GetProductsByProducerAsync(int producerId);
-        public abstract Task AddAsync(ProductData entity);
-        public abstract Task DeleteAsync(ProductData entity);
-        public abstract Task<List<ProductData>> GetAllAsync();
-        public abstract Task<ProductData> GetByIdAsync(int id);
-        public abstract Task UpdateAsync(ProductData entity);
+        Task<List<ProductData>> GetProductsByArtistAsync(int artistId);
+        Task<List<ProductData>> GetProductsByGenreAsync(string genre);
+        Task<List<ProductData>> GetProductsByBpmAsync(int bpm);
+        Task<List<ProductData>> GetProductsByScaleAsync(string scale);
+        Task<List<ProductData>> GetProductsByProducerAsync(int producerId);
     }
 }

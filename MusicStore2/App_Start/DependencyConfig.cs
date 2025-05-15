@@ -5,8 +5,10 @@ using Autofac.Integration.Mvc;
 using MusicStore.BusinessLogic;
 using MusicStore.BusinessLogic.Data;
 using MusicStore.BusinessLogic.Data.DataInterfaces;
+using MusicStore.BusinessLogic.Data.Repositories;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services;
+using MusicStore.BusinessLogic.Services.Interfaces;
 
 
 namespace MusicStore2
@@ -25,10 +27,11 @@ namespace MusicStore2
 
             // Registrare repository-uri
             builder.RegisterType<UserRepository>().As<IUserRepository>().InstancePerRequest();
+            builder.RegisterType<ProductRepository>().As<IProductRepository>().InstancePerRequest();
 
             // Registrare servicii
-            builder.RegisterType<SessionBL>().As<ISession>().SingleInstance();
-            builder.RegisterType<AuthService>().AsSelf().InstancePerRequest();
+            builder.RegisterType<AuthService>().As<IAuthService>().InstancePerRequest();
+            builder.RegisterType<ProductService>().As<IProductService>().InstancePerRequest();
 
             // Construiește containerul
             var container = builder.Build();
