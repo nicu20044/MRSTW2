@@ -120,14 +120,11 @@ C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\rosl
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\roslyn\vbc.rsp
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\roslyn\VBCSCompiler.exe
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\EntityFramework.dll
-C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\EntityFramework.SqlServer.dll
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\MusicStore2.Domain.dll
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\MusicStore2.Domain.pdb
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\MusicStore2.Domain.dll.config
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\EntityFramework.xml
-C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\EntityFramework.SqlServer.xml
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicSto.0B46BB1B.Up2Date
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\Newtonsoft.Json.dll
@@ -241,3 +238,11 @@ C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\Syst
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\System.Web.WebPages.xml
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Migration.resources
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Mig.resources
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\System.Data.SqlClient.dll
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\System.Data.SqlClient.xml
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Migrarre.resources

@@ -275,3 +275,9 @@ C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2.Domain\bin\System.Web
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2.Domain\bin\System.Web.WebPages.xml
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2.Domain\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2.Domain\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2.Domain\bin\System.Data.SqlClient.dll
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2.Domain\bin\System.Data.SqlClient.xml
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2.Domain\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2.Domain\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2.Domain\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2.Domain\bin\EntityFramework.SqlServer.xml

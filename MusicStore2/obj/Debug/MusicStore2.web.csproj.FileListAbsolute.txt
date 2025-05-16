@@ -290,3 +290,7 @@ C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\System.Net.Http.F
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\System.Web.Http.dll
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\System.Net.Http.Formatting.xml
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\System.Web.Http.xml
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\System.Data.SqlClient.dll
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\System.Data.SqlClient.xml
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\EntityFramework.SqlServer.xml
