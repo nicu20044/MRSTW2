@@ -1,0 +1,51 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store - Product Page</title>
+    <link rel="stylesheet" href="/wwwroot/css/productpage.css">
+    <script src="https://unpkg.com/wavesurfer.js@6.6.4/dist/wavesurfer.min.js"></script>
+</head>
+<body>
+<main class="product-container">
+    <div class="product-image">
+        <img src="/wwwroot/images/test.jpg" alt="Product">
+        <h2>IDFC</h2>
+        <div class="product-description">
+            <p><strong>Published:</strong> <span>Feb 26, 2025</span></p>
+            <p><strong>BPM:</strong> <span>90</span></p>
+            <p><strong>Key:</strong> <span>Fm</span></p>
+            <p><strong>Artist Name</strong> <span>Blackbear</span></p>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="music">
+            <div class="info">
+                <div id="waveform"></div>
+                <div class="controls">
+                    <img src="/wwwroot/images/play.png" id="playBtn">
+                    <img src="/wwwroot/images/stop.png" id="stopBtn">
+                    <img src="/wwwroot/images/volume.png" id="volumeBtn">
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+                </div>
+            </div>
+        </div>
+
+        <section class="licensing">
+            <h3>Licensing</h3>
+            <div class="license-options">
+                <button class="license">Unlimited lease - $95.95</button>
+                <button class="license">Exclusive - Negotiate Price</button>
+            </div>
+            <p>Total: <span class="total-price">$0.00</span></p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+        </section>
+        
+    </div>
+</main>
+
+<script src="/wwwroot/js/product_Page.js"></script> 
+</body>
+</html>

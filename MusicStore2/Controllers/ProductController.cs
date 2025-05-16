@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 
-namespace MusicStore2.Controllers{
+namespace MusicStore2.Controllers
+{
     public class ProductController : Controller
     {
         // GET
@@ -8,7 +9,5 @@ namespace MusicStore2.Controllers{
         {
             return View();
         }
-
-        
     }
 }
