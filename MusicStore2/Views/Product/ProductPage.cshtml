@@ -1,15 +1,21 @@
-﻿<html lang="en">
+﻿@{
+    ViewBag.Title = "ProductPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Store - Product Page</title>
-    <link rel="stylesheet" href="/wwwroot/css/productpage.css">
+    <link rel="stylesheet" href="/Scripts/css/productpage.css">
     <script src="https://unpkg.com/wavesurfer.js@6.6.4/dist/wavesurfer.min.js"></script>
 </head>
 <body>
 <main class="product-container">
     <div class="product-image">
-        <img src="/wwwroot/images/test.jpg" alt="Product">
+        <img src="/Scripts/images/test.jpg" alt="Product">
         <h2>IDFC</h2>
         <div class="product-description">
             <p><strong>Published:</strong> <span>Feb 26, 2025</span></p>
@@ -24,9 +30,9 @@
             <div class="info">
                 <div id="waveform"></div>
                 <div class="controls">
-                    <img src="/wwwroot/images/play.png" id="playBtn">
-                    <img src="/wwwroot/images/stop.png" id="stopBtn">
-                    <img src="/wwwroot/images/volume.png" id="volumeBtn">
+                    <img src="/Scripts/images/play.png" id="playBtn">
+                    <img src="/Scripts/images/stop.png" id="stopBtn">
+                    <img src="/Scripts/images/volume.png" id="volumeBtn">
                     <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
                 </div>
             </div>
@@ -46,6 +52,6 @@
     </div>
 </main>
 
-<script src="/wwwroot/js/product_Page.js"></script> 
+<script src="/Scripts/js/productpage.js"></script> 
 </body>
 </html>
