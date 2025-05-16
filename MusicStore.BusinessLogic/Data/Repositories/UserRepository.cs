@@ -79,5 +79,10 @@ namespace MusicStore.BusinessLogic.Data.Repositories
                     // Optionally log or handle the case where the user is not found
                 }
             }
+            public async Task AddUserSessionAsync(UserSession session)
+            {
+                _context.UserSessions.Add(session);
+                await _context.SaveChangesAsync();
+            }
     }
 }

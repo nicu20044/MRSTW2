@@ -18,6 +18,23 @@ namespace MusicStore.BusinessLogic.Services
         {
             _userRepository = userRepository;
         }
+        public async Task<string> CreateUserSessionAsync(int userId)
+        {
+            var token = Guid.NewGuid().ToString();
+
+            var session = new UserSession
+            {
+                UserId = userId,
+                Token = token,
+                CreatedAt = DateTime.UtcNow,
+                ExpiresAt = DateTime.UtcNow.AddHours(2) // sesiune valabilă 2h
+            };
+
+            await _userRepository.AddUserSessionAsync(session);
+
+            return token;
+        }
+
 
         public async Task<UserAuthResp> UserLoginActionAsync(UserLoginData data)
         {

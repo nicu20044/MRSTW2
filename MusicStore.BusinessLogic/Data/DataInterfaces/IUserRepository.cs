@@ -15,6 +15,7 @@ namespace MusicStore.BusinessLogic.Data.DataInterfaces
         Task<AppUser> GetUserByEmailAsync(string email);
         Task UpdateUserAsync(string email);
         Task<string> GetUserRoleAsync(string dataEmail);
+        Task AddUserSessionAsync(UserSession session);
     }
 }
 

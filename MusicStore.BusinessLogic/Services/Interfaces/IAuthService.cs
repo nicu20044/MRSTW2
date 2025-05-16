@@ -7,6 +7,6 @@ namespace MusicStore.BusinessLogic.Services.Interfaces
     {
         Task<UserAuthResp> UserLoginActionAsync(UserLoginData data);
         Task<UserAuthResp> UserRegisterActionAsync(UserRegData data);
-
+        Task<string> CreateUserSessionAsync(int userId);
     }
 }
