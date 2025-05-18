@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="info-page">
+    <h1>Contact Us</h1>
+    <p>
+        Have a question or need help? Reach out to us on social media!
+    </p>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/vrabie.gabriel" target="_blank" class="social-button facebook">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+
+        <a href="https://www.instagram.com/i.am__gabriel/" target="_blank" class="social-button instagram">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+
+        <a href="https://www.linkedin.com/in/gabriel-vrabie-4a8967269 " target="_blank" class="social-button linkedin">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+    </div>
+</section>
+
+<link rel="stylesheet" href="~/Scripts/css/static_pages.css">
+<style>
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 800px;
+        margin-top: 25px;
+    }
+
+    .social-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 25px;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .social-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .facebook {
+        background-color: #1877F2;
+        border: 1px solid #166FE5;
+    }
+
+    .instagram {
+        background: linear-gradient(45deg, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D);
+        border: 1px solid #C13584;
+    }
+
+    .linkedin {
+        background-color: #0A66C2;
+        border: 1px solid #004182;
+    }
+
+    /* Fallback for icons */
+    .social-button i {
+        min-width: 20px;
+        text-align: center;
+    }
+    p {
+        display: block;
+        text-align: center;
+    }
+</style>

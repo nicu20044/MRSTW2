@@ -228,5 +228,28 @@ namespace MusicStore2.Controllers
             }
             return Json(new { success = false });
         }
+        
+        [HttpPost]
+        public ActionResult MarkNewReleases()
+        {
+            var allSongs = _productRepository.GetAllAsyncFromDatabase().ToList();
+    
+            var latestSongs = allSongs
+                .OrderByDescending(p => p.UploadDate)
+                .Take(5)
+                .Select(product => new 
+                {
+                    product.ImageUrl,
+                    product.Name,
+                    product.ArtistName,
+                    product.AudioFileUrl
+                    
+                })
+                .ToList();
+            ViewBag.LatestSongs = latestSongs;
+    
+            _productRepository.Save();
+            return RedirectToAction("ManageContent");
+        }
     }
 }

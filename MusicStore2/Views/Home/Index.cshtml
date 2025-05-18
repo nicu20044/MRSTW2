@@ -1,51 +1,37 @@
-﻿@{
+﻿@using MusicStore2.Domain.Entities.Product
+@model IEnumerable<ProductData>
+
+@{
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="hero-section">
-    <div class="featured-track">
-        <span class="featured-label">FEATURED TRACK</span>
-        <h1 class="track-title">Track Title</h1>
-        <p class="artist-name">Artist Name</p>
-        <div class="track-actions">
-            <button class="btn btn-primary">
-                <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
-                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                </svg>
-                Play Now
-            </button>
-            <button class="btn btn-outline">
-                <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
-                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/>
-                </svg>
-                Add to Library
-            </button>
-        </div>
-    </div>
+    <img src="~/UploadedImages/header_image.jpg" alt="header_image">
 </div>
 
 <div class="container">
     <section class="tracks-section">
         <div class="section-header">
             <h2>Popular Tracks</h2>
-            <a href="/popular" class="view-all">View All</a>
+            <a href="/popular"></a>
         </div>
         <div class="tracks-grid">
-            @for (int i = 0; i < 5; i++)
+            @foreach (var product in Model.Take(5))
             {
                 <div class="track-card">
                     <div class="track-image">
-                        <img src="/images/placeholder.jpg" alt="Track artwork">
-                        <button class="play-button">
+                        <img src="@Url.Content(product.ImageUrl)" alt="Track artwork" />
+                        <button class="play-button play-toggle" data-audio-id="audio-@product.Id" onclick="togglePlay(this)">
                             <svg viewBox="0 0 24 24" width="24" height="24">
-                                <path d="M8 5v14l11-7z" fill="currentColor"/>
+                                <path d="M8 5v14l11-7z" fill="currentColor" />
                             </svg>
                         </button>
+                        <audio id="audio-@product.Id" src="@Url.Content(product.AudioFileUrl)"></audio>
                     </div>
                     <div class="track-info">
-                        <h3>Track Name</h3>
-                        <p>Artist Name</p>
+                        <h3>@product.Name</h3>
+                        <p>@product.ArtistName</p>
                     </div>
                 </div>
             }
@@ -55,26 +41,63 @@
     <section class="tracks-section">
         <div class="section-header">
             <h2>New Releases</h2>
-            <a href="/new" class="view-all">View All</a>
+            <a href="/new"></a>
         </div>
         <div class="tracks-grid">
-            @for (int i = 0; i < 5; i++)
+            @foreach (var product in Model.OrderByDescending(p => p.UploadDate).Take(5))
             {
                 <div class="track-card">
                     <div class="track-image">
-                        <img src="/images/placeholder.jpg" alt="Track artwork">
-                        <button class="play-button">
+                        <img src="@Url.Content(product.ImageUrl)" alt="Track artwork" />
+                        <button class="play-button play-toggle" data-audio-id="audio-@product.Id" onclick="togglePlay(this)">
                             <svg viewBox="0 0 24 24" width="24" height="24">
-                                <path d="M8 5v14l11-7z" fill="currentColor"/>
+                                <path d="M8 5v14l11-7z" fill="currentColor" />
                             </svg>
                         </button>
+                        <audio id="audio-@product.Id" src="@Url.Content(product.AudioFileUrl)"></audio>
                     </div>
                     <div class="track-info">
-                        <h3>Track Name</h3>
-                        <p>Artist Name</p>
+                        <h3>@product.Name</h3>
+                        <p>@product.ArtistName</p>
                     </div>
                 </div>
             }
         </div>
     </section>
 </div>
+
+<script>
+    const allAudioElements = document.querySelectorAll("audio");
+
+    function togglePlay(button) {
+        const audioId = button.getAttribute("data-audio-id");
+        const audio = document.getElementById(audioId);
+
+        allAudioElements.forEach(a => {
+            if (a !== audio) {
+                a.pause();
+                a.currentTime = 0;
+                updateButtonIcon(a.id, false);
+            }
+        });
+
+        if (audio.paused) {
+            audio.play();
+            updateButtonIcon(audioId, true);
+        } else {
+            audio.pause();
+            updateButtonIcon(audioId, false);
+        }
+    }
+
+    function updateButtonIcon(audioId, isPlaying) {
+        const button = document.querySelector(`.play-toggle[data-audio-id="${audioId}"]`);
+        const svg = button.querySelector("svg");
+
+        if (isPlaying) {
+            svg.innerHTML = `<path d="M6 4h4v16H6zm8 0h4v16h-4z" fill="currentColor"/>`;
+        } else {
+            svg.innerHTML = `<path d="M8 5v14l11-7z" fill="currentColor"/>`;
+        }
+    }
+</script>

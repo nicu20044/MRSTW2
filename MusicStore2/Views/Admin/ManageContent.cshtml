@@ -24,7 +24,9 @@
 <div class="container">
     <h2>Manage Songs</h2>
     <a href="@Url.Action("AddProduct", "Admin")" class="add-btn">Add New Song</a>
-
+    <form action="@Url.Action("MarkNewReleases", "Admin")" method="post">
+        <button type="submit" class="btn btn-primary">Update New Releases</button>
+    </form>
     <table>
         <tr>
             <th>ID</th>
