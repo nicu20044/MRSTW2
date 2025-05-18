@@ -258,7 +258,6 @@ D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\obj\Deb
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\obj\Debug\MusicStore2.pdb
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Autofac.dll
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Autofac.Integration.Mvc.dll
-D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Autofac.pdb
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Autofac.xml
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Autofac.Integration.Mvc.xml
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\MusicStore2.dll.config
@@ -294,3 +293,27 @@ C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\System.Data.SqlCl
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\System.Data.SqlClient.xml
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\EntityFramework.SqlServer.dll
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\EntityFramework.SqlServer.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Autofac.Extensions.DependencyInjection.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Buffers.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Data.SqlClient.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Memory.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Net.Http.Formatting.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Numerics.Vectors.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Threading.Tasks.Extensions.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Web.Http.dll
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Autofac.Extensions.DependencyInjection.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Buffers.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Data.SqlClient.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Memory.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Net.Http.Formatting.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Numerics.Vectors.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Threading.Tasks.Extensions.xml
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Web.Http.xml

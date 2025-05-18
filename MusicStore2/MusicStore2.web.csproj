@@ -234,6 +234,7 @@
     <Content Include="Scripts\css\productpage.css" />
     <Content Include="Scripts\css\shopping-cart.css" />
     <Content Include="Scripts\css\site.css" />
+    <Content Include="Scripts\css\static_pages.css" />
     <Content Include="Scripts\css\styles.css" />
     <Content Include="Scripts\images\mute.png" />
     <Content Include="Scripts\images\pause.png" />
@@ -261,6 +262,7 @@
     <Content Include="UploadedAudios\Ани Лорак - Сон.mp3" />
     <Content Include="UploadedAudios\Артем Качер feat. Ани Лорак - Вулканы.mp3" />
     <Content Include="UploadedAudios\Леонид Агутин - Она Не Вернётся.mp3" />
+    <Content Include="UploadedImages\header_image.jpg" />
     <Content Include="UploadedImages\unudoitrei.JPG" />
     <Content Include="Views\Admin\AddProduct.cshtml" />
     <Content Include="Views\Admin\AddUser.cshtml" />
@@ -276,6 +278,8 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\StaticPages\AboutUs.cshtml" />
+    <Content Include="Views\StaticPages\Contact.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
