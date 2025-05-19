@@ -4,7 +4,7 @@
 }
 
 @model MusicStore2.Domain.Entities.User.UserRegData
-
+<link rel="stylesheet" href="~/Scripts/css/auth.css" />
 <div class="auth-form">
     <h2>Create an account</h2>
     <p>Enter your information to get started</p>
@@ -48,4 +48,6 @@
             Already have an account? <a href="@Url.Action("Login", "Auth")">Sign in</a>
         </p>
     }
+    <script src="/Scripts/js/auth.js"></script>
+
 </div>
