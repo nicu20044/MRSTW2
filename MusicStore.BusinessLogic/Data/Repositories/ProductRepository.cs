@@ -20,10 +20,9 @@ namespace MusicStore.BusinessLogic.Data.Repositories
         {
             return await _context.Products.ToListAsync();
         }
-
         public async Task<ProductData> GetByIdAsyncFromDatabase(int id)
         {
-            throw new System.NotImplementedException();
+            return await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task AddAsyncToDatabase(ProductData entity)

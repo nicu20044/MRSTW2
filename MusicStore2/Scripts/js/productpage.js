@@ -1,10 +1,10 @@
 ﻿document.addEventListener("DOMContentLoaded", function() {
-    
     var waveformContainer = document.getElementById('waveform');
     if (!waveformContainer) {
         console.error('Containerul #waveform nu a fost găsit!');
         return;
     }
+
     var wavesurfer = WaveSurfer.create({
         container: '#waveform',
         waveColor: 'white',
@@ -21,12 +21,18 @@
     var volumeBtn = document.getElementById("volumeBtn");
     var volumeSlider = document.getElementById("volumeSlider");
 
-    wavesurfer.load('/UploadedAudios/black.mp3');
+    // Încarcă piesa care e în <audio id="audioPlayer" src="...">
+    var audioPlayer = document.getElementById("audioPlayer");
+    if (audioPlayer && audioPlayer.src) {
+        wavesurfer.load(audioPlayer.src);
+    } else {
+        console.error("Fișierul audio nu a fost găsit sau nu are src!");
+    }
 
     playBtn.onclick = function() {
         wavesurfer.playPause();
         playBtn.src = playBtn.src.includes("play.png") ? "/Scripts/images/pause.png" : "/Scripts/images/play.png";
-    }
+    };
 
     stopBtn.onclick = function() {
         wavesurfer.stop();
@@ -59,14 +65,13 @@
     });
 
     var licenseButtons = document.querySelectorAll(".license");
-    
-       
-        licenseButtons.forEach(function(button) {
-            button.addEventListener("click", function() {
-                licenseButtons.forEach(btn => btn.classList.remove("selected"));
-                this.classList.add("selected");
-                var selectedPrice = this.textContent.match(/\$\d+(\.\d{2})?/g);
-                document.querySelector(".total-price").textContent = selectedPrice ? selectedPrice[0] : "Negotiate Price";
-            });
+
+    licenseButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            licenseButtons.forEach(btn => btn.classList.remove("selected"));
+            this.classList.add("selected");
+            var selectedPrice = this.textContent.match(/\$\d+(\.\d{2})?/g);
+            document.querySelector(".total-price").textContent = selectedPrice ? selectedPrice[0] : "Negotiate Price";
         });
+    });
 });
