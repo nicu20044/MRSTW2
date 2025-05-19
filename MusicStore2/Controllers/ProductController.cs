@@ -1,13 +1,30 @@
-﻿using System.Web.Mvc;
+﻿using System.Threading.Tasks;
+using System.Web.Mvc;
+using MusicStore.BusinessLogic.Data.DataInterfaces;
+using MusicStore.BusinessLogic.Services;
+using MusicStore.BusinessLogic.Services.Interfaces;
+
 
 namespace MusicStore2.Controllers
 {
     public class ProductController : Controller
     {
-        // GET
-        public ActionResult ProductPage()
+        private readonly IProductService _productService;
+
+        public ProductController(IProductService productService)
         {
-            return View();
+            _productService = productService;
+        }
+
+        public async Task<ActionResult> Details(int id)
+        {
+            var product = await _productService.GetByIdAsync(id);
+            if (product == null)
+            {
+                return HttpNotFound("Product not found");
+            }
+
+            return View("ProductPage", product);
         }
     }
 }

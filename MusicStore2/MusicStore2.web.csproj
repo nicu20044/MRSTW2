@@ -256,7 +256,6 @@
     <Content Include="Scripts\js\productpage.js" />
     <Content Include="Scripts\js\shopping_cart.js" />
     <Content Include="Scripts\js\site.js" />
-    <Content Include="UploadedAudios\black.mp3" />
     <Content Include="UploadedAudios\Ce.mp3" />
     <Content Include="UploadedAudios\white.mp3" />
     <Content Include="UploadedAudios\Ани Лорак - Сон.mp3" />
