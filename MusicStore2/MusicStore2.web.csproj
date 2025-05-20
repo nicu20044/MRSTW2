@@ -272,6 +272,7 @@
     <Content Include="Views\Admin\ManageContent.cshtml" />
     <Content Include="Views\Admin\ManageUsers.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\_NewReleasesPartial.cshtml" />
     <Content Include="Views\Library\AddProduct.cshtml" />
     <Content Include="Views\Library\Library.cshtml" />
     <Content Include="Views\Product\ProductPage.cshtml" />
