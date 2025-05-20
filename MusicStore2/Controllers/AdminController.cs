@@ -18,30 +18,13 @@ namespace MusicStore2.Controllers
         private readonly IGenericRepository<ProductData> _productRepository;
         private readonly IGenericRepository<AppUser> _userRepository;
 
-        public AdminController()
-        {
-            _productRepository = new GenericRepository<ProductData>(new AppDbContext());
-            _userRepository = new GenericRepository<AppUser>(new AppDbContext());
-        }
-        public AdminController(IGenericRepository<ProductData> productRepository, IGenericRepository<AppUser> userRepository)
+        public AdminController(IGenericRepository<ProductData> productRepository,
+            IGenericRepository<AppUser> userRepository)
         {
             _productRepository = productRepository;
             _userRepository = userRepository;
-            
-            if (!_userRepository.GetAllAsyncFromDatabase().Any(u => u.UserRole == "Admin"))
-            {
-                var adminUser = new AppUser
-                {
-                    Name = "Administrator",
-                    Email = "admin@example.com",
-                    PasswordHash = "admin123",
-                    UserRole = "Admin",
-                    LastLoginTime = DateTime.Now
-                };
-                _userRepository.Add(adminUser);
-                _userRepository.Save();
-            }
         }
+ 
 
         public ActionResult Dashboard()
         {
