@@ -44,66 +44,36 @@
     <section class="tracks-section">
         <div class="section-header">
             <h2>New Releases</h2>
-            <a href="/new"></a>
         </div>
-        <div class="tracks-grid">
+        <div id="new-releases-container" class="tracks-grid">
             @foreach (var product in Model.OrderByDescending(p => p.UploadDate).Take(5))
             {
-                <a href="@Url.Action("Details", "Product", new { id = product.Id })" class="track-card-link">
-                    <div class="track-card">
-                        <div class="track-image">
-                            <img src="@Url.Content(product.ImageUrl)" alt="Track artwork" />
-                            <button class="play-button play-toggle" data-audio-id="audio-@product.Id" onclick="event.preventDefault(); togglePlay(this)">
-                                <svg viewBox="0 0 24 24" width="24" height="24">
-                                    <path d="M8 5v14l11-7z" fill="currentColor" />
-                                </svg>
-                            </button>
-                            <audio id="audio-@product.Id" src="@Url.Content(product.AudioFileUrl)"></audio>
-                        </div>
-                        <div class="track-info">
-                            <h3>@product.Name</h3>
-                            <p>@product.ArtistName</p>
-                        </div>
+            <a href="@Url.Action("Details", "Product", new { id = product.Id })" class="track-card-link">
+                <div class="track-card">
+                    <div class="track-image">
+                        <img src="@Url.Content(product.ImageUrl)" alt="Track artwork" />
+                        <button class="play-button play-toggle" data-audio-id="audio-@product.Id" onclick="event.preventDefault(); togglePlay(this)">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M8 5v14l11-7z" fill="currentColor" />
+                            </svg>
+                        </button>
+                        <audio id="audio-@product.Id" src="@Url.Content(product.AudioFileUrl)"></audio>
                     </div>
+                    <div class="track-info">
+                        <h3>@product.Name</h3>
+                        <p>@product.ArtistName</p>
+                    </div>
+                </div>
                 </a>
             }
+        </div>
 
+        <div class="view-all-container">
+            <button id="viewAllBtn" class="view-all-button">View all</button>
         </div>
     </section>
+    <script src="~/Scripts/js/site.js"></script>
+
 </div>
 
-<script>
-    const allAudioElements = document.querySelectorAll("audio");
 
-    function togglePlay(button) {
-        const audioId = button.getAttribute("data-audio-id");
-        const audio = document.getElementById(audioId);
-
-        allAudioElements.forEach(a => {
-            if (a !== audio) {
-                a.pause();
-                a.currentTime = 0;
-                updateButtonIcon(a.id, false);
-            }
-        });
-
-        if (audio.paused) {
-            audio.play();
-            updateButtonIcon(audioId, true);
-        } else {
-            audio.pause();
-            updateButtonIcon(audioId, false);
-        }
-    }
-
-    function updateButtonIcon(audioId, isPlaying) {
-        const button = document.querySelector(`.play-toggle[data-audio-id="${audioId}"]`);
-        const svg = button.querySelector("svg");
-
-        if (isPlaying) {
-            svg.innerHTML = `<path d="M6 4h4v16H6zm8 0h4v16h-4z" fill="currentColor"/>`;
-        } else {
-            svg.innerHTML = `<path d="M8 5v14l11-7z" fill="currentColor"/>`;
-        }
-    }
-</script>
