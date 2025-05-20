@@ -7,5 +7,6 @@ namespace MusicStore.BusinessLogic.Data
 {
 	public class UserContext
 	{
+		
 	}
 }

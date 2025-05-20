@@ -6,7 +6,6 @@ using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services.Interfaces;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Models;
-using ProductData = MusicStore2.Models.ProductData;
 
 namespace MusicStore2.Controllers
 {
@@ -32,7 +31,7 @@ namespace MusicStore2.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> AddProduct(ProductData model)
+        public async Task<ActionResult> AddProduct(ProductDTO model)
         {
             if (!ModelState.IsValid)
             {

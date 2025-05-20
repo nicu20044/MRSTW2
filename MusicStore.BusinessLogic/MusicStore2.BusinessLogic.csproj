@@ -146,6 +146,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic.cs" />
     <Compile Include="Core\AdminApi.cs" />
     <Compile Include="Core\ArtistApi.cs" />
     <Compile Include="Core\UserApi.cs" />
@@ -157,6 +158,9 @@
     <Compile Include="Data\Repositories\ProductRepository.cs" />
     <Compile Include="Data\Repositories\UserRepository.cs" />
     <Compile Include="Data\UserContext.cs" />
+    <Compile Include="EntityBL\AuthBL.cs" />
+    <Compile Include="EntityBL\ProductBL.cs" />
+    <Compile Include="EntityBL\SessionBl.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\IProduct.cs" />

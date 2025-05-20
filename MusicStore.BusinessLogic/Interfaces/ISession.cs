@@ -9,6 +9,6 @@ namespace MusicStore.BusinessLogic.Interfaces
 {
 	public interface ISession
 	{
-		Task<UserAuthResp> UserLogin(UserLoginData data);
+		Task<string> CreateUserSession(int userId);
 	}
 }

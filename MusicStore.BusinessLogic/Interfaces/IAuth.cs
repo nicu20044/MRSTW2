@@ -9,7 +9,7 @@ namespace MusicStore.BusinessLogic.Interfaces
 {
 	public interface IAuth
 	{
-		Task<UserAuthResp> LoginActionAsync(UserLoginData data);
-		Task<UserAuthResp> UserRegisterActionAsync(UserRegData data);
+		Task<UserAuthResp> LoginAction(UserLoginData data, string dataEmail);
+		Task<UserAuthResp> UserRegisterAction(UserRegData data, string dataEmail);
 	}
 }

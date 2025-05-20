@@ -7,16 +7,13 @@ using MusicStore2.Domain.Entities.Product;
 
 namespace MusicStore.BusinessLogic.Data.Repositories
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository 
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _context = new AppDbContext();
 
-        public ProductRepository(AppDbContext context)
-        {
-            _context = context;
-        }
+        
 
-        public async Task<List<ProductData>> GetAllAsyncDatabse()
+        public async Task<List<ProductData>> GetAllAsync()
         {
             return await _context.Products.ToListAsync();
         }

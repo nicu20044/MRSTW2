@@ -6,14 +6,10 @@ namespace MusicStore.BusinessLogic.Interfaces
 {
     public interface IProduct
     {
-        Task AddProduct(ProductData product);
-        Task DeleteProduct(int productId);
-        Task<ProductData> GetProductById(int productId);
-        Task UpdateProduct(ProductData product);
-        Task<List<ProductData>> GetProducts();
-        Task<List<ProductData>> GetProductsByArtist(int artistId);
-        Task<List<ProductData>> GetProductsByGenre(string genre);
-        Task<List<ProductData>> GetProductsByBpm(int bpm);
-        Task<List<ProductData>> GetProductsByScale(string scale);
+        Task<ProductData> GetById(int id);
+        Task<List<ProductData>> GetAll();
+        Task Create(ProductData productData);
+        Task Update(ProductData productData, int id);
+        Task Delete(int productId);
     }
 }
