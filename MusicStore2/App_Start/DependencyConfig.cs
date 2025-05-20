@@ -10,7 +10,6 @@ using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services;
 using MusicStore.BusinessLogic.Services.Interfaces;
 
-
 namespace MusicStore2
 {
     public class DependencyConfig
@@ -25,9 +24,14 @@ namespace MusicStore2
             // Registrare DbContext
             builder.RegisterType<AppDbContext>().AsSelf().InstancePerRequest();
 
-            // Registrare repository-uri
+            // Registrare repository-uri concrete
             builder.RegisterType<UserRepository>().As<IUserRepository>().InstancePerRequest();
             builder.RegisterType<ProductRepository>().As<IProductRepository>().InstancePerRequest();
+
+            // ✅ Registrare generic repository
+            builder.RegisterGeneric(typeof(GenericRepository<>))
+                .As(typeof(IGenericRepository<>))
+                .InstancePerRequest();
 
             // Registrare servicii
             builder.RegisterType<AuthService>().As<IAuthService>().InstancePerRequest();
