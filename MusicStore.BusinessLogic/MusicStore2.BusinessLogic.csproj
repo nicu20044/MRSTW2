@@ -151,35 +151,18 @@
     <Compile Include="Core\ArtistApi.cs" />
     <Compile Include="Core\UserApi.cs" />
     <Compile Include="Data\AppDbContext.cs" />
-    <Compile Include="Data\DataInterfaces\IGenericRepository.cs" />
-    <Compile Include="Data\DataInterfaces\IProductRepository.cs" />
-    <Compile Include="Data\DataInterfaces\IUserRepository.cs" />
-    <Compile Include="Data\Repositories\GenericRepository.cs" />
-    <Compile Include="Data\Repositories\ProductRepository.cs" />
-    <Compile Include="Data\Repositories\UserRepository.cs" />
-    <Compile Include="Data\UserContext.cs" />
     <Compile Include="EntityBL\AuthBL.cs" />
     <Compile Include="EntityBL\ProductBL.cs" />
     <Compile Include="EntityBL\SessionBl.cs" />
+    <Compile Include="EntityBL\UserBl.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Interfaces\ISession.cs" />
-    <Compile Include="Migrations\202505141850209_FirstMigration.cs" />
-    <Compile Include="Migrations\202505141850209_FirstMigration.Designer.cs">
-      <DependentUpon>202505141850209_FirstMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202505151312419_Migration.cs" />
-    <Compile Include="Migrations\202505151312419_Migration.Designer.cs">
-      <DependentUpon>202505151312419_Migration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202505151327095_Mig.cs" />
-    <Compile Include="Migrations\202505151327095_Mig.Designer.cs">
-      <DependentUpon>202505151327095_Mig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202505151413461_Migrarre.cs" />
-    <Compile Include="Migrations\202505151413461_Migrarre.Designer.cs">
-      <DependentUpon>202505151413461_Migrarre.cs</DependentUpon>
+    <Compile Include="Interfaces\IUser.cs" />
+    <Compile Include="Migrations\202505201934310_NewMig.cs" />
+    <Compile Include="Migrations\202505201934310_NewMig.Designer.cs">
+      <DependentUpon>202505201934310_NewMig.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -204,17 +187,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202505141850209_FirstMigration.resx">
-      <DependentUpon>202505141850209_FirstMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202505151312419_Migration.resx">
-      <DependentUpon>202505151312419_Migration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202505151327095_Mig.resx">
-      <DependentUpon>202505151327095_Mig.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202505151413461_Migrarre.resx">
-      <DependentUpon>202505151413461_Migrarre.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505201934310_NewMig.resx">
+      <DependentUpon>202505201934310_NewMig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

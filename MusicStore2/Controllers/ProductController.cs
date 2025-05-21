@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
-using MusicStore.BusinessLogic.Data.DataInterfaces;
+using MusicStore.BusinessLogic.EntityBL;
+using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services;
 using MusicStore.BusinessLogic.Services.Interfaces;
 
@@ -9,16 +10,17 @@ namespace MusicStore2.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly IProductService _productService;
+        private readonly IProduct _productService;
 
-        public ProductController(IProductService productService)
+        public ProductController()
         {
-            _productService = productService;
+            var bl = new BusinessLogic();
+            _productService = new ProductBl();
         }
 
         public async Task<ActionResult> Details(int id)
         {
-            var product = await _productService.GetByIdAsync(id);
+            var product = await _productService.GetById(id);
             if (product == null)
             {
                 return HttpNotFound("Product not found");

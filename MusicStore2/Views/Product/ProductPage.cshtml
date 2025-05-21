@@ -15,7 +15,7 @@
 <body>
 <main class="product-container">
     <div class="product-image">
-        <img src="@Url.Content(Model.ImageUrl)" alt="Product">
+        <img src="@Url.Content(string.IsNullOrEmpty(Model.ImageUrl) ? "~/UploadedImages/default.jpg" : Model.ImageUrl)" alt="Product Image" />
         <h2>@Model.Name</h2>
         <div class="product-description">
             <p><strong>Published:</strong> <span>@Model.ReleaseDate</span></p>
@@ -35,7 +35,8 @@
                     <img src="/Scripts/images/volume.png" id="volumeBtn">
                     <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
                 </div>
-                <audio id="audioPlayer" src="@Url.Content(Model.AudioFileUrl)"></audio>
+                <audio id="audioPlayer" src="@Url.Content(string.IsNullOrEmpty(Model.AudioFileUrl) ? "~/UploadedAudio/default.mp3" : Model.AudioFileUrl)"></audio>
+
             </div>
         </div>
 

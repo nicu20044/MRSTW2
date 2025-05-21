@@ -16,5 +16,10 @@ namespace MusicStore.BusinessLogic.EntityBL
         {
             return new AuthBl();
         }
+
+        public ISession GetSessionBl()
+        {
+            return new SessionBl();
+        }
     }
 }

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using MusicStore.BusinessLogic.Data;
-using MusicStore.BusinessLogic.Data.DataInterfaces;
+
 using MusicStore.BusinessLogic.Services;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Domain.Entities.User;
@@ -21,21 +21,13 @@ namespace MusicStore.BusinessLogic.Core
 
         internal async Task<ProductData> GetByIdAsync(int id)
         {
-            var model = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
-
-            if (model != null)
-            {
-                return model;
-            }
-
-            return model;
+            return await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
         }
 
 
-        internal async Task<List<ProductData>> GetAllAsync()
+        internal  IEnumerable<ProductData> GetAllAsync()
         {
-            var models = await _context.Products.ToListAsync();
-            return models;
+            return _context.Products.AsNoTracking().ToList();
         }
 
         internal Task CreateAsync(ProductData productData)
@@ -51,26 +43,21 @@ namespace MusicStore.BusinessLogic.Core
             return Task.CompletedTask;
         }
 
-        internal async Task UpdateAsync(ProductData productData, int id)
+        internal async Task UpdateProductAsync(ProductData productData)
         {
             if (productData == null)
-            {
-                throw new ArgumentException("Product cannot be null");
-            }
+                throw new ArgumentException("Produsul nu poate fi null.");
 
-            var productToUpdate = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
+            var existingProduct = await _context.Products.FirstOrDefaultAsync(u => u.Id == productData.Id);
+            if (existingProduct == null)
+                throw new InvalidOperationException("Utilizatorul nu a fost găsit.");
+
+            existingProduct.Name = productData.Name;
+            existingProduct.AudioFileUrl = productData.AudioFileUrl;
+            existingProduct.Price = productData.Price;
             
 
-            if (productToUpdate != null)
-            {
-                productToUpdate.Name = productData.Name;
-                productToUpdate.Price = productData.Price;
-                productToUpdate.ArtistId = productData.ArtistId;
-                productToUpdate.Genre = productData.Genre;
-                productToUpdate.ProducerId = productData.ProducerId;
-                productToUpdate.Bpm = productData.Bpm;
-            }
-
+            _context.Entry(existingProduct).State = EntityState.Modified;
             await _context.SaveChangesAsync();
         }
 
@@ -82,7 +69,8 @@ namespace MusicStore.BusinessLogic.Core
                 throw new ArgumentException("Product not found");
             }
         
-            // await _context.DeleteAsync(entity);
+            _context.Products.Remove(entity);
+            _context.SaveChanges();
         }
 
         internal async Task<string> CreateUserSessionAsync(int userId)
@@ -265,7 +253,7 @@ namespace MusicStore.BusinessLogic.Core
             }
         }
 
-        private static string ComputeHash(string password)
+        public static string ComputeHash(string password)
         {
             using (var sha256 = SHA256.Create())
             {
@@ -273,6 +261,11 @@ namespace MusicStore.BusinessLogic.Core
                 var hash = sha256.ComputeHash(bytes);
                 return Convert.ToBase64String(hash);
             }
+        }
+
+        internal void SaveChanges()
+        {
+            _context.SaveChanges();
         }
     }
 }

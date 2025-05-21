@@ -1,12 +1,14 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using MusicStore.BusinessLogic.Core;
 using MusicStore.BusinessLogic.Data;
-using MusicStore.BusinessLogic.Data.DataInterfaces;
-using MusicStore.BusinessLogic.Data.Repositories;
-using MusicStore.BusinessLogic.Services;
+using MusicStore.BusinessLogic.EntityBL;
+using MusicStore.BusinessLogic.Interfaces;
+
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Domain.Entities.User;
 
@@ -15,16 +17,15 @@ namespace MusicStore2.Controllers
 {
     public class AdminController : Controller
     {
-        private readonly IGenericRepository<ProductData> _productRepository;
-        private readonly IGenericRepository<AppUser> _userRepository;
+        private readonly IProduct _product;
+        private readonly IUser _user;
 
-        public AdminController(IGenericRepository<ProductData> productRepository,
-            IGenericRepository<AppUser> userRepository)
+        public AdminController()
         {
-            _productRepository = productRepository;
-            _userRepository = userRepository;
+            var bl = new BusinessLogic();
+            _product = new ProductBl();
+            _user = new UserBl();
         }
- 
 
         public ActionResult Dashboard()
         {
@@ -33,7 +34,7 @@ namespace MusicStore2.Controllers
 
         public ActionResult ManageContent()
         {
-            var products = _productRepository.GetAllAsyncFromDatabase().ToList();
+            var products = _product.GetAll();
             return View(products);
         }
 
@@ -79,8 +80,7 @@ namespace MusicStore2.Controllers
                 }
 
                 model.UploadDate = DateTime.Now;
-                _productRepository.Add(model);
-                _productRepository.Save();
+                _product.Create(model);
 
                 return RedirectToAction("ManageContent");
             }
@@ -89,13 +89,14 @@ namespace MusicStore2.Controllers
         }
 
 
-        public ActionResult EditProduct(int id)
+        public async Task<ActionResult> EditProduct(int id)
         {
-            var product = _productRepository.GetById(id);
+            var product = await _product.GetById(id);
             if (product == null)
             {
                 return HttpNotFound();
             }
+
             return View(product);
         }
 
@@ -104,24 +105,23 @@ namespace MusicStore2.Controllers
         {
             if (ModelState.IsValid)
             {
-                _productRepository.Update(product);
-                _productRepository.Save();
+                _product.Update(product);
                 return RedirectToAction("ManageContent");
             }
+
             return View(product);
         }
 
         [HttpPost]
         public JsonResult DeleteProduct(int id)
         {
-            var product = _productRepository.GetById(id);
+            var product = _product.GetById(id);
             if (product == null)
             {
                 return Json(new { success = false, message = "Product not found." });
             }
 
-            _productRepository.Delete(product.Id);
-            _productRepository.Save();
+            _product.Delete(product.Id);
 
             return Json(new { success = true });
         }
@@ -129,7 +129,7 @@ namespace MusicStore2.Controllers
 
         public ActionResult ManageUsers()
         {
-            var users = _userRepository.GetAllAsyncFromDatabase().ToList();
+            var users = _user.GetAll();
             return View(users);
         }
 
@@ -143,24 +143,25 @@ namespace MusicStore2.Controllers
         {
             if (ModelState.IsValid)
             {
-                string hashed_password = AuthService.ComputeHash(user.PasswordHash);
+                string hashed_password = _.ComputeHash(user.PasswordHash);
                 user.LastLoginTime = DateTime.Now;
                 user.Token = Guid.NewGuid().ToString();
                 user.PasswordHash = hashed_password;
-                _userRepository.Add(user);
-                _userRepository.Save();
+                _user.Create(user);
                 return RedirectToAction("ManageUsers");
             }
+
             return View(user);
         }
 
-        public ActionResult EditUser(int id)
+        public async Task<ActionResult> EditUser(int id)
         {
-            var user = _userRepository.GetById(id);
+            var user = await _user.GetById(id);
             if (user == null)
             {
                 return HttpNotFound();
             }
+
             return View(user);
         }
 
@@ -169,69 +170,68 @@ namespace MusicStore2.Controllers
         {
             if (ModelState.IsValid)
             {
-                _userRepository.Update(user);
-                _userRepository.Save();
+                _user.UpdateUser(user);
+                _user.SaveChanges();
                 return RedirectToAction("ManageUsers");
             }
+
             return View(user);
         }
 
         [HttpPost]
         public ActionResult DeleteUser(int id)
         {
-            _userRepository.Delete(id);
-            _userRepository.Save();
+            _user.Delete(id);
+            _user.SaveChanges();
             return RedirectToAction("ManageUsers");
         }
 
         [HttpPost]
-        public ActionResult UpdateUserRole(int id, string role)
+        public async Task<ActionResult> UpdateUserRole(int id, string role)
         {
-            var user = _userRepository.GetById(id);
+            var user = await _user.GetById(id);
             if (user != null)
             {
                 user.UserRole = role;
-                _userRepository.Update(user);
-                _userRepository.Save();
+                await _user.UpdateUserRole(user.Email, role);
                 return Json(new { success = true });
             }
+
             return Json(new { success = false });
         }
 
         [HttpPost]
-        public ActionResult UpdateProductPrice(int id, decimal price)
+        public async Task<ActionResult> UpdateProductPrice(int id, decimal price)
         {
-            var product = _productRepository.GetById(id);
+            var product = await _product.GetById(id);
             if (product != null)
             {
                 product.Price = price;
-                _productRepository.Update(product);
-                _productRepository.Save();
+                await _product.Update(product);
                 return Json(new { success = true });
             }
+
             return Json(new { success = false });
         }
-        
+
         [HttpPost]
         public ActionResult MarkNewReleases()
         {
-            var allSongs = _productRepository.GetAllAsyncFromDatabase().ToList();
-    
+            var allSongs = _product.GetAll().ToList();
+
             var latestSongs = allSongs
                 .OrderByDescending(p => p.UploadDate)
                 .Take(5)
-                .Select(product => new 
+                .Select(product => new
                 {
                     product.ImageUrl,
                     product.Name,
                     product.ArtistName,
                     product.AudioFileUrl
-                    
                 })
                 .ToList();
             ViewBag.LatestSongs = latestSongs;
-    
-            _productRepository.Save();
+
             return RedirectToAction("ManageContent");
         }
     }

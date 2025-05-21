@@ -13,7 +13,7 @@ namespace MusicStore2
            AreaRegistration.RegisterAllAreas();
            RouteConfig.RegisterRoutes(RouteTable.Routes);
            
-           DependencyConfig.RegisterDependencies();
+           //DependencyConfig.RegisterDependencies();
         }
     }
 }

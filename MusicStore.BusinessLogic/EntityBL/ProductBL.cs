@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using MusicStore.BusinessLogic.Core;
-using MusicStore.BusinessLogic.Data.DataInterfaces;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore2.Domain.Entities.Product;
 
@@ -14,9 +13,9 @@ namespace MusicStore.BusinessLogic.EntityBL
             return await GetByIdAsync(id);
         }
 
-        public async Task<List<ProductData>> GetAll()
+        public IEnumerable<ProductData> GetAll()
         {
-            return await GetAllAsync();
+            return GetAllAsync();
         }
 
         public Task Create(ProductData productData)
@@ -24,9 +23,9 @@ namespace MusicStore.BusinessLogic.EntityBL
             return CreateAsync(productData);
         }
 
-        public Task Update(ProductData productData, int id)
+        public Task Update(ProductData productData)
         {
-            return UpdateAsync(productData, id);
+            return UpdateProductAsync(productData);
         }
 
         public  Task Delete(int productId)
