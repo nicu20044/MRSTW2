@@ -401,8 +401,6 @@ C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicSto.0B46BB1B.Up2Date
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.dll
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.pdb
-C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Miggggg.resources
-C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\MusicStore.BusinessLogic.dll.config
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\MusicStore.BusinessLogic.dll
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\MusicStore.BusinessLogic.pdb
@@ -515,3 +513,5 @@ C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicS
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicSto.0B46BB1B.Up2Date
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.dll
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.pdb
+C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig.resources
+C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache
