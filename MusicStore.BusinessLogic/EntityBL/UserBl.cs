@@ -18,26 +18,17 @@ namespace MusicStore.BusinessLogic.EntityBL
             return GetAllAsync();
         }
 
-        public Task UpdateUser(AppUser data)
-        {
-            return UpdateUserAsync(data);
-        }
+       
 
         public Task Delete(int userid)
         {
             return DeleteAsync(userid);
         }
 
-        public Task SaveChanges()
-        {
-            return Save();
-        }
-
-        
 
         public Task UpdateUserRole(string email, string newRole)
         {
-            return  UpdateUserRoleAsync(email, newRole);
+            return UpdateUserRoleAsync(email, newRole);
         }
     }
 }

@@ -226,6 +226,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Scripts\jquery-2.0.0.intellisense.js" />
+    <Content Include="Scripts\css\addProduct.css" />
     <Content Include="Scripts\css\Admin.css" />
     <Content Include="Scripts\css\auth.css" />
     <Content Include="Scripts\css\ContentManage.css" />

@@ -35,16 +35,23 @@ namespace MusicStore.BusinessLogic.Core
         internal async Task UpdateUserAsync(AppUser user)
         {
             if (user == null)
+            {
                 throw new ArgumentNullException(nameof(user), "Utilizatorul nu poate fi null.");
+            }
 
-            var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == user.Id);
+            var existingUser = _context.Users.FirstOrDefault(u => u.Id == user.Id);
+          
             if (existingUser == null)
+            {
                 throw new InvalidOperationException("Utilizatorul nu a fost găsit.");
+            }
 
-            
-            existingUser.Name = user.Name?.Trim();
-            existingUser.Email = user.Email?.Trim();
+
+            existingUser.Name = user.Name;
+            existingUser.Email = user.Email;
             existingUser.UserRole = user.UserRole;
+
+            _context.Entry(existingUser).State = EntityState.Modified;
 
             await _context.SaveChangesAsync();
         }
@@ -63,24 +70,23 @@ namespace MusicStore.BusinessLogic.Core
             _context.Entry(user).State = EntityState.Modified;
             await _context.SaveChangesAsync();
         }
-        
+
         internal async Task DeleteAsync(int userid)
         {
-            var entity = await  _context.Users.FirstOrDefaultAsync(p => p.Id == userid);;
+            var entity = await _context.Users.FirstOrDefaultAsync(p => p.Id == userid);
+            ;
             if (entity == null)
             {
                 throw new ArgumentException("User not found");
             }
-        
+
             _context.Users.Remove(entity);
+            _context.SaveChanges();
         }
 
         internal async Task Save()
-        { 
+        {
             _context.SaveChanges();
         }
-        
-        
-        
     }
 }

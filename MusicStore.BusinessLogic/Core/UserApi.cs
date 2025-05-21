@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using MusicStore.BusinessLogic.Data;
-
 using MusicStore.BusinessLogic.Services;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Domain.Entities.User;
@@ -25,7 +24,7 @@ namespace MusicStore.BusinessLogic.Core
         }
 
 
-        internal  IEnumerable<ProductData> GetAllAsync()
+        internal IEnumerable<ProductData> GetAllAsync()
         {
             return _context.Products.AsNoTracking().ToList();
         }
@@ -46,29 +45,41 @@ namespace MusicStore.BusinessLogic.Core
         internal async Task UpdateProductAsync(ProductData productData)
         {
             if (productData == null)
-                throw new ArgumentException("Produsul nu poate fi null.");
+            {
+                throw new ArgumentNullException(nameof(productData), "Utilizatorul nu poate fi null.");
+            }
 
-            var existingProduct = await _context.Products.FirstOrDefaultAsync(u => u.Id == productData.Id);
+            var existingProduct = _context.Products.FirstOrDefault(u => u.Id == productData.Id);
+          
             if (existingProduct == null)
+            {
                 throw new InvalidOperationException("Utilizatorul nu a fost găsit.");
+            }
+
 
             existingProduct.Name = productData.Name;
             existingProduct.AudioFileUrl = productData.AudioFileUrl;
+            existingProduct.ImageUrl = productData.ImageUrl;
+            existingProduct.Bpm = productData.Bpm;
+            existingProduct.Genre = productData.Genre;
+            existingProduct.Scale = productData.Scale;
             existingProduct.Price = productData.Price;
             
 
             _context.Entry(existingProduct).State = EntityState.Modified;
+
             await _context.SaveChangesAsync();
         }
 
         internal async Task DeleteAsync(int productId)
         {
-            var entity = await  _context.Products.FirstOrDefaultAsync(p => p.Id == productId);;
+            var entity = await _context.Products.FirstOrDefaultAsync(p => p.Id == productId);
+            ;
             if (entity == null)
             {
                 throw new ArgumentException("Product not found");
             }
-        
+
             _context.Products.Remove(entity);
             _context.SaveChanges();
         }

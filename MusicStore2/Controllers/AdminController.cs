@@ -8,7 +8,6 @@ using MusicStore.BusinessLogic.Core;
 using MusicStore.BusinessLogic.Data;
 using MusicStore.BusinessLogic.EntityBL;
 using MusicStore.BusinessLogic.Interfaces;
-
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Domain.Entities.User;
 
@@ -23,8 +22,8 @@ namespace MusicStore2.Controllers
         public AdminController()
         {
             var bl = new BusinessLogic();
-            _product =  bl.GetProductBl();
-            _user =  bl.GetUserBl();
+            _product = bl.GetProductBl();
+            _user = bl.GetUserBl();
         }
 
         public ActionResult Dashboard()
@@ -138,36 +137,11 @@ namespace MusicStore2.Controllers
             return View();
         }
 
-        
-
-        public async Task<ActionResult> EditUser(int id)
-        {
-            var user = await _user.GetById(id);
-            if (user == null)
-            {
-                return HttpNotFound();
-            }
-
-            return View(user);
-        }
-
-        [HttpPost]
-        public ActionResult EditUser(AppUser user)
-        {
-            if (ModelState.IsValid)
-            {
-                _user.UpdateUser(user);
-                return RedirectToAction("ManageUsers");
-            }
-
-            return View(user);
-        }
 
         [HttpPost]
         public ActionResult DeleteUser(int id)
         {
             _user.Delete(id);
-            _user.SaveChanges();
             return RedirectToAction("ManageUsers");
         }
 
@@ -219,5 +193,6 @@ namespace MusicStore2.Controllers
 
             return RedirectToAction("ManageContent");
         }
+        
     }
 }

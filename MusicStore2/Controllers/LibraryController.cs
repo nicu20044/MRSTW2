@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
+using System.Web;
 using System.Web.Mvc;
 using MusicStore.BusinessLogic.EntityBL;
 using MusicStore.BusinessLogic.Interfaces;
@@ -32,72 +33,70 @@ namespace MusicStore2.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> AddProduct(ProductDTO model)
+        public ActionResult AddProduct(ProductDTO dto)
         {
-            if (!ModelState.IsValid)
+            string audioUrl = null;
+            string imageUrl = null;
+
+            if (ModelState.IsValid)
             {
-                return View(model);
+                if (dto.AudioFile != null && dto.AudioFile.ContentLength > 0)
+                {
+                    string fileName = Path.GetFileName(dto.AudioFile.FileName);
+                    string uploadPath = Server.MapPath("~/UploadedAudios/");
+                    if (!Directory.Exists(uploadPath))
+                    {
+                        Directory.CreateDirectory(uploadPath);
+                    }
+
+                    string filePath = Path.Combine(uploadPath, fileName);
+                    dto.AudioFile.SaveAs(filePath);
+
+                    audioUrl = "~/UploadedAudios/" + fileName;
+                }
+
+                if (dto.ImageFile != null && dto.ImageFile.ContentLength > 0)
+                {
+                    string imageFileName = Path.GetFileName(dto.ImageFile.FileName);
+                    string imageUploadPath = Server.MapPath("~/UploadedImages/");
+                    if (!Directory.Exists(imageUploadPath))
+                    {
+                        Directory.CreateDirectory(imageUploadPath);
+                    }
+
+                    string imageFilePath = Path.Combine(imageUploadPath, imageFileName);
+                    dto.ImageFile.SaveAs(imageFilePath);
+
+                    imageUrl = "~/UploadedImages/" + imageFileName;
+                }
+
+                ProductData model = MapDtoToProductData(dto, audioUrl, imageUrl);
+                _product.Create(model);
+
+                return View("Home");
             }
 
-            var imagePath = "";
-            var audioPath = "";
-    
-            var imagesFolder = Server.MapPath("~/Content/Uploads/Images");
-            var audioFolder = Server.MapPath("~/Content/Uploads/Audio");
-            
-            if (!Directory.Exists(imagesFolder))
+            return View(dto);
+        }
+
+        private ProductData MapDtoToProductData(ProductDTO dto, string audioUrl, string imageUrl)
+        {
+            return new ProductData
             {
-                Directory.CreateDirectory(imagesFolder);
-            }
-
-            if (!Directory.Exists(audioFolder))
-            {
-                Directory.CreateDirectory(audioFolder);
-            }
-
-
-            if (model.ImageFile != null && model.ImageFile.ContentLength > 0)
-            {
-                var fileName = Path.GetFileName(model.ImageFile.FileName); 
-                imagePath = Path.Combine("/Content/Uploads/Images", fileName); 
-                var serverPath = Path.Combine(imagesFolder, fileName); 
-
-
-                model.ImageFile.SaveAs(serverPath);
-            }
-
-            // Salvarea fișierului audio
-            if (model.AudioFile != null && model.AudioFile.ContentLength > 0)
-            {
-                var fileName = Path.GetFileName(model.AudioFile.FileName); 
-                audioPath = Path.Combine("/Content/Uploads/Audio", fileName); 
-                var serverPath = Path.Combine(audioFolder, fileName); 
-
-                
-                model.AudioFile.SaveAs(serverPath);
-            }
-
-
-            var product = new ProductData()
-            {
-                Name = model.Name,
-                Price = model.Price,
-                Description = model.Description,
-                Genre = model.Genre,
-                Bpm = model.Bpm,
-                Scale = model.Scale,
-                License = model.License,
-                ArtistName = model.ArtistName,
-                ArtistId = model.ArtistId,
-                ProducerId = model.ProducerId,
-                ImageUrl = imagePath, 
-                AudioFileUrl = audioPath, 
+                Name = dto.Name,
+                Price = dto.Price,
+                Description = dto.Description,
+                Genre = dto.Genre,
+                Bpm = dto.Bpm,
+                Scale = dto.Scale,
+                License = dto.License,
+                ArtistName = dto.ArtistName,
+                ArtistId = dto.ArtistId,
+                ProducerId = dto.ProducerId,
+                AudioFileUrl = audioUrl,
+                ImageUrl = imageUrl,
                 UploadDate = DateTime.Now
             };
-
-            await _product.Create(product);
-            
-            return RedirectToAction("Index", "Home");
         }
     }
 
