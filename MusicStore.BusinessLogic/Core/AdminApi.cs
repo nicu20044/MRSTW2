@@ -35,32 +35,33 @@ namespace MusicStore.BusinessLogic.Core
         internal async Task UpdateUserAsync(AppUser user)
         {
             if (user == null)
-                throw new ArgumentException("Utilizatorul nu poate fi null.");
+                throw new ArgumentNullException(nameof(user), "Utilizatorul nu poate fi null.");
 
             var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == user.Id);
             if (existingUser == null)
                 throw new InvalidOperationException("Utilizatorul nu a fost găsit.");
 
-            existingUser.Name = user.Name;
-            existingUser.Email = user.Email;
-            existingUser.UserRole = user.UserRole;
             
+            existingUser.Name = user.Name?.Trim();
+            existingUser.Email = user.Email?.Trim();
+            existingUser.UserRole = user.UserRole;
 
-            _context.Entry(existingUser).State = EntityState.Modified;
             await _context.SaveChangesAsync();
         }
 
-        internal Task CreateAsync(AppUser userData)
+        public async Task UpdateUserRoleAsync(string email, string newRole)
         {
-            if (userData == null)
-            {
-                throw new ArgumentException("Product cannot be null");
-            }
+            if (string.IsNullOrWhiteSpace(email))
+                throw new ArgumentException("Email-ul nu poate fi gol.");
 
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+                throw new InvalidOperationException("Utilizatorul nu a fost găsit.");
 
-            _context.Users.Add(userData);
-            _context.SaveChanges();
-            return Task.CompletedTask;
+            user.UserRole = newRole;
+
+            _context.Entry(user).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
         }
         
         internal async Task DeleteAsync(int userid)
@@ -79,19 +80,7 @@ namespace MusicStore.BusinessLogic.Core
             _context.SaveChanges();
         }
         
-        public async Task UpdateUserRoleAsync(string email, string newRole)
-        {
-            if (string.IsNullOrWhiteSpace(email))
-                throw new ArgumentException("Email-ul nu poate fi gol.");
-
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
-            if (user == null)
-                throw new InvalidOperationException("Utilizatorul nu a fost găsit.");
-
-            user.UserRole = newRole;
-
-            _context.Entry(user).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-        }
+        
+        
     }
 }

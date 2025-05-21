@@ -23,8 +23,8 @@ namespace MusicStore2.Controllers
         public AdminController()
         {
             var bl = new BusinessLogic();
-            _product = new ProductBl();
-            _user = new UserBl();
+            _product =  bl.GetProductBl();
+            _user =  bl.GetUserBl();
         }
 
         public ActionResult Dashboard()
@@ -138,21 +138,7 @@ namespace MusicStore2.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult AddUser(AppUser user)
-        {
-            if (ModelState.IsValid)
-            {
-                string hashed_password = _.ComputeHash(user.PasswordHash);
-                user.LastLoginTime = DateTime.Now;
-                user.Token = Guid.NewGuid().ToString();
-                user.PasswordHash = hashed_password;
-                _user.Create(user);
-                return RedirectToAction("ManageUsers");
-            }
-
-            return View(user);
-        }
+        
 
         public async Task<ActionResult> EditUser(int id)
         {
@@ -171,7 +157,6 @@ namespace MusicStore2.Controllers
             if (ModelState.IsValid)
             {
                 _user.UpdateUser(user);
-                _user.SaveChanges();
                 return RedirectToAction("ManageUsers");
             }
 
