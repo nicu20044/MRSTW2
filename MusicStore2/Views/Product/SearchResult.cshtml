@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MusicStore2.Domain.Entities.Product.ProductData>
+
+@{
+    ViewBag.Title = "Search Results";
+}
+
+<h2>Search Results</h2>
+
+@if (!Model.Any())
+{
+    <p>No songs found matching your search.</p>
+}
+else
+{
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="@Url.Action("ProductPage", "Product", new { id = item.Id })">
+                    @item.Name - @item.ArtistName ($@item.Price)
+                </a>
+            </li>
+        }
+    </ul>
+}

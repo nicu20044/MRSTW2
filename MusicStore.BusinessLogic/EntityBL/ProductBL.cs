@@ -32,5 +32,12 @@ namespace MusicStore.BusinessLogic
         {
             return DeleteAsync(productId);
         }
+
+
+        public async Task<IEnumerable<ProductData>> SearchByNameAsync(string query)
+        {
+            return await SearchSongsByNameAsync(query);
+        }
+
     }
 }
