@@ -11,7 +11,6 @@ using MusicStore.BusinessLogic.Interfaces;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Domain.Entities.User;
 
-
 namespace MusicStore2.Controllers
 {
     public class AdminController : Controller
@@ -24,6 +23,18 @@ namespace MusicStore2.Controllers
             var bl = new BusinessLogic();
             _product = bl.GetProductBl();
             _user = bl.GetUserBl();
+        }
+
+        
+        protected override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            if (Session["UserRole"]?.ToString() != "Admin")
+            {
+                filterContext.Result = new HttpNotFoundResult();
+                return;
+            }
+
+            base.OnActionExecuting(filterContext);
         }
 
         public ActionResult Dashboard()
@@ -87,7 +98,6 @@ namespace MusicStore2.Controllers
             return View(model);
         }
 
-
         public async Task<ActionResult> EditProduct(int id)
         {
             var product = await _product.GetById(id);
@@ -125,7 +135,6 @@ namespace MusicStore2.Controllers
             return Json(new { success = true });
         }
 
-
         public ActionResult ManageUsers()
         {
             var users = _user.GetAll();
@@ -136,7 +145,6 @@ namespace MusicStore2.Controllers
         {
             return View();
         }
-
 
         [HttpPost]
         public ActionResult DeleteUser(int id)
@@ -193,6 +201,5 @@ namespace MusicStore2.Controllers
 
             return RedirectToAction("ManageContent");
         }
-        
     }
 }

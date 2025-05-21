@@ -1,33 +1,46 @@
-﻿@{
+﻿@model List<MusicStore2.Models.ProductDTO>
+
+@{
     ViewBag.Title = "Library";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    
-    
 }
 
 <h2>Your Library</h2>
 <link rel="stylesheet" href="~/Scripts/css/library.css">
+
 <div class="library-container">
-    <input type="text" class="search-bar" placeholder="Search in library...">
-    <button class="btn-add">Add Tracks</button>
+    <input type="text" class="search-bar" placeholder="Search in library..." />
+
+    @if (Session["UserRole"]?.ToString() == "Artist")
+    {
+        <form method="get" action="@Url.Action("AddProduct", "Admin")" style="display:inline;">
+            <button type="submit" class="btn-add">Add Tracks</button>
+        </form>
+    }
+
     <ul class="track-list">
-        <li class="track-item">
-            <button class="play-button">▶</button>
-            <span class="track-info">
-                <strong>Track Name</strong>
-                <span>Artist Name</span>
-            </span>
-            <button class="favorite-button">♡</button>
-            <button class="more-options">⋮</button>
-        </li>
-        <li class="track-item">
-            <button class="play-button">▶</button>
-            <span class="track-info">
-                <strong>Track Name</strong>
-                <span>Artist Name</span>
-            </span>
-            <button class="favorite-button">♡</button>
-            <button class="more-options">⋮</button>
-        </li>
+        @foreach (var track in Model)
+        {
+            <li class="track-item">
+                <button class="play-button">▶</button>
+
+                <img src="@Url.Content(track.ImageUrl)" alt="@track.Name" 
+                     style="width:50px; height:50px; object-fit:cover; margin-right:10px;" />
+
+                <span class="track-info">
+                    <strong>
+                        <a href="@Url.Action("Details", "Product", new { id = track.Id })" 
+                           style="color:inherit; text-decoration:none;">
+                            @track.Name
+                        </a>
+                    </strong>
+                    <br />
+                    <span>@track.ArtistName</span>
+                </span>
+
+                <button class="favorite-button">♡</button>
+                <button class="more-options">⋮</button>
+            </li>
+        }
     </ul>
 </div>

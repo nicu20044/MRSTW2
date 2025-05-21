@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -23,7 +24,31 @@ namespace MusicStore2.Controllers
 
         public ActionResult Library()
         {
-            return View();
+            if (Session["UserId"] == null)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
+            int artistId = Convert.ToInt32(Session["UserId"]);
+
+            var productsDomain = _product.GetAll()
+                .Where(p => p.ArtistId == artistId)
+                .ToList();
+
+            /
+            var productsDto = productsDomain.Select(p => new ProductDTO
+            {
+                Id = p.Id,
+                Name = p.Name,
+                ArtistName = p.ArtistName,
+                ImageUrl = p.ImageUrl,
+                AudioFileUrl = p.AudioFileUrl,
+                Price = p.Price,
+                UploadDate = p.UploadDate
+                
+            }).ToList();
+
+            return View(productsDto);
         }
 
         [HttpGet]
@@ -40,9 +65,9 @@ namespace MusicStore2.Controllers
 
             if (ModelState.IsValid)
             {
-                if (dto.AudioFile != null && dto.AudioFile.ContentLength > 0)
+                if (dto.AudioFileUrl != null && dto.AudioFileUrl.ContentLength > 0)
                 {
-                    string fileName = Path.GetFileName(dto.AudioFile.FileName);
+                    string fileName = Path.GetFileName(dto.AudioFileUrl.FileName);
                     string uploadPath = Server.MapPath("~/UploadedAudios/");
                     if (!Directory.Exists(uploadPath))
                     {
@@ -50,12 +75,12 @@ namespace MusicStore2.Controllers
                     }
 
                     string filePath = Path.Combine(uploadPath, fileName);
-                    dto.AudioFile.SaveAs(filePath);
+                    dto.AudioFileUrl.SaveAs(filePath);
 
                     audioUrl = "~/UploadedAudios/" + fileName;
                 }
 
-                if (dto.ImageFile != null && dto.ImageFile.ContentLength > 0)
+                if (dto.ImageUrl != null && dto.ImageUrl.ContentLength > 0)
                 {
                     string imageFileName = Path.GetFileName(dto.ImageFile.FileName);
                     string imageUploadPath = Server.MapPath("~/UploadedImages/");
