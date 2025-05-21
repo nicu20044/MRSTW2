@@ -11,7 +11,6 @@ namespace MusicStore.BusinessLogic.Interfaces
         Task UpdateUser(AppUser data);
         Task Delete(int userid);
         Task SaveChanges();
-        Task Create(AppUser userData);
         Task UpdateUserRole(string email, string newRole);
     }
 }

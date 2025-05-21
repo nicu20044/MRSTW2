@@ -160,9 +160,9 @@
     <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Interfaces\ISession.cs" />
     <Compile Include="Interfaces\IUser.cs" />
-    <Compile Include="Migrations\202505201934310_NewMig.cs" />
-    <Compile Include="Migrations\202505201934310_NewMig.Designer.cs">
-      <DependentUpon>202505201934310_NewMig.cs</DependentUpon>
+    <Compile Include="Migrations\202505211152272_Miggggg.cs" />
+    <Compile Include="Migrations\202505211152272_Miggggg.Designer.cs">
+      <DependentUpon>202505211152272_Miggggg.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -187,8 +187,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202505201934310_NewMig.resx">
-      <DependentUpon>202505201934310_NewMig.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505211152272_Miggggg.resx">
+      <DependentUpon>202505211152272_Miggggg.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

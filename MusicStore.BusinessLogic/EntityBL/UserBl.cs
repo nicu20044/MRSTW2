@@ -33,10 +33,7 @@ namespace MusicStore.BusinessLogic.EntityBL
             return Save();
         }
 
-        public Task Create(AppUser userData)
-        {
-            return CreateAsync(userData);
-        }
+        
 
         public Task UpdateUserRole(string email, string newRole)
         {
