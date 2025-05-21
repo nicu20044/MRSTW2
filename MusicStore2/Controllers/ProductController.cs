@@ -35,6 +35,7 @@ namespace MusicStore2.Controllers
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<ActionResult> Search(string query)
         {
             if (string.IsNullOrWhiteSpace(query))
@@ -48,9 +49,10 @@ namespace MusicStore2.Controllers
                 return RedirectToAction("Details", "Product", new { id = song.Id });
             }
 
-            // Multiple results: show a results list (optional)
-            return View("SearchResults", results);
+            // Multiple matches
+            return View("SearchResult", results);
         }
 
     }
+
 }
