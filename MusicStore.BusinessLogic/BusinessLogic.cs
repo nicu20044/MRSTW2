@@ -1,11 +1,10 @@
-﻿using MusicStore.BusinessLogic.EntityBL.EntityBL;
-using MusicStore.BusinessLogic.Interfaces;
+﻿using MusicStore.BusinessLogic.Interfaces;
+using MusicStore.BusinessLogic.Services;
 
-namespace MusicStore.BusinessLogic.EntityBL
+namespace MusicStore.BusinessLogic
 {
     public class BusinessLogic
     {
-       
 
         public IProduct GetProductBl()
         {
@@ -25,6 +24,11 @@ namespace MusicStore.BusinessLogic.EntityBL
         public IUser GetUserBl()
         {
             return new UserBl();
+        }
+
+        public ICart GetCartBl()
+        {
+            return new CartBl();
         }
     }
 }

@@ -27,7 +27,7 @@ namespace MusicStore.BusinessLogic.Core
         }
 
 
-        internal IEnumerable<AppUser> GetAllAsync()
+        internal IEnumerable<AppUser> GetAll()
         {
             return _context.Users.AsNoTracking().ToList();
         }

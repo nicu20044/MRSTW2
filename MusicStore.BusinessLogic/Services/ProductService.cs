@@ -30,7 +30,7 @@
 //             return model;
 //         }
 //
-//         public async Task<List<ProductData>> GetAllAsync()
+//         public async Task<List<ProductData>> GetAll()
 //         {
 //             var models = await _productRepository.GetAllAsyncDatabse();
 //             return models;

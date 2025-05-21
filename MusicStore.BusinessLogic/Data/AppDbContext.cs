@@ -7,11 +7,16 @@ namespace MusicStore.BusinessLogic.Data
 {
 	public class AppDbContext:DbContext
 	{
-		public AppDbContext() : base("name=MusicStoreDB") { }
+		public AppDbContext() : base("name=MusicStore") { }
 		public DbSet<AppUser> Users { get; set; }
 		public DbSet<ProductData> Products { get; set; }
 		public DbSet<UserSession> UserSessions { get; set; }
 
-		
-	}
+
+
+        public DbSet<UserCartItem> UserCartItems { get; set; }
+
+
+
+    }
 }

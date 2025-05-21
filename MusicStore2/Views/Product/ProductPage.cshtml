@@ -4,55 +4,85 @@
     ViewBag.Title = "ProductPage";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@Model.Name - Product Page</title>
-    <link rel="stylesheet" href="/Scripts/css/productpage.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Model.Name – Product Page</title>
+
+    <link rel="stylesheet" href="~/Scripts/css/productpage.css" />
     <script src="https://unpkg.com/wavesurfer.js@6.6.4/dist/wavesurfer.min.js"></script>
 </head>
 <body>
-<main class="product-container">
-    <div class="product-image">
-        <img src="@Url.Content(string.IsNullOrEmpty(Model.ImageUrl) ? "~/UploadedImages/default.jpg" : Model.ImageUrl)" alt="Product Image" />
-        <h2>@Model.Name</h2>
-        <div class="product-description">
-            <p><strong>Published:</strong> <span>@Model.ReleaseDate</span></p>
-            <p><strong>BPM:</strong> <span>@Model.Bpm</span></p>
-            <p><strong>Key:</strong> <span>@Model.Scale</span></p>
-            <p><strong>Artist Name:</strong> <span>@Model.ArtistName</span></p>
-        </div>
-    </div>
+    <main class="product-container">
+        <!-- ───────────  artwork + meta ─────────── -->
+        <div class="product-image">
+            <img src="@Url.Content(string.IsNullOrEmpty(Model.ImageUrl) ? "~/UploadedImages/default.jpg"
+                                                                    : Model.ImageUrl)"
+                 alt="Product Image" />
+            <h2>@Model.Name</h2>
 
-    <div class="hero">
-        <div class="music">
-            <div class="info">
-                <div id="waveform"></div>
-                <div class="controls">
-                    <img src="/Scripts/images/play.png" id="playBtn">
-                    <img src="/Scripts/images/stop.png" id="stopBtn">
-                    <img src="/Scripts/images/volume.png" id="volumeBtn">
-                    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+            <div class="product-description">
+                <p><strong>Published:</strong> <span>@Model.ReleaseDate</span></p>
+                <p><strong>BPM:</strong> <span>@Model.Bpm</span></p>
+                <p><strong>Key:</strong> <span>@Model.Scale</span></p>
+                <p><strong>Artist Name:</strong> <span>@Model.ArtistName</span></p>
+            </div>
+        </div>
+
+        <!-- ───────────  player + licensing section ─────────── -->
+        <div class="hero">
+            <!-- audio player -->
+            <div class="music">
+                <div class="info">
+                    <div id="waveform"></div>
+
+                    <div class="controls">
+                        <img src="~/Scripts/images/play.png" id="playBtn" />
+                        <img src="~/Scripts/images/stop.png" id="stopBtn" />
+                        <img src="~/Scripts/images/volume.png" id="volumeBtn" />
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" />
+                    </div>
+
+                    <audio id="audioPlayer"
+                           src="@Url.Content(string.IsNullOrEmpty(Model.AudioFileUrl) ? "~/UploadedAudio/default.mp3"
+                                                                               : Model.AudioFileUrl)">
+                    </audio>
                 </div>
-                <audio id="audioPlayer" src="@Url.Content(string.IsNullOrEmpty(Model.AudioFileUrl) ? "~/UploadedAudio/default.mp3" : Model.AudioFileUrl)"></audio>
-
             </div>
+
+            <!-- licensing & purchase -->
+            <section class="licensing">
+                <h3>Licensing</h3>
+
+                <div class="license-options">
+                    <button class="license" type="button">Unlimited lease – $@Model.Price</button>
+                    <button class="license" type="button">Exclusive – Negotiate Price</button>
+                </div>
+
+                <p>
+                    Total:
+                    <span class="total-price">$@Model.Price</span>
+                </p>
+
+                <!-- ADD TO CART -->
+                @using (Html.BeginForm("AddToCart", "ShoppingCart", FormMethod.Post))
+                {
+                    @Html.Hidden("productId", Model.Id)
+                    <button type="submit" class="add-to-cart btn btn-warning">Add to Cart</button>
+                }
+
+                <!-- BUY NOW  (redirects via controller to payment page) -->
+                @using (Html.BeginForm("PaymentPage", "ShoppingCart", FormMethod.Post))
+                {
+                    @Html.Hidden("productId", Model.Id)
+                    <button type="submit" class="buy-now btn btn-success">Buy Now</button>
+                }
+            </section>
         </div>
+    </main>
 
-        <section class="licensing">
-            <h3>Licensing</h3>
-            <div class="license-options">
-                <button class="license">Unlimited lease - $@Model.Price</button>
-                <button class="license">Exclusive - Negotiate Price</button>
-            </div>
-            <p>Total: <span class="total-price">$@Model.Price</span></p>
-            <button class="add-to-cart">Add to Cart</button>
-            <button class="buy-now">Buy Now</button>
-        </section>
-    </div>
-</main>
-
-<script src="/Scripts/js/productpage.js"></script> 
+    <script src="~/Scripts/js/productpage.js"></script>
 </body>
 </html>
