@@ -1,0 +1,77 @@
+﻿body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label,
+.form-control,
+input[type="file"] {
+    display: block;
+    width: 100%;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
+
+.form-control,
+input[type="file"],
+textarea {
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-control:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+input[type="file"] {
+    padding: 8px;
+    background-color: #1e1e1e;
+    color: #cccccc;
+}
+
+button.btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #0055aa;
+    cursor: pointer;
+}
+
+.field-validation-error {
+    color: #ff6b6b;
+    font-size: 0.9em;
+    margin-top: 3px;
+}

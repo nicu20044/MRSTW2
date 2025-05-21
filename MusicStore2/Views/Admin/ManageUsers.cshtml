@@ -51,7 +51,6 @@
                     </td>
                     <td>@user.LastLoginTime.ToString("yyyy-MM-dd HH:mm")</td>
                     <td>
-                        <a href="@Url.Action("EditUser", "Admin", new { id = user.Id })" class="edit-btn">Edit</a>
                         <button class="delete-btn" data-id="@user.Id">Delete</button>
                     </td>
                 </tr>
