@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
-using MusicStore.BusinessLogic.EntityBL;
+using MusicStore.BusinessLogic;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services;
 using MusicStore.BusinessLogic.Services.Interfaces;
