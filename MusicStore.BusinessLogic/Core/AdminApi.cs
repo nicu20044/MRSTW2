@@ -71,10 +71,9 @@ namespace MusicStore.BusinessLogic.Core
             await _context.SaveChangesAsync();
         }
 
-        internal async Task DeleteAsync(int userid)
+        internal void Delete(int userId)
         {
-            var entity = await _context.Users.FirstOrDefaultAsync(p => p.Id == userid);
-            ;
+            var entity = _context.Users.FirstOrDefault(p => p.Id == userId);
             if (entity == null)
             {
                 throw new ArgumentException("User not found");
@@ -84,9 +83,6 @@ namespace MusicStore.BusinessLogic.Core
             _context.SaveChanges();
         }
 
-        internal async Task Save()
-        {
-            _context.SaveChanges();
-        }
+        
     }
 }

@@ -28,9 +28,9 @@ namespace MusicStore.BusinessLogic.EntityBL
             return UpdateProductAsync(productData);
         }
 
-        public  Task Delete(int productId)
+        public void Delete(int productId)
         {
-            return DeleteAsync(productId);
+            DeleteProductById(productId);
         }
     }
 }

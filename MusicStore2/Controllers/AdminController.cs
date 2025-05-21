@@ -122,17 +122,10 @@ namespace MusicStore2.Controllers
         }
 
         [HttpPost]
-        public JsonResult DeleteProduct(int id)
+        public ActionResult DeleteProduct(int id)
         {
-            var product = _product.GetById(id);
-            if (product == null)
-            {
-                return Json(new { success = false, message = "Product not found." });
-            }
-
-            _product.Delete(product.Id);
-
-            return Json(new { success = true });
+            _product.Delete(id);
+            return RedirectToAction("ManageContent");
         }
 
         public ActionResult ManageUsers()
@@ -141,15 +134,10 @@ namespace MusicStore2.Controllers
             return View(users);
         }
 
-        public ActionResult AddUser()
-        {
-            return View();
-        }
-
         [HttpPost]
         public ActionResult DeleteUser(int id)
         {
-            _user.Delete(id);
+            _user.DeleteUser(id);
             return RedirectToAction("ManageUsers");
         }
 

@@ -10,6 +10,7 @@ using MusicStore.BusinessLogic.Services.Interfaces;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Models;
 
+
 namespace MusicStore2.Controllers
 {
     public class LibraryController : Controller
@@ -20,6 +21,18 @@ namespace MusicStore2.Controllers
         {
             var bl = new BusinessLogic();
             _product = new ProductBl();
+        }
+        protected override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            var role = Session["UserRole"]?.ToString();
+            
+            if (role != "Artist" && role != "Admin")
+            {
+                filterContext.Result = new HttpNotFoundResult();
+                return;
+            }
+
+            base.OnActionExecuting(filterContext);
         }
 
         public ActionResult Library()
@@ -32,10 +45,9 @@ namespace MusicStore2.Controllers
             int artistId = Convert.ToInt32(Session["UserId"]);
 
             var productsDomain = _product.GetAll()
-                .Where(p => p.ArtistId == artistId)
-                .ToList();
-
-            /
+                    .Where(p => p.ArtistId == artistId)
+                    .ToList();
+                
             var productsDto = productsDomain.Select(p => new ProductDTO
             {
                 Id = p.Id,
@@ -45,7 +57,6 @@ namespace MusicStore2.Controllers
                 AudioFileUrl = p.AudioFileUrl,
                 Price = p.Price,
                 UploadDate = p.UploadDate
-                
             }).ToList();
 
             return View(productsDto);
@@ -58,29 +69,31 @@ namespace MusicStore2.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult AddProduct(ProductDTO dto)
         {
-            string audioUrl = null;
-            string imageUrl = null;
-
             if (ModelState.IsValid)
             {
-                if (dto.AudioFileUrl != null && dto.AudioFileUrl.ContentLength > 0)
+                string audioUrl = null;
+                string imageUrl = null;
+                
+                if (dto.AudioFile != null && dto.AudioFile.ContentLength > 0)
                 {
-                    string fileName = Path.GetFileName(dto.AudioFileUrl.FileName);
-                    string uploadPath = Server.MapPath("~/UploadedAudios/");
-                    if (!Directory.Exists(uploadPath))
+                    string audioFileName = Path.GetFileName(dto.AudioFile.FileName);
+                    string audioUploadPath = Server.MapPath("~/UploadedAudios/");
+                    if (!Directory.Exists(audioUploadPath))
                     {
-                        Directory.CreateDirectory(uploadPath);
+                        Directory.CreateDirectory(audioUploadPath);
                     }
 
-                    string filePath = Path.Combine(uploadPath, fileName);
-                    dto.AudioFileUrl.SaveAs(filePath);
+                    string audioFilePath = Path.Combine(audioUploadPath, audioFileName);
+                    dto.AudioFile.SaveAs(audioFilePath);
 
-                    audioUrl = "~/UploadedAudios/" + fileName;
+                    audioUrl = "~/UploadedAudios/" + audioFileName;
                 }
 
-                if (dto.ImageUrl != null && dto.ImageUrl.ContentLength > 0)
+               
+                if (dto.ImageFile != null && dto.ImageFile.ContentLength > 0)
                 {
                     string imageFileName = Path.GetFileName(dto.ImageFile.FileName);
                     string imageUploadPath = Server.MapPath("~/UploadedImages/");
@@ -95,16 +108,21 @@ namespace MusicStore2.Controllers
                     imageUrl = "~/UploadedImages/" + imageFileName;
                 }
 
-                ProductData model = MapDtoToProductData(dto, audioUrl, imageUrl);
-                _product.Create(model);
+                int artistId = Convert.ToInt32(Session["UserId"]);
+                string artistName = Session["Username"]?.ToString();
 
-                return View("Home");
+                
+                var product = MapDtoToProductData(dto, audioUrl, imageUrl, artistId, artistName);
+
+                _product.Create(product);
+
+                return RedirectToAction("Library", "Library");
             }
 
             return View(dto);
         }
 
-        private ProductData MapDtoToProductData(ProductDTO dto, string audioUrl, string imageUrl)
+        private ProductData MapDtoToProductData(ProductDTO dto, string audioUrl, string imageUrl, int artistId, string artistName)
         {
             return new ProductData
             {
@@ -115,15 +133,13 @@ namespace MusicStore2.Controllers
                 Bpm = dto.Bpm,
                 Scale = dto.Scale,
                 License = dto.License,
-                ArtistName = dto.ArtistName,
-                ArtistId = dto.ArtistId,
-                ProducerId = dto.ProducerId,
+                ArtistName = artistName,
+                ArtistId = artistId,
+                ProducerId = artistId,
                 AudioFileUrl = audioUrl,
                 ImageUrl = imageUrl,
                 UploadDate = DateTime.Now
             };
         }
     }
-
-
 }

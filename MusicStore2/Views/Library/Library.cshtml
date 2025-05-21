@@ -6,14 +6,14 @@
 }
 
 <h2>Your Library</h2>
-<link rel="stylesheet" href="~/Scripts/css/library.css">
+<link rel="stylesheet" href="~/Scripts/css/library.css" />
 
 <div class="library-container">
     <input type="text" class="search-bar" placeholder="Search in library..." />
 
-    @if (Session["UserRole"]?.ToString() == "Artist")
+    @if (Session["UserRole"]?.ToString() == "Artist" || Session["UserRole"]?.ToString() == "Admin")
     {
-        <form method="get" action="@Url.Action("AddProduct", "Admin")" style="display:inline;">
+        <form method="get" action="@Url.Action("AddProduct", "Library")" style="display:inline;">
             <button type="submit" class="btn-add">Add Tracks</button>
         </form>
     }
@@ -21,26 +21,23 @@
     <ul class="track-list">
         @foreach (var track in Model)
         {
-            <li class="track-item">
-                <button class="play-button">▶</button>
+            <a href="@Url.Action("Details", "Product", new { id = track.Id })" style="text-decoration: none; color: inherit;">
+                <li class="track-item" style="cursor: pointer;">
+                    <button class="play-button">▶</button>
 
-                <img src="@Url.Content(track.ImageUrl)" alt="@track.Name" 
-                     style="width:50px; height:50px; object-fit:cover; margin-right:10px;" />
+                    <img src="@(string.IsNullOrEmpty(track.ImageUrl) ? Url.Content("~/Images/default.png") : Url.Content(track.ImageUrl))"
+                         alt="@track.Name"
+                         style="width:50px; height:50px; object-fit:cover; margin-right:10px;" />
 
-                <span class="track-info">
-                    <strong>
-                        <a href="@Url.Action("Details", "Product", new { id = track.Id })" 
-                           style="color:inherit; text-decoration:none;">
-                            @track.Name
-                        </a>
-                    </strong>
-                    <br />
-                    <span>@track.ArtistName</span>
-                </span>
+                    <span class="track-info">
+                        <strong>@track.Name</strong><br />
+                        <span>@track.ArtistName</span>
+                    </span>
 
-                <button class="favorite-button">♡</button>
-                <button class="more-options">⋮</button>
-            </li>
+                    <button class="favorite-button">♡</button>
+                    <button class="more-options">⋮</button>
+                </li>
+            </a>
         }
     </ul>
 </div>
