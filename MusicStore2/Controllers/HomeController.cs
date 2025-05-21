@@ -1,23 +1,33 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using MusicStore.BusinessLogic.Data.DataInterfaces;
+using MusicStore.BusinessLogic.EntityBL;
+using MusicStore.BusinessLogic.Interfaces;
 using MusicStore2.Domain.Entities.Product;
+using MusicStore2.Models;
 
 namespace MusicStore2.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IProductRepository _productRepository;
+        // private readonly IProductRepository _productRepository;
 
-        public HomeController(IProductRepository productRepository)
+        // public HomeController(IProductRepository productRepository)
+        // {
+        //     _productRepository = productRepository;
+        // }
+
+        private readonly IProduct _product;
+
+        public HomeController()
         {
-            _productRepository = productRepository;
+            var bl = new BusinessLogic();
+            _product = new ProductBl();
         }
 
         public ActionResult Index()
         {
-            var products = _productRepository.GetAllAsyncFromDatabase() ?? new List<ProductData>();
+            var products = _product.GetAll() ?? new List<ProductData>();
             return View(products);
         }
 
@@ -34,7 +44,7 @@ namespace MusicStore2.Controllers
         [HttpGet]
         public ActionResult LoadAllNewReleases()
         {
-            var allProducts = _productRepository.GetAllAsyncFromDatabase();
+            var allProducts = _product.GetAll();
             var orderedProducts = allProducts?
                 .OrderByDescending(p => p.UploadDate)
                 .ToList() ?? new List<ProductData>();

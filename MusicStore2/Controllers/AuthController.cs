@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using MusicStore.BusinessLogic.EntityBL;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services;
 using MusicStore.BusinessLogic.Services.Interfaces;
@@ -11,12 +12,15 @@ using MusicStore2.Domain.Entities.User;
 namespace MusicStore2.Controllers
 {
    public class AuthController : Controller
-    {
-        private readonly IAuthService _authService;
+   {
+       private readonly IAuth _authService;
+       private readonly ISession _session;
 
-        public AuthController(IAuthService authService)
+        public AuthController()
         {
-            _authService = authService;
+            var bl = new BusinessLogic();
+            _authService = bl.GetAuthBl();
+            _session = bl.GetSessionBl();
         }
         
         public ActionResult Login()
@@ -36,13 +40,14 @@ namespace MusicStore2.Controllers
             if (!ModelState.IsValid)
                 return Json(new { success = false, message = "Date invalide." });
 
-            var response = await _authService.UserLoginActionAsync(model);
+            string dataEmail = model.Email;
+            var response = await _authService.LoginAction(model,dataEmail);
 
             if (!response.Status)
                 return Json(new { success = false, message = response.StatusMsg });
 
          
-            var token = await _authService.CreateUserSessionAsync(response.Id);
+            var token = await _session.CreateUserSession(response.Id);
             
             Session["UserId"] = response.Id;
             Session["UserEmail"] = response.Email;
@@ -83,7 +88,8 @@ namespace MusicStore2.Controllers
                 return Json(new { success = false, message = "Date invalide." });
             }
 
-            var response = await _authService.UserRegisterActionAsync(model);
+            string dataEmail = model.Email;
+            var response = await _authService.UserRegisterAction(model,dataEmail);
 
             if (!response.Status)
             {
@@ -92,7 +98,7 @@ namespace MusicStore2.Controllers
             }
 
            
-            var token = await _authService.CreateUserSessionAsync(response.Id);
+            var token = await _session.CreateUserSession(response.Id);
 
             Session["UserId"] = response.Id;
             Session["UserEmail"] = response.Email;

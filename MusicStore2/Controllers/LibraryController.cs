@@ -2,22 +2,22 @@
 using System.IO;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using MusicStore.BusinessLogic.EntityBL;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services.Interfaces;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Models;
-using ProductData = MusicStore2.Models.ProductData;
 
 namespace MusicStore2.Controllers
 {
     public class LibraryController : Controller
     {
-        private readonly IProductService _product;
+        private readonly IProduct _product;
 
-        public LibraryController(IProductService product)
+        public LibraryController()
         {
-            
-            _product = product;
+            var bl = new BusinessLogic();
+            _product = new ProductBl();
         }
 
         public ActionResult Library()
@@ -32,7 +32,7 @@ namespace MusicStore2.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> AddProduct(ProductData model)
+        public async Task<ActionResult> AddProduct(ProductDTO model)
         {
             if (!ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace MusicStore2.Controllers
             }
 
 
-            var product = new Domain.Entities.Product.ProductData
+            var product = new ProductData()
             {
                 Name = model.Name,
                 Price = model.Price,
@@ -95,7 +95,7 @@ namespace MusicStore2.Controllers
                 UploadDate = DateTime.Now
             };
 
-            await _product.CreateAsync(product);
+            await _product.Create(product);
             
             return RedirectToAction("Index", "Home");
         }
