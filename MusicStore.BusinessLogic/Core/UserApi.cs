@@ -70,9 +70,9 @@ namespace MusicStore.BusinessLogic.Core
             await _context.SaveChangesAsync();
         }
 
-        internal async Task DeleteAsync(int productId)
+        internal void DeleteProductById(int productId)
         {
-            var entity = await _context.Products.FirstOrDefaultAsync(p => p.Id == productId);
+            var entity = _context.Products.FirstOrDefault(p => p.Id == productId);
             ;
             if (entity == null)
             {
