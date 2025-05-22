@@ -399,3 +399,6 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 .idea/*
+/MusicStore2/Web.config
+/MusicStore2/Web.Debug.config
+/MusicStore2/Web.Release.config

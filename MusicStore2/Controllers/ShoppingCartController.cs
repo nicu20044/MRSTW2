@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using MusicStore.BusinessLogic;
 using MusicStore.BusinessLogic.Interfaces;
@@ -55,5 +56,30 @@ namespace MusicStore.Web.Controllers
             await _cart.RemoveFromCartAsync((int)userId, productId);
             return RedirectToAction("ShoppingCart");
         }
+
+        [HttpPost]
+        public ActionResult ProceedToPayment()
+        {
+            return RedirectToAction("PaymentPage", "ShoppingCart");
+        }
+
+        public async Task<ActionResult> PaymentPage()
+        {
+            var userId = Session["UserId"];
+            if (userId == null)
+                return RedirectToAction("Login", "Auth");
+
+            var cartItems = await _cart.GetCartItemsAsync((int)userId);
+            var total = cartItems.Sum(item => item.Price); 
+
+            ViewBag.TotalPrice = total;
+            return View(cartItems);
+        }
+
+
+
+
+       
+
     }
 }
