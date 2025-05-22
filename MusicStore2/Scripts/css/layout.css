@@ -1,0 +1,250 @@
+﻿:root {
+    --primary-color: #1db954;     
+    --primary-hover: #1ed760;    
+    --background: #133142;        
+    --header-footer-bg: #0c2130;   
+    --surface: #1e455a;            
+    --text: #ffffff;               
+    --text-secondary: #b3b3b3;    
+    --border-radius: 8px;          
+}
+
+/* === LAYOUT PRINCIPAL === */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background) !important;
+    color: var(--text) !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main.container {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: var(--background) !important;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+/* === HEADER === */
+header {
+    background-color: var(--header-footer-bg) !important;
+    color: var(--text) !important;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: var(--header-footer-bg) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text) !important;
+    text-decoration: none;
+}
+
+/* Navigare */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 0.5rem;
+}
+
+.nav-link {
+    color: var(--text) !important;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color) !important;
+}
+
+/* Formular de căutare */
+header form {
+    display: flex;
+    margin: 0 1rem;
+}
+
+.form-control {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: var(--text-secondary);
+}
+
+.form-control:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(29, 185, 84, 0.5);
+}
+
+.me-2 {
+    margin-right: 0.5rem !important;
+}
+
+/* Butoane */
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 20px;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-outline-light {
+    color: var(--text) !important;
+    border: 1px solid var(--text) !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.btn-success {
+    background-color: var(--primary-color) !important;
+    color: var(--text) !important;
+}
+
+.btn-success:hover {
+    background-color: var(--primary-hover) !important;
+    transform: translateY(-1px);
+}
+
+/* === FOOTER === */
+footer {
+    background-color: var(--header-footer-bg) !important;
+    color: var(--text) !important;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: var(--header-footer-bg) !important;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: var(--text) !important;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+    text-decoration: underline;
+}
+
+/* Utilități Bootstrap care ar putea fi folosite */
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    header .container {
+        flex-wrap: wrap;
+    }
+
+    header form {
+        order: 3;
+        width: 100%;
+        margin: 1rem 0 0;
+    }
+
+    nav {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header div:last-child {
+        margin-top: 1rem;
+    }
+}
