@@ -230,6 +230,7 @@
     <Content Include="Scripts\css\Admin.css" />
     <Content Include="Scripts\css\auth.css" />
     <Content Include="Scripts\css\ContentManage.css" />
+    <Content Include="Scripts\css\layout.css" />
     <Content Include="Scripts\css\library.css" />
     <Content Include="Scripts\css\payment-page.css" />
     <Content Include="Scripts\css\productpage.css" />
