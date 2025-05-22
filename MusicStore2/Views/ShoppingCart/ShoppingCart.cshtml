@@ -4,7 +4,7 @@
     ViewBag.Title = "Your Cart";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<link rel="stylesheet" href="~/Scripts/css/shopping-cart.css" />
 <h2>Your Shopping Cart</h2>
 
 @if (!Model.Any())
@@ -15,29 +15,29 @@ else
 {
     <table class="table">
         <thead>
-            <tr>
-                <th>Name</th>
-                <th>Artist</th>
-                <th>Price</th>
-                <th></th>
-            </tr>
+        <tr>
+            <th>Name</th>
+            <th>Artist</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.SongName</td>
-                    <td>@item.ArtistName</td>
-                    <td>$@item.Price</td>
-                    <td>
-                        @using (Html.BeginForm("RemoveFromCart", "ShoppingCart", FormMethod.Post))
-                        {
-                            @Html.Hidden("productId", item.SongId)
-                            <button type="submit" class="btn btn-danger btn-sm">Remove</button>
-                        }
-                    </td>
-                </tr>
-            }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.SongName</td>
+                <td>@item.ArtistName</td>
+                <td>$@item.Price</td>
+                <td>
+                    @using (Html.BeginForm("RemoveFromCart", "ShoppingCart", FormMethod.Post))
+                    {
+                        @Html.Hidden("productId", item.SongId)
+                        <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                    }
+                </td>
+            </tr>
+        }
         </tbody>
     </table>
 

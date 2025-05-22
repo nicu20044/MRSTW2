@@ -1,130 +1,180 @@
-﻿
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
+﻿/* General Body and Container Styling */
 body {
-    background-color: #fff;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    color: #343a40;
+    margin: 0;
+    padding: 20px;
 }
 
-/* Main Content */
-.main-content {
-    max-width: 1200px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff; /* White container background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading Styling */
+h2 {
+    color: #ffffff; /* Keep original blue for heading */
     text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 600;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.subtitle {
-    color: #666;
-    margin-bottom: 3rem;
-}
-
-/* Plans Grid */
-.plans-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.plan-card {
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 2rem;
-    text-align: left;
-    position: relative;
-    background: #fff;
-    transition: transform 0.3s ease;
-}
-
-.plan-card:hover {
-    transform: translateY(-5px);
-}
-
-.plan-card.popular {
-    border: 2px solid #000;
-}
-
-.popular-tag {
-    position: absolute;
-    top: -12px;
-    right: 20px;
-    background: #000;
-    color: #fff;
-    padding: 4px 12px;
-    border-radius: 12px;
-    font-size: 0.8rem;
-}
-
-.plan-name {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.plan-description {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-}
-
-.plan-price {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.price-period {
-    color: #666;
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-.features-list {
-    list-style: none;
-    margin: 2rem 0;
-}
-
-.features-list li {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    color: #333;
-}
-
-.features-list li::before {
-    content: "✓";
-    margin-right: 10px;
-    color: #000;
-}
-
-.choose-plan-btn {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #000;
+/* Empty Cart Message */
+p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #6c757d;
+    padding: 20px;
+    background-color: #e9ecef; /* Light grey background for message */
     border-radius: 5px;
-    background: #fff;
-    color: #000;
-    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* Table Styling - Modified for Calmer Colors */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    background-color: #fcfcfc; /* Very light, almost white background for the table */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners are visible */
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0; /* Softer, lighter grey border */
+    color: #495057; /* Standard text color */
+}
+
+.table thead th {
+    background-color: #FFE5B4; /* Calm light grey for table header */
+    color: #555; /* Darker text for header for contrast */
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    border-bottom: 2px solid #d0d0d0; /* Slightly stronger border below header */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f8f8; /* Very subtle lighter grey for even rows */
+}
+
+.table tbody tr:hover {
+    background-color: #e8f0fe; /* A very light, calm blue on hover, subtle */
+    transition: background-color 0.3s ease;
+}
+
+.table td {
+    font-size: 1.05em;
+}
+
+/* Price Column Specifics */
+.table td:nth-child(3) { /* Targeting the price column */
+    font-weight: bold;
+    color: #28a745; /* Keep original green for price, as it's typically a 'good' color */
+}
+
+/* Button Styling - Keeping original, as they are not part of "table calm" */
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.plan-card.popular .choose-plan-btn {
-    background: #000;
-    color: #fff;
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
 }
 
-.choose-plan-btn:hover {
-    background: #000;
-    color: #fff;
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    margin-top: 25px;
+    float: right; /* Aligns clear cart button to the right */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 15px auto;
+        padding: 20px;
+    }
+
+    .table th,
+    .table td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .table, .table tbody, .table tr, .table td, .table th {
+        display: block;
+    }
+
+    .table thead {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0; /* Calmer border for mobile rows */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px dashed #e0e0e0; /* Calmer dashed border */
+    }
+
+    .table td:last-child {
+        border-bottom: none;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: calc(50% - 30px);
+        text-align: left;
+        font-weight: bold;
+        color: #555; /* Darker grey for labels, to stand out slightly but remain calm */
+    }
+
+    /* Add data-label to your td elements in CSHTML for this to work */
+    /* Example: <td data-label="Name">@item.SongName</td> */
 }

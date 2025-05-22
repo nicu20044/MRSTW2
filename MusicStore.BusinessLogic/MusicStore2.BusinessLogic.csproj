@@ -184,10 +184,6 @@
     <Compile Include="Migrations\202505221045271_Newmigration.Designer.cs">
       <DependentUpon>202505221045271_Newmigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202505221116144_NewMig1.cs" />
-    <Compile Include="Migrations\202505221116144_NewMig1.Designer.cs">
-      <DependentUpon>202505221116144_NewMig1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.1.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -220,9 +216,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202505221045271_Newmigration.resx">
       <DependentUpon>202505221045271_Newmigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202505221116144_NewMig1.resx">
-      <DependentUpon>202505221116144_NewMig1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
