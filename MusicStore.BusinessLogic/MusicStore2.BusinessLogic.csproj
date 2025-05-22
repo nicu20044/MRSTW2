@@ -176,13 +176,13 @@
     <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Interfaces\ISession.cs" />
     <Compile Include="Interfaces\IUser.cs" />
-    <Compile Include="Migrations\202505211734114_first.cs" />
-    <Compile Include="Migrations\202505211734114_first.Designer.cs">
-      <DependentUpon>202505211734114_first.cs</DependentUpon>
+    <Compile Include="Migrations\202505212131351_NewMig.cs" />
+    <Compile Include="Migrations\202505212131351_NewMig.Designer.cs">
+      <DependentUpon>202505212131351_NewMig.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202505212019357_second.cs" />
-    <Compile Include="Migrations\202505212019357_second.Designer.cs">
-      <DependentUpon>202505212019357_second.cs</DependentUpon>
+    <Compile Include="Migrations\202505221045271_Newmigration.cs" />
+    <Compile Include="Migrations\202505221045271_Newmigration.Designer.cs">
+      <DependentUpon>202505221045271_Newmigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.1.AssemblyAttributes.cs" />
@@ -211,11 +211,11 @@
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202505211734114_first.resx">
-      <DependentUpon>202505211734114_first.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505212131351_NewMig.resx">
+      <DependentUpon>202505212131351_NewMig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202505212019357_second.resx">
-      <DependentUpon>202505212019357_second.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505221045271_Newmigration.resx">
+      <DependentUpon>202505221045271_Newmigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

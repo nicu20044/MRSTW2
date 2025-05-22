@@ -7,13 +7,13 @@ namespace MusicStore.BusinessLogic.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class first : IMigrationMetadata
+    public sealed partial class NewMig : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(first));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(NewMig));
         
         string IMigrationMetadata.Id
         {
-            get { return "202505211734114_first"; }
+            get { return "202505212131351_NewMig"; }
         }
         
         string IMigrationMetadata.Source

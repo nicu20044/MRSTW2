@@ -9,10 +9,21 @@
 
         <nav>
             <ul class="nav">
-                <li class="nav-item"><a class="nav-link text-white" href="@Url.Action("Library", "Library")">Library</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="@Url.Action("Subscribtion", "ShoppingCart")">Plans</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="@Url.Action("About", "Home")">AboutUs</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="@Url.Action("Contact", "Home")">Contact</a></li>
+                @if (Session["UserRole"]?.ToString() == "Artist" || Session["UserRole"]?.ToString() == "Admin")
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="@Url.Action("Library", "Library")">Library</a>
+                    </li>
+                }
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="@Url.Action("Subscribtion", "ShoppingCart")">Plans</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="@Url.Action("About", "Home")">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="@Url.Action("Contact", "Home")">Contact</a>
+                </li>
             </ul>
         </nav>
 
