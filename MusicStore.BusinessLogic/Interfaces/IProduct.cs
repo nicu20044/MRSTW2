@@ -10,7 +10,7 @@ namespace MusicStore.BusinessLogic.Interfaces
         IEnumerable<ProductData> GetAll();
         Task Create(ProductData productData);
         Task Update(ProductData productData);
-        Task Delete(int productId);
+        void Delete(int productId);
         
     }
 }

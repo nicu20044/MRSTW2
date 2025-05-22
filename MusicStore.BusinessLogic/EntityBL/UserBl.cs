@@ -20,9 +20,9 @@ namespace MusicStore.BusinessLogic.EntityBL
 
        
 
-        public Task Delete(int userid)
+        public void DeleteUser(int userid)
         {
-            return DeleteAsync(userid);
+            Delete(userid);
         }
 
 

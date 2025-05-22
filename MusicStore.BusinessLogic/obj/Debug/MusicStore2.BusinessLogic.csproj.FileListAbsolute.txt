@@ -403,3 +403,4 @@ C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.pdb
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Miggggg.resources
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache
+C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Newmigration.resources
