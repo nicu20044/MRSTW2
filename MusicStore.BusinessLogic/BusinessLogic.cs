@@ -30,5 +30,16 @@ namespace MusicStore.BusinessLogic
         {
             return new CartBl();
         }
+
+        public IPlan GetPlanBl()
+        {
+            return new PlanBl();
+        }
+
+        public ISubscription GetSubscriptionBl()
+        {
+            return new SubscriptionBl();
+        }
+        
     }
 }

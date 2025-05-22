@@ -514,3 +514,4 @@ C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Newmigration.resources
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig.resources
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Newmigration.resources
+C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig1.resources

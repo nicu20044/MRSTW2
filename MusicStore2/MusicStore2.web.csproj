@@ -230,6 +230,7 @@
     <Content Include="Scripts\css\Admin.css" />
     <Content Include="Scripts\css\auth.css" />
     <Content Include="Scripts\css\ContentManage.css" />
+    <Content Include="Scripts\css\createplan.css" />
     <Content Include="Scripts\css\layout.css" />
     <Content Include="Scripts\css\library.css" />
     <Content Include="Scripts\css\payment-page.css" />
@@ -268,12 +269,13 @@
     <Content Include="UploadedImages\unudoitrei.JPG" />
     <Content Include="Views\Admin\AddProduct.cshtml" />
     <Content Include="Views\Admin\AddUser.cshtml" />
+    <Content Include="Views\Admin\CreatePlan.cshtml" />
     <Content Include="Views\Admin\Dashboard.cshtml" />
     <Content Include="Views\Admin\EditProduct.cshtml" />
     <Content Include="Views\Admin\EditUser.cshtml" />
     <Content Include="Views\Admin\ManageContent.cshtml" />
     <Content Include="Views\Admin\ManageUsers.cshtml" />
-    <Content Include="Views\Admin\SubscriptionManagement.cshtml" />
+    <Content Include="Views\Admin\PlansManagement.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\_NewReleasesPartial.cshtml" />
     <Content Include="Views\Library\AddProduct.cshtml" />
@@ -284,6 +286,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\StaticPages\AboutUs.cshtml" />
     <Content Include="Views\StaticPages\Contact.cshtml" />
+    <Content Include="Views\Subscription\Subscription.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -296,9 +299,11 @@
     <Compile Include="Controllers\LibraryController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
+    <Compile Include="Controllers\SubscriptionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\PlanDTO.cs" />
     <Compile Include="Models\ProductDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -331,7 +336,6 @@
     <Content Include="Views\Auth\Register.cshtml" />
     <Content Include="Views\ShoppingCart\PaymentPage.cshtml" />
     <Content Include="Views\ShoppingCart\ShoppingCart.cshtml" />
-    <Content Include="Views\ShoppingCart\Subscribtion.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Product\SearchResult.cshtml" />
     <None Include="Web.Debug.config">

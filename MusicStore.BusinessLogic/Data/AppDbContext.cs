@@ -15,5 +15,13 @@ namespace MusicStore.BusinessLogic.Data
 		public DbSet<UserCartItem> UserCartItems { get; set; }
 		public DbSet<PlanData> Plans { get; set; }
         public DbSet<SubscriptionData> Subscriptions { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+	        modelBuilder.Entity<SubscriptionData>()
+		        .HasRequired(s => s.User)
+		        .WithOptional(u => u.Subscription);
+
+	        base.OnModelCreating(modelBuilder);
+        }
 	}
 }

@@ -27,11 +27,7 @@ namespace MusicStore.Web.Controllers
             var cartItems = await _cart.GetCartItemsAsync((int)userId);
             return View(cartItems);
         }
-
-        public ActionResult Subscribtion()
-        {
-            return View();
-        }
+        
 
         public ActionResult PaymentPage()
         {

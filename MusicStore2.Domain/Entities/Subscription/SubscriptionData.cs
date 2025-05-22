@@ -7,7 +7,7 @@ namespace MusicStore2.Domain.Entities.Subscription
 {
     public class SubscriptionData
     {
-        [Key]
+        [Key, ForeignKey("User")]
         public int Id { get; set; }
 
         [Required]
