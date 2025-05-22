@@ -330,6 +330,8 @@
     <Content Include="Views\ShoppingCart\PaymentPage.cshtml" />
     <Content Include="Views\ShoppingCart\ShoppingCart.cshtml" />
     <Content Include="Views\ShoppingCart\Subscribtion.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Product\SearchResult.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

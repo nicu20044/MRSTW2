@@ -27,9 +27,14 @@
             </ul>
         </nav>
 
-        <form class="d-flex me-3">
-            <input class="form-control me-2" type="search" placeholder="Search tracks, artists..." aria-label="Search">
+        <!-- Search Form -->
+        <form class="d-flex me-3" method="post" action="@Url.Action("Search", "Product")">
+            @Html.AntiForgeryToken()
+            <input class="form-control me-2" type="search" name="query" placeholder="Search tracks, artists..." aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
+
+
 
         <!-- Cart Icon -->
         <div class="me-3 position-relative">
