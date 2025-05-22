@@ -4,7 +4,7 @@ using MusicStore.BusinessLogic.Core;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore2.Domain.Entities.User;
 
-namespace MusicStore.BusinessLogic.EntityBL
+namespace MusicStore.BusinessLogic
 {
     public class UserBl : AdminApi, IUser
     {
@@ -15,7 +15,7 @@ namespace MusicStore.BusinessLogic.EntityBL
 
         public IEnumerable<AppUser> GetAll()
         {
-            return GetAllAsync();
+            return base.GetAll();
         }
 
        

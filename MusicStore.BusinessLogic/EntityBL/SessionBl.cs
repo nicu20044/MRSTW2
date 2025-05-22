@@ -2,7 +2,7 @@
 using MusicStore.BusinessLogic.Core;
 using MusicStore.BusinessLogic.Interfaces;
 
-namespace MusicStore.BusinessLogic.EntityBL
+namespace MusicStore.BusinessLogic
 {
     public class SessionBl : UserApi, ISession
     {

@@ -3,7 +3,7 @@ using MusicStore.BusinessLogic.Core;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore2.Domain.Entities.User;
 
-namespace MusicStore.BusinessLogic.EntityBL.EntityBL
+namespace MusicStore.BusinessLogic
 {
     public class AuthBl : UserApi, IAuth
     {

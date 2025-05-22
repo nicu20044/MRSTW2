@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Web.DynamicData;
@@ -34,5 +35,10 @@ namespace MusicStore2.Domain.Entities.User
         
         [Display(Name="Last_Login_Time")]
         public DateTime LastLoginTime { get; set; }
+
+
+
+
+
     }
 }

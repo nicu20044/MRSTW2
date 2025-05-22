@@ -1,78 +1,162 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\",
+  "WorkspaceRootPath": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore.businesslogic\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\administrator\\documents\\github\\mrstw\\musicstore.businesslogic\\migrations\\202505211152272_miggggg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\migrations\\202505211152272_miggggg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Migrations\\Configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MusicStore.BusinessLogic\\Migrations\\Configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\administrator\\documents\\github\\mrstw\\musicstore.businesslogic\\migrations\\202505211150246_miggg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:musicstore.businesslogic\\migrations\\202505211150246_miggg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|c:\\users\\administrator\\documents\\github\\mrstw\\musicstore2.domain\\entities\\user\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2.domain\\entities\\user\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\user\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2.domain\\entities\\cart\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\cart\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\views\\product\\searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\views\\product\\searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\views\\product\\productpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\views\\product\\productpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\interfaces\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\interfaces\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\controllers\\beatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\controllers\\beatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\entitybl\\productbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\entitybl\\productbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\interfaces\\icart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\interfaces\\icart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\entitybl\\cartbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\entitybl\\cartbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\businesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\views\\shoppingcart\\paymentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\views\\shoppingcart\\paymentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\migrations\\202505212019357_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\migrations\\202505212019357_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2.domain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2.domain\\enums\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\enums\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2.domain\\enums\\licence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\enums\\licence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore.businesslogic\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2.domain\\entities\\user\\userregdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\user\\userregdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2.domain\\entities\\user\\userlogindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\entitybl\\authbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\entitybl\\authbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\app_start\\dependencyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\app_start\\dependencyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\core\\adminapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\core\\adminapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore.businesslogic\\migrations\\202505211734114_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\migrations\\202505211734114_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore.businesslogic\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore.businesslogic\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2.domain\\entities\\user\\userlogindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\user\\userlogindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2.domain\\entities\\user\\userauthresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2.domain\\entities\\user\\userregdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\user\\userregdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2.domain\\enums\\licence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\enums\\licence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2.domain\\enums\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\enums\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2.domain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2.domain\\entities\\user\\userauthresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\user\\userauthresp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2.domain\\entities\\shoppingcart\\producttocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\shoppingcart\\producttocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\musicstore2.domain\\entities\\product\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\product\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -132,8 +216,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\BusinessLogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Migrations\\202505201934310_NewMig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MusicStore.BusinessLogic\\Migrations\\202505201934310_NewMig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505151413461_Migrarre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MusicStore.BusinessLogic\\Migrations\\202505151413461_Migrarre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505151327095_Mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MusicStore.BusinessLogic\\Migrations\\202505151327095_Mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -147,36 +235,438 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "MusicStore2\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\ShoppingCartController.cs*",
+              "RelativeToolTip": "MusicStore2\\Controllers\\ShoppingCartController.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T19:55:11.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\Cart\\CartItem.cs",
+              "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\Cart\\CartItem.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\Cart\\CartItem.cs",
+              "RelativeToolTip": "MusicStore2.Domain\\Entities\\Cart\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T19:58:18.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Product\\ProductPage.cshtml",
+              "RelativeDocumentMoniker": "MusicStore2\\Views\\Product\\ProductPage.cshtml",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Product\\ProductPage.cshtml",
+              "RelativeToolTip": "MusicStore2\\Views\\Product\\ProductPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T20:26:53.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductBL.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\EntityBL\\ProductBL.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\EntityBL\\ProductBL.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\EntityBL\\ProductBL.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\EntityBL\\ProductBL.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAIA+wCYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:25:01.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserApi.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Core\\UserApi.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Core\\UserApi.cs",
+              "ViewState": "AgIAAEUBAAAAAAAAAAAEwFwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:25:55.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "MusicStore2\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "MusicStore2\\Views\\Shared\\_Header.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T17:42:33.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MusicStore2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MusicStore2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T21:55:16.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BeatsController.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\BeatsController.cs",
+              "RelativeDocumentMoniker": "MusicStore2\\Controllers\\BeatsController.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\BeatsController.cs",
+              "RelativeToolTip": "MusicStore2\\Controllers\\BeatsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T21:55:35.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "MusicStore2\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "MusicStore2\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T21:39:23.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\User\\AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\User\\AppUser.cs",
               "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\User\\AppUser.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\User\\AppUser.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\User\\AppUser.cs",
               "RelativeToolTip": "MusicStore2.Domain\\Entities\\User\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:47:40.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "MusicStore2\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "MusicStore2\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "IProduct.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Interfaces\\IProduct.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Interfaces\\IProduct.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Interfaces\\IProduct.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Interfaces\\IProduct.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAArwA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T11:31:35.21Z"
+              "WhenOpened": "2025-05-21T21:41:29.772Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "SearchResult.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Product\\SearchResult.cshtml",
+              "RelativeDocumentMoniker": "MusicStore2\\Views\\Product\\SearchResult.cshtml",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Product\\SearchResult.cshtml",
+              "RelativeToolTip": "MusicStore2\\Views\\Product\\SearchResult.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T21:53:23.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ICart.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Interfaces\\ICart.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Interfaces\\ICart.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Interfaces\\ICart.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Interfaces\\ICart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:04:59.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Services\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Services\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Services\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Services\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T21:42:44.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BusinessLogic.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\BusinessLogic.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\BusinessLogic.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\BusinessLogic.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\BusinessLogic.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwBwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:06:45.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MusicStore2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MusicStore2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:18:05.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CartBL.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\EntityBL\\CartBL.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\EntityBL\\CartBL.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\EntityBL\\CartBL.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\EntityBL\\CartBL.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAArwAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T18:22:06.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LibraryController.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\LibraryController.cs",
+              "RelativeDocumentMoniker": "MusicStore2\\Controllers\\LibraryController.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\LibraryController.cs",
+              "RelativeToolTip": "MusicStore2\\Controllers\\LibraryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:18:16.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "202505212019357_second.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505212019357_second.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\202505212019357_second.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505212019357_second.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\202505212019357_second.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:19:42.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PaymentPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\ShoppingCart\\PaymentPage.cshtml",
+              "RelativeDocumentMoniker": "MusicStore2\\Views\\ShoppingCart\\PaymentPage.cshtml",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\ShoppingCart\\PaymentPage.cshtml",
+              "RelativeToolTip": "MusicStore2\\Views\\ShoppingCart\\PaymentPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T20:34:46.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "MusicStore2\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "MusicStore2\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T10:39:44.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Models\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "MusicStore2\\Models\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Models\\ProductDTO.cs",
+              "RelativeToolTip": "MusicStore2\\Models\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:22:03.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "MusicStore2\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "MusicStore2\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAWwBQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:01:21.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthBL.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\EntityBL\\AuthBL.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\EntityBL\\AuthBL.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\EntityBL\\AuthBL.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\EntityBL\\AuthBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T18:21:50.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAASwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:38:19.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AdminApi.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Core\\AdminApi.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Core\\AdminApi.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Core\\AdminApi.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Core\\AdminApi.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAIAwwFYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:33:50.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DependencyConfig.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\App_Start\\DependencyConfig.cs",
+              "RelativeDocumentMoniker": "MusicStore2\\App_Start\\DependencyConfig.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\App_Start\\DependencyConfig.cs",
+              "RelativeToolTip": "MusicStore2\\App_Start\\DependencyConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:47:52.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MusicStore2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MusicStore2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T10:39:58.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "202505211734114_first.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505211734114_first.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\202505211734114_first.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505211734114_first.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\202505211734114_first.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:34:17.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Web.config",
+              "RelativeDocumentMoniker": "MusicStore2\\Web.config",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Web.config",
+              "RelativeToolTip": "MusicStore2\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-07T10:44:00.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Web.config",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Web.config",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Web.config",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-20T14:36:44.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "202505151413461_Migrarre.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505151413461_Migrarre.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\202505151413461_Migrarre.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505151413461_Migrarre.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\202505151413461_Migrarre.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T16:09:32.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "202505151327095_Mig.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505151327095_Mig.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\202505151327095_Mig.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505151327095_Mig.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\202505151327095_Mig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T16:09:28.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "UserRole.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Enums\\UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "MusicStore2.Domain\\Enums\\UserRole.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Enums\\UserRole.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Enums\\UserRole.cs",
               "RelativeToolTip": "MusicStore2.Domain\\Enums\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -184,35 +674,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 35,
               "Title": "ProductStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Enums\\ProductStatus.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Enums\\ProductStatus.cs",
               "RelativeDocumentMoniker": "MusicStore2.Domain\\Enums\\ProductStatus.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Enums\\ProductStatus.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Enums\\ProductStatus.cs",
               "RelativeToolTip": "MusicStore2.Domain\\Enums\\ProductStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:49:02.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 34,
               "Title": "Licence.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Enums\\Licence.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Enums\\Licence.cs",
               "RelativeDocumentMoniker": "MusicStore2.Domain\\Enums\\Licence.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Enums\\Licence.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Enums\\Licence.cs",
               "RelativeToolTip": "MusicStore2.Domain\\Enums\\Licence.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:48:45.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 33,
               "Title": "UserRegData.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\User\\UserRegData.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\User\\UserRegData.cs",
               "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\User\\UserRegData.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\User\\UserRegData.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\User\\UserRegData.cs",
               "RelativeToolTip": "MusicStore2.Domain\\Entities\\User\\UserRegData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -220,11 +710,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 32,
               "Title": "UserLoginData.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\User\\UserLoginData.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\User\\UserLoginData.cs",
               "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\User\\UserLoginData.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\User\\UserLoginData.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\User\\UserLoginData.cs",
               "RelativeToolTip": "MusicStore2.Domain\\Entities\\User\\UserLoginData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -232,47 +722,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "MusicStore2\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "MusicStore2\\Controllers\\AdminController.cs",
+              "DocumentIndex": 31,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\Configuration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T10:39:44.501Z"
+              "WhenOpened": "2025-05-14T18:49:38.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MusicStore2\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MusicStore2\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T10:39:58.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2\\Web.config",
-              "RelativeDocumentMoniker": "MusicStore2\\Web.config",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2\\Web.config",
-              "RelativeToolTip": "MusicStore2\\Web.config",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-05-07T10:44:00.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 37,
               "Title": "AddProduct.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2\\Views\\Admin\\AddProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Admin\\AddProduct.cshtml",
               "RelativeDocumentMoniker": "MusicStore2\\Views\\Admin\\AddProduct.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2\\Views\\Admin\\AddProduct.cshtml",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\Admin\\AddProduct.cshtml",
               "RelativeToolTip": "MusicStore2\\Views\\Admin\\AddProduct.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -280,11 +746,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 38,
               "Title": "UserAuthResp.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\User\\UserAuthResp.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\User\\UserAuthResp.cs",
               "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\User\\UserAuthResp.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\User\\UserAuthResp.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\User\\UserAuthResp.cs",
               "RelativeToolTip": "MusicStore2.Domain\\Entities\\User\\UserAuthResp.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -292,234 +758,210 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ProductToCart.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\ShoppingCart\\ProductToCart.cs",
-              "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\ShoppingCart\\ProductToCart.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\ShoppingCart\\ProductToCart.cs",
-              "RelativeToolTip": "MusicStore2.Domain\\Entities\\ShoppingCart\\ProductToCart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T10:47:27.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ProductData.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\Product\\ProductData.cs",
-              "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\Product\\ProductData.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore2.Domain\\Entities\\Product\\ProductData.cs",
-              "RelativeToolTip": "MusicStore2.Domain\\Entities\\Product\\ProductData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T10:47:12.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 39,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\UserService.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\UserService.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\UserService.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:45:47.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 40,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\AuthService.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\AuthService.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Services\\AuthService.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:45:34.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 41,
               "Title": "ISession.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ISession.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ISession.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ISession.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ISession.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ISession.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ISession.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:45:08.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 42,
               "Title": "IProduct.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IProduct.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IProduct.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IProduct.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IProduct.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IProduct.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IProduct.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:44:53.527Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 43,
               "Title": "ICart.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ICart.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ICart.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ICart.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ICart.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ICart.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\ICart.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:44:37.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 44,
               "Title": "IAuth.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IAuth.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IAuth.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IAuth.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IAuth.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IAuth.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Interfaces\\IAuth.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:44:06.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 45,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\Repositories\\ProductRepository.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\Repositories\\ProductRepository.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:43:42.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 46,
               "Title": "UserContext.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\UserContext.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\UserContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\UserContext.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\UserContext.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\UserContext.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\UserContext.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:43:11.626Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 47,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:42:59.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 48,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IUserRepository.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IUserRepository.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IUserRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IUserRepository.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:42:30.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 49,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IProductRepository.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IProductRepository.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IProductRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IProductRepository.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:42:14.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 50,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IGenericRepository.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IGenericRepository.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IGenericRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Data\\DataInterfaces\\IGenericRepository.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:41:57.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 51,
               "Title": "UserApi.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:41:17.296Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 52,
               "Title": "ArtistApi.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\ArtistApi.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\ArtistApi.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\ArtistApi.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\ArtistApi.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\ArtistApi.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\ArtistApi.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:41:04.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 53,
               "Title": "AdminApi.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\AdminApi.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\AdminApi.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\AdminApi.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\AdminApi.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\AdminApi.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\Core\\AdminApi.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:40:51.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 54,
               "Title": "SessionBL.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\SessionBL.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\SessionBL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\SessionBL.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\SessionBL.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\SessionBL.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\SessionBL.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:39:32.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 55,
               "Title": "ProductBL.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\ProductBL.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\ProductBL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\ProductBL.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\ProductBL.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\ProductBL.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\ProductBL.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:39:20.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 56,
               "Title": "CartBL.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\CartBL.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\CartBL.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\CartBL.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\CartBL.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\CartBL.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\CartBL.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:39:08.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 57,
               "Title": "BusinessLogic.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\BusinessLogic.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\BusinessLogic.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\BusinessLogic.cs",
               "ToolTip": "C:\\Users\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\BusinessLogic.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\nicud\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\BusinessLogic.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\MusicStore2\\MusicStore.BusinessLogic\\BusinessLogic.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:38:47.613Z"
             }
@@ -527,74 +969,11 @@
         },
         {
           "DockedWidth": 893,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "202505211152272_Miggggg.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Migrations\\202505211152272_Miggggg.cs",
-              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\202505211152272_Miggggg.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Migrations\\202505211152272_Miggggg.cs",
-              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\202505211152272_Miggggg.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T11:52:31.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Migrations\\Configuration.cs",
-              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\Configuration.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Migrations\\Configuration.cs",
-              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\Configuration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T19:34:15.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "202505211150246_Miggg.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Migrations\\202505211150246_Miggg.cs",
-              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\202505211150246_Miggg.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Migrations\\202505211150246_Miggg.cs",
-              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\202505211150246_Miggg.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T11:50:29.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "202505201934310_NewMig.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Migrations\\202505201934310_NewMig.cs",
-              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\202505201934310_NewMig.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Migrations\\202505201934310_NewMig.cs",
-              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\202505201934310_NewMig.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T19:34:33.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\MRSTW\\MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "MusicStore.BusinessLogic\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T19:32:03.64Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -603,10 +982,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

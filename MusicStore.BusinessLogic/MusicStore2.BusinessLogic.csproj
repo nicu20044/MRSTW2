@@ -143,6 +143,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\MusicSto.0B46BB1B.Up2Date" />
+    <Content Include="obj\Debug\MusicStore.BusinessLogic.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Debug\MusicStore.BusinessLogic.dll" />
+    <Content Include="obj\Debug\MusicStore.BusinessLogic.Migrations.FirstMigration.resources" />
+    <Content Include="obj\Debug\MusicStore.BusinessLogic.Migrations.Mig.resources" />
+    <Content Include="obj\Debug\MusicStore.BusinessLogic.Migrations.Migrarre.resources" />
+    <Content Include="obj\Debug\MusicStore.BusinessLogic.Migrations.Migration.resources" />
+    <Content Include="obj\Debug\MusicStore.BusinessLogic.Migrations.Thirdmig.resources" />
+    <Content Include="obj\Debug\MusicStore.BusinessLogic.pdb" />
+    <Content Include="obj\Debug\MusicStore2.BusinessLogic.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Debug\MusicStore2.BusinessLogic.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\MusicStore2.BusinessLogic.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +167,7 @@
     <Compile Include="Core\UserApi.cs" />
     <Compile Include="Data\AppDbContext.cs" />
     <Compile Include="EntityBL\AuthBL.cs" />
+    <Compile Include="EntityBL\CartBL.cs" />
     <Compile Include="EntityBL\ProductBL.cs" />
     <Compile Include="EntityBL\SessionBl.cs" />
     <Compile Include="EntityBL\UserBl.cs" />
@@ -160,11 +176,16 @@
     <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Interfaces\ISession.cs" />
     <Compile Include="Interfaces\IUser.cs" />
-    <Compile Include="Migrations\202505211152272_Miggggg.cs" />
-    <Compile Include="Migrations\202505211152272_Miggggg.Designer.cs">
-      <DependentUpon>202505211152272_Miggggg.cs</DependentUpon>
+    <Compile Include="Migrations\202505211734114_first.cs" />
+    <Compile Include="Migrations\202505211734114_first.Designer.cs">
+      <DependentUpon>202505211734114_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202505212019357_second.cs" />
+    <Compile Include="Migrations\202505212019357_second.Designer.cs">
+      <DependentUpon>202505212019357_second.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.1.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\Interfaces\IAuthService.cs" />
@@ -187,8 +208,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202505211152272_Miggggg.resx">
-      <DependentUpon>202505211152272_Miggggg.cs</DependentUpon>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202505211734114_first.resx">
+      <DependentUpon>202505211734114_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505212019357_second.resx">
+      <DependentUpon>202505212019357_second.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

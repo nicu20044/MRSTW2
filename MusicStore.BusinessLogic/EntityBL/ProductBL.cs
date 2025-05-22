@@ -4,7 +4,7 @@ using MusicStore.BusinessLogic.Core;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore2.Domain.Entities.Product;
 
-namespace MusicStore.BusinessLogic.EntityBL
+namespace MusicStore.BusinessLogic
 {
     public class ProductBl : UserApi, IProduct
     {
@@ -32,5 +32,12 @@ namespace MusicStore.BusinessLogic.EntityBL
         {
             return DeleteAsync(productId);
         }
+
+
+        public async Task<IEnumerable<ProductData>> SearchByNameAsync(string query)
+        {
+            return await SearchSongsByNameAsync(query);
+        }
+
     }
 }
