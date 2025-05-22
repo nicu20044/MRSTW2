@@ -11,5 +11,7 @@ namespace MusicStore.BusinessLogic.Services.Interfaces
         Task CreateAsync(ProductData productData);
         Task UpdateAsync(ProductData productData);
         Task DeleteAsync(int id);
+
+
     }
 }

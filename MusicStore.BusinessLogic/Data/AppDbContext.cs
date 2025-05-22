@@ -12,6 +12,11 @@ namespace MusicStore.BusinessLogic.Data
 		public DbSet<ProductData> Products { get; set; }
 		public DbSet<UserSession> UserSessions { get; set; }
 
-		
-	}
+
+
+        public DbSet<UserCartItem> UserCartItems { get; set; }
+
+
+
+    }
 }

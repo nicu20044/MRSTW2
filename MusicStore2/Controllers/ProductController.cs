@@ -1,6 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
-using MusicStore.BusinessLogic.EntityBL;
+using MusicStore.BusinessLogic;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services;
 using MusicStore.BusinessLogic.Services.Interfaces;
@@ -28,5 +29,30 @@ namespace MusicStore2.Controllers
 
             return View("ProductPage", product);
         }
+
+
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Search(string query)
+        {
+            if (string.IsNullOrWhiteSpace(query))
+                return RedirectToAction("Index", "Home");
+
+            var results = await _productService.SearchByNameAsync(query);
+
+            if (results.Count() == 1)
+            {
+                var song = results.First();
+                return RedirectToAction("Details", "Product", new { id = song.Id });
+            }
+
+            // Multiple matches
+            return View("SearchResult", results);
+        }
+
     }
+
 }

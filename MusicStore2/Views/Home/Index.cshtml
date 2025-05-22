@@ -5,32 +5,30 @@
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<link rel="stylesheet" href="~/Scripts/css/site.css" />
 <div class="hero-section">
-    <img src="~/UploadedImages/header_image.jpg" alt="header_image" />
+    <img src="~/UploadedImages/header_image.jpg" alt="header_image">
 </div>
 
 <div class="container">
     <section class="tracks-section">
         <div class="section-header">
-            <h2>New Releases</h2>
+            <h2>Popular Tracks</h2>
+            <a href="/popular"></a>
         </div>
         <div class="tracks-grid">
             @foreach (var product in Model.Take(5))
             {
-                var imageUrl = string.IsNullOrEmpty(product.ImageUrl) ? "~/images/default-cover.png" : product.ImageUrl;
-                var audioUrl = string.IsNullOrEmpty(product.AudioFileUrl) ? "~/audio/placeholder.mp3" : product.AudioFileUrl;
-
                 <a href="@Url.Action("Details", "Product", new { id = product.Id })" class="track-card-link">
                     <div class="track-card">
                         <div class="track-image">
-                            <img src="@Url.Content(imageUrl)" alt="Track artwork" />
+                            <img src="@Url.Content(product.ImageUrl)" alt="Track artwork" />
                             <button class="play-button play-toggle" data-audio-id="audio-@product.Id" onclick="event.preventDefault(); togglePlay(this)">
                                 <svg viewBox="0 0 24 24" width="24" height="24">
                                     <path d="M8 5v14l11-7z" fill="currentColor" />
                                 </svg>
                             </button>
-                            <audio id="audio-@product.Id" src="@Url.Content(audioUrl)"></audio>
+                            <audio id="audio-@product.Id" src="@Url.Content(product.AudioFileUrl)"></audio>
                         </div>
                         <div class="track-info">
                             <h3>@product.Name</h3>
@@ -39,6 +37,41 @@
                     </div>
                 </a>
             }
+
         </div>
     </section>
+
+    <section class="tracks-section">
+        <div class="section-header">
+            <h2>New Releases</h2>
+        </div>
+        <div id="new-releases-container" class="tracks-grid">
+            @foreach (var product in Model.OrderByDescending(p => p.UploadDate).Take(5))
+            {
+            <a href="@Url.Action("Details", "Product", new { id = product.Id })" class="track-card-link">
+                <div class="track-card">
+                    <div class="track-image">
+                        <img src="@Url.Content(product.ImageUrl)" alt="Track artwork" />
+                        <button class="play-button play-toggle" data-audio-id="audio-@product.Id" onclick="event.preventDefault(); togglePlay(this)">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M8 5v14l11-7z" fill="currentColor" />
+                            </svg>
+                        </button>
+                        <audio id="audio-@product.Id" src="@Url.Content(product.AudioFileUrl)"></audio>
+                    </div>
+                    <div class="track-info">
+                        <h3>@product.Name</h3>
+                        <p>@product.ArtistName</p>
+                    </div>
+                </div>
+                </a>
+            }
+        </div>
+
+        <div class="view-all-container">
+            <button id="viewAllBtn" class="view-all-button">View all</button>
+        </div>
+    </section>
+    <script src="~/Scripts/js/site.js"></script>
+
 </div>

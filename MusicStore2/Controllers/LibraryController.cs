@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using MusicStore.BusinessLogic.EntityBL;
+using MusicStore.BusinessLogic;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services.Interfaces;
 using MusicStore2.Domain.Entities.Product;

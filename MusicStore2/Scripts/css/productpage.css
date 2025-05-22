@@ -80,7 +80,7 @@ nav ul {
 }
 
 .hero {
-    width: 100%;
+    width: 90%;
     /* Removed height: 100vh to allow content to determine height */
     background-position: center;
     background-size: cover;
@@ -89,7 +89,7 @@ nav ul {
 }
 
 .music {
-    width: 85%;
+    width: 95%;
     padding: 20px;
     box-sizing: border-box;
     background: #000;
@@ -100,12 +100,13 @@ nav ul {
 }
 
 #waveform {
-    width: 100%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 1100px;
     height: 50px;
     margin: 10px 0;
     background-color: #000;
     visibility: visible;
+    overflow-x:hidden ;
 }
 
 .wavesurfer-region {
