@@ -189,5 +189,10 @@ namespace MusicStore2.Controllers
 
             return RedirectToAction("ManageContent");
         }
+
+        public ActionResult SubscriptionManagement()
+        {
+            return View();
+        }
     }
 }

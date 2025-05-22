@@ -28,6 +28,16 @@ namespace MusicStore.Web.Controllers
             return View(cartItems);
         }
 
+        public ActionResult Subscribtion()
+        {
+            return View();
+        }
+
+        public ActionResult PaymentPage()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<ActionResult> AddToCart(int productId)
         {

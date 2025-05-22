@@ -170,11 +170,13 @@
     <Compile Include="EntityBL\CartBL.cs" />
     <Compile Include="EntityBL\ProductBL.cs" />
     <Compile Include="EntityBL\SessionBl.cs" />
+    <Compile Include="EntityBL\SubscriptionBl.cs" />
     <Compile Include="EntityBL\UserBl.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Interfaces\ISession.cs" />
+    <Compile Include="Interfaces\ISubscription.cs" />
     <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Migrations\202505212131351_NewMig.cs" />
     <Compile Include="Migrations\202505212131351_NewMig.Designer.cs">
