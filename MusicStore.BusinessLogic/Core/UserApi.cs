@@ -335,7 +335,7 @@ namespace MusicStore.BusinessLogic.Core
 
 
         //search song
-        protected async Task<IEnumerable<ProductData>> SearchSongsByNameAsync(string query)
+        protected async Task<IEnumerable<ProductData>> SearchByNameOrArtistAsync(string query)
         {
             using (var context = new AppDbContext())
             {

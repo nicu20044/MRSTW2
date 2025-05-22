@@ -41,7 +41,7 @@ namespace MusicStore2.Controllers
                 return Json(new { success = false, message = "Date invalide." });
 
             string dataEmail = model.Email;
-            var response = await _authService.LoginAction(model,dataEmail);
+            UserAuthResp response = await _authService.LoginAction(model,dataEmail);
 
             if (!response.Status)
                 return Json(new { success = false, message = response.StatusMsg });
