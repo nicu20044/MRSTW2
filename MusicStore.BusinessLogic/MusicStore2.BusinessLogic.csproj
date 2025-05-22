@@ -164,6 +164,10 @@
     <Compile Include="Migrations\202505211152272_Miggggg.Designer.cs">
       <DependentUpon>202505211152272_Miggggg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202505221045271_Newmigration.cs" />
+    <Compile Include="Migrations\202505221045271_Newmigration.Designer.cs">
+      <DependentUpon>202505221045271_Newmigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AuthService.cs" />
@@ -189,6 +193,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202505211152272_Miggggg.resx">
       <DependentUpon>202505211152272_Miggggg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505221045271_Newmigration.resx">
+      <DependentUpon>202505221045271_Newmigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
