@@ -6,31 +6,40 @@
     padding: 20px;
 }
 
-h2 {
+.library-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.library-container h2 {
     color: #ffffff;
     margin-bottom: 20px;
 }
 
-.form-group {
+.library-container .form-group {
     margin-bottom: 15px;
+    width: 100%;
 }
 
-label,
-.form-control,
-input[type="file"] {
+.library-container label,
+.library-container .form-control,
+.library-container input[type="file"] {
     display: block;
     width: 100%;
 }
 
-label {
+.library-container label {
     font-weight: 600;
     margin-bottom: 5px;
     color: #cccccc;
 }
 
-.form-control,
-input[type="file"],
-textarea {
+.library-container .form-control,
+.library-container input[type="file"],
+.library-container textarea {
     background-color: #1e1e1e;
     border: 1px solid #333333;
     color: #ffffff;
@@ -38,24 +47,24 @@ textarea {
     border-radius: 5px;
 }
 
-textarea.form-control {
+.library-container textarea.form-control {
     resize: vertical;
     min-height: 100px;
 }
 
-.form-control:focus {
+.library-container .form-control:focus {
     border-color: #0066cc;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
 }
 
-input[type="file"] {
+.library-container input[type="file"] {
     padding: 8px;
     background-color: #1e1e1e;
     color: #cccccc;
 }
 
-button.btn {
+.library-container button.btn {
     background-color: #003366;
     color: white;
     padding: 10px 25px;
@@ -65,13 +74,86 @@ button.btn {
     transition: background-color 0.3s;
 }
 
-button.btn:hover {
+.library-container button.btn:hover {
     background-color: #0055aa;
     cursor: pointer;
 }
 
-.field-validation-error {
+.library-container .field-validation-error {
     color: #ff6b6b;
     font-size: 0.9em;
     margin-top: 3px;
+}
+
+.library-container .btn-add {
+    margin-bottom: 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.library-container .btn-add:hover {
+    background-color: #005fa3;
+}
+
+.library-container .track-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.library-container .track-item {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.library-container .track-item:hover {
+    background-color: #333333;
+}
+
+.library-container .play-button,
+.library-container .favorite-button,
+.library-container .more-options {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.library-container .play-button:hover,
+.library-container .favorite-button:hover,
+.library-container .more-options:hover {
+    color: #007acc;
+}
+
+.library-container .track-info {
+    flex-grow: 1;
+    color: #eee;
+}
+
+.library-container .track-info strong {
+    font-size: 1.1em;
+}
+
+.library-container .track-info a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.library-container .track-info a:hover {
+    text-decoration: underline;
 }

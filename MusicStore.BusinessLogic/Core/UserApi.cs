@@ -5,8 +5,9 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using MusicStore.BusinessLogic.Data;
-using MusicStore2.Domain.Entities.Cart;
+using MusicStore.BusinessLogic.Services;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Domain.Entities.User;
 
@@ -49,7 +50,7 @@ namespace MusicStore.BusinessLogic.Core
             }
 
             var existingProduct = _context.Products.FirstOrDefault(u => u.Id == productData.Id);
-
+          
             if (existingProduct == null)
             {
                 throw new InvalidOperationException("Utilizatorul nu a fost găsit.");
@@ -63,7 +64,7 @@ namespace MusicStore.BusinessLogic.Core
             existingProduct.Genre = productData.Genre;
             existingProduct.Scale = productData.Scale;
             existingProduct.Price = productData.Price;
-
+            
 
             _context.Entry(existingProduct).State = EntityState.Modified;
 
@@ -276,57 +277,6 @@ namespace MusicStore.BusinessLogic.Core
         internal void SaveChanges()
         {
             _context.SaveChanges();
-        }
-
-
-
-
-
-
-        protected async Task<IEnumerable<CartItem>> GetUserCartItemsAsync(int userId)
-        {
-            using (var db = new AppDbContext())
-            {
-                return await db.UserCartItems
-                    .Include(ci => ci.Product)
-                    .Where(ci => ci.UserId == userId)
-                    .Select(ci => new CartItem
-                    {
-                        SongId = ci.ProductId,
-                        SongName = ci.Product.Name,
-                        Price = ci.Product.Price
-                    })
-                    .ToListAsync();
-            }
-        }
-
-        protected async Task AddItemToCartAsync(int userId, int productId)
-        {
-            using (var db = new AppDbContext())
-            {
-                var item = new UserCartItem
-                {
-                    UserId = userId,
-                    ProductId = productId
-                };
-                db.UserCartItems.Add(item);
-                await db.SaveChangesAsync();
-            }
-        }
-
-        protected async Task RemoveItemFromCartAsync(int userId, int productId)
-        {
-            using (var db = new AppDbContext())
-            {
-                var item = await db.UserCartItems
-                    .FirstOrDefaultAsync(ci => ci.UserId == userId && ci.ProductId == productId);
-
-                if (item != null)
-                {
-                    db.UserCartItems.Remove(item);
-                    await db.SaveChangesAsync();
-                }
-            }
         }
     }
 }

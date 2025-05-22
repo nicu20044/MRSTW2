@@ -8,7 +8,7 @@ namespace MusicStore.BusinessLogic.Interfaces
     {
         Task<AppUser> GetById(int id);
         IEnumerable<AppUser> GetAll();
-        Task Delete(int userid);
+        void DeleteUser(int userid);
         Task UpdateUserRole(string email, string newRole);
     }
 }

@@ -11,7 +11,6 @@ using MusicStore.BusinessLogic.Interfaces;
 using MusicStore2.Domain.Entities.Product;
 using MusicStore2.Domain.Entities.User;
 
-
 namespace MusicStore2.Controllers
 {
     public class AdminController : Controller
@@ -24,6 +23,18 @@ namespace MusicStore2.Controllers
             var bl = new BusinessLogic();
             _product = bl.GetProductBl();
             _user = bl.GetUserBl();
+        }
+
+        
+        protected override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            if (Session["UserRole"]?.ToString() != "Admin")
+            {
+                filterContext.Result = new HttpNotFoundResult();
+                return;
+            }
+
+            base.OnActionExecuting(filterContext);
         }
 
         public ActionResult Dashboard()
@@ -87,7 +98,6 @@ namespace MusicStore2.Controllers
             return View(model);
         }
 
-
         public async Task<ActionResult> EditProduct(int id)
         {
             var product = await _product.GetById(id);
@@ -112,19 +122,11 @@ namespace MusicStore2.Controllers
         }
 
         [HttpPost]
-        public JsonResult DeleteProduct(int id)
+        public ActionResult DeleteProduct(int id)
         {
-            var product = _product.GetById(id);
-            if (product == null)
-            {
-                return Json(new { success = false, message = "Product not found." });
-            }
-
-            _product.Delete(product.Id);
-
-            return Json(new { success = true });
+            _product.Delete(id);
+            return RedirectToAction("ManageContent");
         }
-
 
         public ActionResult ManageUsers()
         {
@@ -132,16 +134,10 @@ namespace MusicStore2.Controllers
             return View(users);
         }
 
-        public ActionResult AddUser()
-        {
-            return View();
-        }
-
-
         [HttpPost]
         public ActionResult DeleteUser(int id)
         {
-            _user.Delete(id);
+            _user.DeleteUser(id);
             return RedirectToAction("ManageUsers");
         }
 
@@ -193,6 +189,5 @@ namespace MusicStore2.Controllers
 
             return RedirectToAction("ManageContent");
         }
-        
     }
 }
