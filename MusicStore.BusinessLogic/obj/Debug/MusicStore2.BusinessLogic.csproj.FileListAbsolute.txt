@@ -195,7 +195,6 @@ D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.Business
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.dll
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.pdb
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\bin\MusicStore.BusinessLogic.dll.config
-D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.FirstMigration.resources
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\Autofac.dll
@@ -510,8 +509,6 @@ C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Newmigration.resources
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig1.resources
-D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig.resources
-D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Newmigration.resources
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.third.resources
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.forth.resources

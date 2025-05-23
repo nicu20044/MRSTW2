@@ -9,7 +9,7 @@
 
         <nav>
             <ul class="nav">
-                @if (Session["UserRole"]?.ToString() == "Artist" || Session["UserRole"]?.ToString() == "Admin")
+                @if (Session["UserRole"] != null && Session["UserRole"].ToString() == "Artist" || Session["UserRole"] != null && Session["UserRole"].ToString() == "Admin")
                 {
                     <li class="nav-item">
                         <a class="nav-link text-white" href="@Url.Action("Library", "Library")">Library</a>

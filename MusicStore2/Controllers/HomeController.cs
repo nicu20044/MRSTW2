@@ -40,6 +40,14 @@ namespace MusicStore2.Controllers
         {
             return View("~/Views/StaticPages/Contact.cshtml");
         }
+        public ActionResult PrivacyPolicy()
+        {
+            return View("~/Views/StaticPages/PrivacyPolicy.cshtml");
+        }
+        public ActionResult TermsOfService()
+        {
+            return View("~/Views/StaticPages/TermsOfService.cshtml");
+        }
 
         [HttpGet]
         public ActionResult LoadAllNewReleases()

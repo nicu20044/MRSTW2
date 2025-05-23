@@ -1,42 +1,40 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\",
+  "WorkspaceRootPath": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|c:\\users\\nicud\\documents\\github\\mrstw2\\musicstore2\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|d:\\universitate\\universitate anul 2\\semestrul 2\\tw\\musicshop\\musicstore2\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\musicstore.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\core\\userapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2\\scripts\\js\\payment_page.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\musicstore2\\scripts\\js\\payment_page.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\scripts\\js\\payment_page.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2\\views\\shoppingcart\\paymentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\musicstore2\\views\\shoppingcart\\paymentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4E41099E-EAFE-4B12-98A6-DD0A282BF801}|MusicStore2\\MusicStore2.web.csproj|solutionrelative:musicstore2\\views\\shoppingcart\\paymentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2.domain\\entities\\product\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\musicstore2.domain\\entities\\product\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\product\\productdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2.domain\\entities\\cart\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\musicstore2.domain\\entities\\cart\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\cart\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore2.domain\\entities\\user\\usercartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\musicstore2.domain\\entities\\user\\usercartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B664919-3BEB-4EFF-BBBB-64E1ABB0653C}|MusicStore2.Domain\\MusicStore2.Domain.csproj|solutionrelative:musicstore2.domain\\entities\\user\\usercartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore.businesslogic\\migrations\\202505221905353_forth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\migrations\\202505221905353_forth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505221905353_forth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\musicstore.businesslogic\\migrations\\202505221841121_third.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB128947-29EE-4094-AD9F-92AAD65FA7C1}|MusicStore.BusinessLogic\\MusicStore2.BusinessLogic.csproj|solutionrelative:musicstore.businesslogic\\migrations\\202505221841121_third.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505221841121_third.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,39 +44,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 28,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "202505221905353_forth.cs",
-              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505221905353_forth.cs",
-              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\202505221905353_forth.cs",
-              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505221905353_forth.cs",
-              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\202505221905353_forth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T19:05:41.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserCartItem.cs",
-              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\User\\UserCartItem.cs",
-              "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\User\\UserCartItem.cs",
-              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\User\\UserCartItem.cs",
-              "RelativeToolTip": "MusicStore2.Domain\\Entities\\User\\UserCartItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T19:03:32.969Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "UserApi.cs",
-              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
+              "DocumentMoniker": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
               "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Core\\UserApi.cs",
-              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
+              "ToolTip": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore.BusinessLogic\\Core\\UserApi.cs",
               "RelativeToolTip": "MusicStore.BusinessLogic\\Core\\UserApi.cs",
               "ViewState": "AgIAADIBAAAAAAAAAAAAACkBAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -89,9 +63,7 @@
               "DocumentIndex": 8,
               "Title": "202505221841121_third.cs",
               "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505221841121_third.cs",
-              "RelativeDocumentMoniker": "MusicStore.BusinessLogic\\Migrations\\202505221841121_third.cs",
               "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505221841121_third.cs",
-              "RelativeToolTip": "MusicStore.BusinessLogic\\Migrations\\202505221841121_third.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T18:41:18.585Z"
@@ -100,9 +72,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "CartItem.cs",
-              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\Cart\\CartItem.cs",
+              "DocumentMoniker": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2.Domain\\Entities\\Cart\\CartItem.cs",
               "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\Cart\\CartItem.cs",
-              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\Cart\\CartItem.cs",
+              "ToolTip": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2.Domain\\Entities\\Cart\\CartItem.cs",
               "RelativeToolTip": "MusicStore2.Domain\\Entities\\Cart\\CartItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -112,22 +84,21 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "PaymentPage.cshtml",
-              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\ShoppingCart\\PaymentPage.cshtml",
+              "DocumentMoniker": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2\\Views\\ShoppingCart\\PaymentPage.cshtml",
               "RelativeDocumentMoniker": "MusicStore2\\Views\\ShoppingCart\\PaymentPage.cshtml",
-              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Views\\ShoppingCart\\PaymentPage.cshtml",
+              "ToolTip": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2\\Views\\ShoppingCart\\PaymentPage.cshtml",
               "RelativeToolTip": "MusicStore2\\Views\\ShoppingCart\\PaymentPage.cshtml",
               "ViewState": "AgIAAEgAAAAAAAAAAAAkwG0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T18:26:10.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T18:26:10.547Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "payment_page.js",
-              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Scripts\\js\\payment_page.js",
+              "DocumentMoniker": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2\\Scripts\\js\\payment_page.js",
               "RelativeDocumentMoniker": "MusicStore2\\Scripts\\js\\payment_page.js",
-              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Scripts\\js\\payment_page.js",
+              "ToolTip": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2\\Scripts\\js\\payment_page.js",
               "RelativeToolTip": "MusicStore2\\Scripts\\js\\payment_page.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -137,9 +108,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ShoppingCartController.cs",
-              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\ShoppingCartController.cs",
+              "DocumentMoniker": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2\\Controllers\\ShoppingCartController.cs",
               "RelativeDocumentMoniker": "MusicStore2\\Controllers\\ShoppingCartController.cs",
-              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2\\Controllers\\ShoppingCartController.cs",
               "RelativeToolTip": "MusicStore2\\Controllers\\ShoppingCartController.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAqwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -148,11 +119,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserCartItem.cs",
+              "DocumentMoniker": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2.Domain\\Entities\\User\\UserCartItem.cs",
+              "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\User\\UserCartItem.cs",
+              "ToolTip": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2.Domain\\Entities\\User\\UserCartItem.cs",
+              "RelativeToolTip": "MusicStore2.Domain\\Entities\\User\\UserCartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:03:32.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "202505221905353_forth.cs",
+              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505221905353_forth.cs",
+              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore.BusinessLogic\\Migrations\\202505221905353_forth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:05:41.857Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ProductData.cs",
-              "DocumentMoniker": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\Product\\ProductData.cs",
+              "DocumentMoniker": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2.Domain\\Entities\\Product\\ProductData.cs",
               "RelativeDocumentMoniker": "MusicStore2.Domain\\Entities\\Product\\ProductData.cs",
-              "ToolTip": "C:\\Users\\nicud\\Documents\\GitHub\\MRSTW2\\MusicStore2.Domain\\Entities\\Product\\ProductData.cs",
+              "ToolTip": "D:\\Universitate\\Universitate Anul 2\\Semestrul 2\\TW\\MusicShop\\MusicStore2.Domain\\Entities\\Product\\ProductData.cs",
               "RelativeToolTip": "MusicStore2.Domain\\Entities\\Product\\ProductData.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

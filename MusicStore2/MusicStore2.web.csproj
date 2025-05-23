@@ -284,6 +284,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\StaticPages\AboutUs.cshtml" />
     <Content Include="Views\StaticPages\Contact.cshtml" />
+    <Content Include="Views\StaticPages\PrivacyPolicy.cshtml" />
+    <Content Include="Views\StaticPages\TermsOfService.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
