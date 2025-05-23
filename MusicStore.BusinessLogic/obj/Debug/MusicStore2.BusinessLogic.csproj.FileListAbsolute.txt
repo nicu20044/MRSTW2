@@ -502,7 +502,6 @@ C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\System.Web.W
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\System.Web.WebPages.Razor.xml
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.AssemblyReference.cache
-C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.CoreCompileInputs.cache
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicSto.0B46BB1B.Up2Date
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.dll
@@ -513,5 +512,6 @@ C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig1.resources
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig.resources
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Newmigration.resources
-C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig.resources
-C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Newmigration.resources
+C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.third.resources
+C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache
+C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.forth.resources

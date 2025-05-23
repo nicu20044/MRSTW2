@@ -1,90 +1,109 @@
 ﻿@model IEnumerable<MusicStore2.Domain.Entities.Cart.CartItem>
-
 @{
     ViewBag.Title = "PaymentPage";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/Scripts/css/payment-page.css" />
+    <meta charset="utf-8" />
     <title>Payment - Harmonia</title>
+    <link rel="stylesheet" href="~/Scripts/css/payment-page.css" />
 </head>
 <body style="color: black;">
-    <!-- Force black text for visibility -->
-
     <div class="main-content">
         <h1>Complete Payment</h1>
 
-        <!-- Cart items table -->
-        <!--<div class="cart-table-wrapper">
-            <table class="table cart-table">
-                <thead>
-                    <tr>
-                        <th>Song Name</th>
-                        <th>Artist</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>@item.SongName</td>
-                            <td>@item.ArtistName</td>
-                            <td>$@item.Price</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>-->
-
-
-
-        <!-- Total price -->
         @if (ViewBag.TotalPrice != null)
         {
-            <div class="payment-summary" style="font-size: 18px; margin-bottom: 20px;">
+            <div class="payment-summary">
                 <strong>Total to pay:</strong> $@ViewBag.TotalPrice
             </div>
         }
 
-        <!-- Payment form -->
         <div class="payment-container">
             <form id="paymentForm">
+                @foreach (var item in Model)
+                {
+                    var songFileName = !string.IsNullOrEmpty(item.FileName)
+                        ? item.FileName.Replace("~/UploadedAudios/", "")
+                        : "";
+                    <input type="hidden" name="song-file-name" value="@songFileName" />
+                }
+
                 <div class="form-group">
                     <label for="card-number">Card Number</label>
-                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required maxlength="19">
+                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required maxlength="19" />
                 </div>
 
                 <div class="form-group">
                     <label for="card-holder">Cardholder Name</label>
-                    <input type="text" id="card-holder" placeholder="Full Name" required>
+                    <input type="text" id="card-holder" placeholder="Full Name" required />
                 </div>
 
                 <div class="row">
                     <div class="form-group">
                         <label for="exp-date">Expiry Date</label>
-                        <input type="text" id="exp-date" placeholder="MM/YY" required maxlength="5">
+                        <input type="text" id="exp-date" placeholder="MM/YY" required maxlength="5" />
                     </div>
                     <div class="form-group">
                         <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" placeholder="123" required maxlength="4">
+                        <input type="text" id="cvv" placeholder="123" required maxlength="4" />
                     </div>
                 </div>
 
                 <button type="submit" class="pay-button">Pay Now</button>
-
-                <div class="security-info">
-                    🔒 Secure payment processing
-                </div>
+                <div class="security-info">🔒 Secure payment processing</div>
             </form>
         </div>
     </div>
 
-    <script src="~/wwwroot/js/payment_page.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('paymentForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                var cardNumber = document.getElementById('card-number').value;
+                var cardHolder = document.getElementById('card-holder').value;
+                var expDate = document.getElementById('exp-date').value;
+                var cvv = document.getElementById('cvv').value;
+
+                if (cardNumber && cardHolder && expDate && cvv) {
+                    var inputs = document.querySelectorAll('input[name="song-file-name"]');
+                    var fileNames = [];
+                    for (var i = 0; i < inputs.length; i++) {
+                        if (inputs[i].value) {
+                            fileNames.push(inputs[i].value);
+                        }
+                    }
+
+                    if (fileNames.length > 0) {
+                        alert("Payment successful! Songs are downloading...");
+
+                        // Sequential download with delay to prevent browser blocking
+                        var i = 0;
+                        function downloadNext() {
+                            if (i >= fileNames.length) return;
+                            var link = document.createElement('a');
+                            link.href = '/ShoppingCart/DownloadSong?fileName=' + encodeURIComponent(fileNames[i]);
+                            link.download = fileNames[i];
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                            i++;
+                            setTimeout(downloadNext, 1000); // 1 second delay
+                        }
+
+                        downloadNext();
+                    } else {
+                        alert('No songs available for download.');
+                    }
+                } else {
+                    alert('Please fill all fields correctly.');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
