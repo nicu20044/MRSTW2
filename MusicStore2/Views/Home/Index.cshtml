@@ -22,14 +22,21 @@
                 <a href="@Url.Action("Details", "Product", new { id = product.Id })" class="track-card-link">
                     <div class="track-card">
                         <div class="track-image">
-                            <img src="@Url.Content(product.ImageUrl)" alt="Track artwork" />
+                            @if (!string.IsNullOrEmpty(product.ImageUrl))
+                            {
+                                <img src="@Url.Content(product.ImageUrl)" alt="Track artwork" />
+                            }
                             <button class="play-button play-toggle" data-audio-id="audio-@product.Id" onclick="event.preventDefault(); togglePlay(this)">
                                 <svg viewBox="0 0 24 24" width="24" height="24">
                                     <path d="M8 5v14l11-7z" fill="currentColor" />
                                 </svg>
                             </button>
-                            <audio id="audio-@product.Id" src="@Url.Content(product.AudioFileUrl)"></audio>
+                            @if (!string.IsNullOrEmpty(product.AudioFileUrl))
+                            {
+                                <audio id="audio-@product.Id" src="@Url.Content(product.AudioFileUrl)"></audio>
+                            }
                         </div>
+
                         <div class="track-info">
                             <h3>@product.Name</h3>
                             <p>@product.ArtistName</p>
@@ -51,14 +58,21 @@
             <a href="@Url.Action("Details", "Product", new { id = product.Id })" class="track-card-link">
                 <div class="track-card">
                     <div class="track-image">
-                        <img src="@Url.Content(product.ImageUrl)" alt="Track artwork" />
+                        @if (!string.IsNullOrEmpty(product.ImageUrl))
+                        {
+                            <img src="@Url.Content(product.ImageUrl)" alt="Track artwork" />
+                        }
                         <button class="play-button play-toggle" data-audio-id="audio-@product.Id" onclick="event.preventDefault(); togglePlay(this)">
                             <svg viewBox="0 0 24 24" width="24" height="24">
                                 <path d="M8 5v14l11-7z" fill="currentColor" />
                             </svg>
                         </button>
-                        <audio id="audio-@product.Id" src="@Url.Content(product.AudioFileUrl)"></audio>
+                        @if (!string.IsNullOrEmpty(product.AudioFileUrl))
+                        {
+                            <audio id="audio-@product.Id" src="@Url.Content(product.AudioFileUrl)"></audio>
+                        }
                     </div>
+
                     <div class="track-info">
                         <h3>@product.Name</h3>
                         <p>@product.ArtistName</p>

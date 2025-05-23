@@ -282,7 +282,6 @@ namespace MusicStore.BusinessLogic.Core
 
 
 
-        // cart functions
         protected async Task<IEnumerable<CartItem>> GetUserCartItemsAsync(int userId)
         {
             using (var db = new AppDbContext())
@@ -295,7 +294,8 @@ namespace MusicStore.BusinessLogic.Core
                         SongId = ci.ProductId,
                         SongName = ci.Product.Name,
                         ArtistName = ci.Product.ArtistName,
-                        Price = ci.Product.Price
+                        Price = ci.Product.Price,
+                        FileName = ci.Product.AudioFileUrl
                     })
                     .ToListAsync();
             }
@@ -335,7 +335,7 @@ namespace MusicStore.BusinessLogic.Core
 
 
         //search song
-        protected async Task<IEnumerable<ProductData>> SearchSongsByNameAsync(string query)
+        protected async Task<IEnumerable<ProductData>> SearchByNameOrArtistAsync(string query)
         {
             using (var context = new AppDbContext())
             {

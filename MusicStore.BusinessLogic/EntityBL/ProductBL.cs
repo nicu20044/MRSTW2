@@ -34,9 +34,9 @@ namespace MusicStore.BusinessLogic
         }
 
 
-        public async Task<IEnumerable<ProductData>> SearchByNameAsync(string query)
+        public async Task<IEnumerable<ProductData>> SearchByNameOrArtistAsync(string query)
         {
-            return await SearchSongsByNameAsync(query);
+            return await base.SearchByNameOrArtistAsync(query);
         }
 
     }

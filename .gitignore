@@ -399,3 +399,10 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 .idea/*
+/MusicStore2/Web.config
+/MusicStore2/Web.Debug.config
+/MusicStore2/Web.Release.config
+/MusicStore.BusinessLogic/Migrations/202505221841121_third.cs
+/MusicStore.BusinessLogic/Migrations/202505221841121_third.Designer.cs
+/MusicStore.BusinessLogic/Migrations/202505221841121_third.resx
+/MusicStore.BusinessLogic/Migrations/Configuration.cs

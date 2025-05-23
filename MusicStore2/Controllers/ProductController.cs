@@ -41,7 +41,7 @@ namespace MusicStore2.Controllers
             if (string.IsNullOrWhiteSpace(query))
                 return RedirectToAction("Index", "Home");
 
-            var results = await _productService.SearchByNameAsync(query);
+            var results = await _productService.SearchByNameOrArtistAsync(query);
 
             if (results.Count() == 1)
             {
