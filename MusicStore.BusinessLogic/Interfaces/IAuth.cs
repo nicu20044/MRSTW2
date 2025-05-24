@@ -11,5 +11,6 @@ namespace MusicStore.BusinessLogic.Interfaces
 	{
 		Task<UserAuthResp> LoginAction(UserLoginData data, string dataEmail);
 		Task<UserAuthResp> UserRegisterAction(UserRegData data, string dataEmail);
-	}
+		
+		Task<UserAuthResp> ChangeUserPassword(string email, string newPassword);	}
 }

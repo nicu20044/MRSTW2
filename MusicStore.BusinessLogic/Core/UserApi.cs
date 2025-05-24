@@ -344,6 +344,43 @@ namespace MusicStore.BusinessLogic.Core
                     .ToListAsync();
             }
         }
+        
+        
+        // Change Password
+        internal async Task<UserAuthResp> UpdateUserPassword(string email,string newPassword)
+        {
+            try
+            {
+                var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+                if (user == null)
+                {
+                    return new UserAuthResp
+                    {
+                        Status = false,
+                        StatusMsg = "Utilizatorul nu există."
+                    };
+                }
+
+                user.PasswordHash = ComputeHash(newPassword);
+                await _context.SaveChangesAsync();
+
+                return new UserAuthResp
+                {
+                    Status = true,
+                    StatusMsg = "Parola a fost actualizată cu succes."
+                };
+            }
+            catch (Exception)
+            {
+                return new UserAuthResp
+                {
+                    Status = false,
+                    StatusMsg = "Eroare la actualizarea parolei."
+                };
+            }
+        }
+
 
     }
 }
+
