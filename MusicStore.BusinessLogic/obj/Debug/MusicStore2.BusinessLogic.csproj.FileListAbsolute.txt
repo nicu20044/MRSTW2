@@ -509,9 +509,7 @@ C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicS
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicSto.0B46BB1B.Up2Date
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.dll
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.pdb
-C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig.resources
-C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache
-C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Newmigration.resources
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig.resources
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Newmigration.resources
-C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.NewMig1.resources
+C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore.BusinessLogic.Migrations.Newmiggg.resources
+C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore.BusinessLogic\obj\Debug\MusicStore2.BusinessLogic.csproj.GenerateResource.cache

@@ -239,6 +239,7 @@
     <Content Include="Scripts\css\site.css" />
     <Content Include="Scripts\css\static_pages.css" />
     <Content Include="Scripts\css\styles.css" />
+    <Content Include="Scripts\css\subscriptionPage.css" />
     <Content Include="Scripts\images\mute.png" />
     <Content Include="Scripts\images\pause.png" />
     <Content Include="Scripts\images\play.png" />
@@ -284,6 +285,7 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\ShoppingCart\PaymentPagePlan.cshtml" />
     <Content Include="Views\StaticPages\AboutUs.cshtml" />
     <Content Include="Views\StaticPages\Contact.cshtml" />
     <Content Include="Views\Subscription\Subscription.cshtml" />
@@ -294,7 +296,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
-    <Compile Include="Controllers\BeatsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LibraryController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -303,6 +304,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ChangePasswordDTO.cs" />
     <Compile Include="Models\PlanDTO.cs" />
     <Compile Include="Models\ProductDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

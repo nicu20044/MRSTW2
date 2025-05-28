@@ -1,67 +1,33 @@
-﻿@{
-    ViewBag.Title = "ShoppingCart";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@model IEnumerable<MusicStore2.Domain.Entities.Subscription.PlanData>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/Scripts/css/shopping-cart.css" />
-    <title>Choose Your Plan - Harmonia</title>
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Plans</title>
+  <link rel="stylesheet" href="~/Scripts/css/subscriptionPage.css" />
 </head>
 <body>
 
-
-<div class="main-content">
-    <h1>Choose Your Plan</h1>
-    <p class="subtitle">Download unlimited music with our premium plans</p>
-
-    <div class="plans-grid">
-        <div class="plan-card">
-            <h2 class="plan-name">Basic</h2>
-            <p class="plan-description">Perfect for casual listeners</p>
-            <div class="plan-price">$4.99<span class="price-period">/month</span></div>
-            <ul class="features-list">
-                <li>Download 50 songs/month</li>
-                <li>Ad-free listening</li>
-                <li>Standard quality audio</li>
-                <li>Listen on 1 device</li>
-            </ul>
-            <button class="choose-plan-btn">Choose Plan</button>
-        </div>
-
-        <div class="plan-card popular">
-            <span class="popular-tag">Most Popular</span>
-            <h2 class="plan-name">Premium</h2>
-            <p class="plan-description">Our most popular plan</p>
-            <div class="plan-price">$9.99<span class="price-period">/month</span></div>
-            <ul class="features-list">
-                <li>Unlimited downloads</li>
-                <li>High quality audio</li>
-                <li>Listen on 5 devices</li>
-                <li>Offline mode</li>
-            </ul>
-            <button class="choose-plan-btn">Choose Plan</button>
-        </div>
-
-        <div class="plan-card">
-            <h2 class="plan-name">Pro</h2>
-            <p class="plan-description">For the true audiophiles</p>
-            <div class="plan-price">$14.99<span class="price-period">/month</span></div>
-            <ul class="features-list">
-                <li>Unlimited downloads</li>
-                <li>Ultra HD audio</li>
-                <li>Listen on 10 devices</li>
-                <li>Exclusive content</li>
-            </ul>
-            <button class="choose-plan-btn">Choose Plan</button>
-        </div>
+<section class="pricing-container">
+  @foreach (var plan in Model)
+  {
+    <div class="plan-card">
+      <h2 class="plan-title">@plan.Name</h2>
+      <p class="plan-price">$@plan.Price / @plan.DurationDays days</p>
+      <ul class="plan-features">
+        <li>Access to all features</li>
+        <li>Priority support</li>
+        <li>Analytics included</li>
+      </ul>
+      <form action="@Url.Action("PaymentPage", "ShoppingCart")" method="get">
+        <input type="hidden" name="planId" value="@plan.Id" />
+        <button type="submit" class="choose-button">Choose Plan</button>
+      </form>
     </div>
-</div>
+  }
+</section>
 
-<script src="~/Scripts/js/shopping_cart.js"></script>
 </body>
 </html>

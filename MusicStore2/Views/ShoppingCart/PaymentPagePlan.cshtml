@@ -1,0 +1,49 @@
+﻿@model MusicStore2.Domain.Entities.Subscription.PlanData
+
+@{
+    ViewBag.Title = "PaymentPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Payment</title>
+    <link rel="stylesheet" href="~/Scripts/css/payment-page.css" />
+</head>
+<body style="background-color: #0b2c3a; font-family: Arial, sans-serif; color: white; text-align: center;">
+
+<h1>Complete Payment</h1>
+<h3>Total to pay: $@Model.Price</h3>
+
+<div style="background: white; color: black; padding: 30px; max-width: 400px; margin: auto; border-radius: 10px;">
+    <form method="post" action="@Url.Action("ConfirmPlanPayment", "ShoppingCart")">
+        <input type="hidden" name="planId" value="@Model.Id" />
+
+        <label>Card Number</label>
+        <input type="text" name="cardNumber" placeholder="1234 5678 9012 3456" required class="input-field" /><br />
+
+        <label>Cardholder Name</label>
+        <input type="text" name="cardholderName" placeholder="Full Name" required class="input-field" /><br />
+
+        <div style="display: flex; gap: 10px;">
+            <div style="flex: 1;">
+                <label>Expiry Date</label>
+                <input type="text" name="expiry" placeholder="MM/YY" required class="input-field" />
+            </div>
+
+            <div style="flex: 1;">
+                <label>CVV</label>
+                <input type="text" name="cvv" placeholder="123" required class="input-field" />
+            </div>
+        </div>
+
+        <button type="submit" style="margin-top: 20px; background: black; color: white; padding: 10px 20px; border: none;">Pay Now</button>
+    </form>
+
+    <p style="margin-top: 10px; font-size: 14px;"><span style="color: orange;">🔒</span> Secure payment processing</p>
+</div>
+
+</body>
+</html>

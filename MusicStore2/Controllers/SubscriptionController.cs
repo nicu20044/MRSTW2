@@ -1,13 +1,24 @@
 ﻿using System.Web.Mvc;
+using MusicStore.BusinessLogic;
+using MusicStore.BusinessLogic.Interfaces;
 
 namespace MusicStore2.Controllers
 {
     public class SubscriptionController : Controller
     {
-        // GET
-        public ActionResult Index()
+        private readonly IPlan _plan;
+
+        public SubscriptionController()
         {
-            return View();
+            var bl = new BusinessLogic();
+            _plan = bl.GetPlanBl();
         }
+        // GET
+        public ActionResult Subscription()
+        {
+            var plans = _plan.GetAll();
+            return View(plans);
+        }
+        
     }
 }

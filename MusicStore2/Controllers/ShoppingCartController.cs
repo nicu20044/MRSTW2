@@ -33,10 +33,10 @@ namespace MusicStore.Web.Controllers
         }
         
 
-        public ActionResult PaymentPage()
-        {
-            return View();
-        }
+        // public ActionResult PaymentPage()
+        // {
+        //     return View();
+        // }
 
         [HttpPost]
         public async Task<ActionResult> AddToCart(int productId)
@@ -72,17 +72,31 @@ namespace MusicStore.Web.Controllers
             return RedirectToAction("PaymentPage", "ShoppingCart");
         }
 
-        public async Task<ActionResult> PaymentPage()
+        public async Task<ActionResult> PaymentPage(int? planId)
         {
             var userId = Session["UserId"];
             if (userId == null)
                 return RedirectToAction("Login", "Auth");
 
-            var cartItems = await _cart.GetCartItemsAsync((int)userId);
-            var total = cartItems.Sum(item => item.Price);
+            if (planId.HasValue)
+            {
+                var plan = new BusinessLogic.BusinessLogic().GetPlanBl().GetPlan(planId.Value);
+                if (plan == null)
+                    return HttpNotFound();
 
-            ViewBag.TotalPrice = total;
-            return View(cartItems);
+                ViewBag.IsPlan = true;
+                ViewBag.TotalPrice = plan.Price;
+                return View("PaymentPagePlan", plan);
+            }
+            else
+            {
+                var cartItems = await _cart.GetCartItemsAsync((int)userId);
+                var total = cartItems.Sum(item => item.Price);
+
+                ViewBag.TotalPrice = total;
+                ViewBag.IsPlan = false;
+                return View(cartItems);
+            }
         }
 
 
@@ -106,5 +120,12 @@ namespace MusicStore.Web.Controllers
             byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
             return File(fileBytes, "application/octet-stream", fileName);
         }
+        [HttpPost]
+        public ActionResult ConfirmPlanPayment(int planId)
+        {
+            TempData["Message"] = "Payment completed successfully and subscription activated!";
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }
