@@ -1,4 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.IO.Compression;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using MusicStore.BusinessLogic;
 using MusicStore.BusinessLogic.Interfaces;
@@ -60,6 +64,47 @@ namespace MusicStore.Web.Controllers
 
             await _cart.RemoveFromCartAsync((int)userId, productId);
             return RedirectToAction("ShoppingCart");
+        }
+
+        [HttpPost]
+        public ActionResult ProceedToPayment()
+        {
+            return RedirectToAction("PaymentPage", "ShoppingCart");
+        }
+
+        public async Task<ActionResult> PaymentPage()
+        {
+            var userId = Session["UserId"];
+            if (userId == null)
+                return RedirectToAction("Login", "Auth");
+
+            var cartItems = await _cart.GetCartItemsAsync((int)userId);
+            var total = cartItems.Sum(item => item.Price);
+
+            ViewBag.TotalPrice = total;
+            return View(cartItems);
+        }
+
+
+        //download song
+
+        [HttpGet]
+        public ActionResult DownloadSong(string fileName)
+        {
+            if (string.IsNullOrEmpty(fileName))
+            {
+                return HttpNotFound("File name is empty.");
+            }
+
+            string filePath = Server.MapPath(Path.Combine("~/UploadedAudios", fileName));
+
+            if (!System.IO.File.Exists(filePath))
+            {
+                return HttpNotFound("File not found at: " + filePath);
+            }
+
+            byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+            return File(fileBytes, "application/octet-stream", fileName);
         }
     }
 }

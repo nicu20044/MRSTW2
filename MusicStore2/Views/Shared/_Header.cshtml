@@ -9,7 +9,7 @@
 
         <nav>
             <ul class="nav">
-                @if (Session["UserRole"]?.ToString() == "Artist" || Session["UserRole"]?.ToString() == "Admin")
+                @if (Session["UserRole"] != null && Session["UserRole"].ToString() == "Artist" || Session["UserRole"] != null && Session["UserRole"].ToString() == "Admin")
                 {
                     <li class="nav-item">
                         <a class="nav-link text-white" href="@Url.Action("Library", "Library")">Library</a>
@@ -64,19 +64,35 @@
             </a>
         </div>
 
-        <div>
-            @if (Session["UserId"] != null)
-            {
-                <form action="@Url.Action("Logout", "Auth")" method="post" style="display:inline;">
-                    @Html.AntiForgeryToken()
-                    <button type="submit" class="btn btn-outline-light">Logout (@Session["Username"])</button>
-                </form>
-            }
-            else
-            {
-                <a class="btn btn-outline-light me-2" href="@Url.Action("Login", "Auth")">Login</a>
-                <a class="btn btn-success" href="@Url.Action("Register", "Auth")">Sign Up</a>
-            }
-        </div>
+        @if (Session["UserId"] != null)
+        {
+            <div class="custom-dropdown">
+                <button class="dropdown-toggle-btn" onclick="toggleDropdown()">
+                    My Account
+                </button>
+
+                <ul id="dropdownMenu" class="dropdown-menu dropdown-menu-hidden">
+                    <li><a class="dropdown-item" href="@Url.Action("ChangePassword", "Auth")">Change Password</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#" onclick="document.getElementById('logoutForm').submit(); return false;">Logout</a>
+                        <form id="logoutForm" action="@Url.Action("Logout", "Auth")" method="post" style="display:none;">
+                            @Html.AntiForgeryToken()
+                        </form>
+                    </li>                    
+                    @if (Session["UserRole"]?.ToString() == "Admin")
+                    {
+                        <li><a class="dropdown-item" href="@Url.Action("Dashboard", "Admin")">Admin Dashboard</a></li>
+                    }
+                </ul>
+            </div>
+        }
+        else
+        {
+            <a class="btn btn-outline-light me-2" href="@Url.Action("Login", "Auth")">Login</a>
+            <a class="btn btn-success" href="@Url.Action("Register", "Auth")">Sign Up</a>
+        }
+
+        
+        
     </div>
 </header>

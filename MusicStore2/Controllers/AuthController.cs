@@ -7,6 +7,7 @@ using MusicStore.BusinessLogic.Interfaces;
 using MusicStore.BusinessLogic.Services;
 using MusicStore.BusinessLogic.Services.Interfaces;
 using MusicStore2.Domain.Entities.User;
+using MusicStore2.Models;
 
 
 namespace MusicStore2.Controllers
@@ -33,6 +34,11 @@ namespace MusicStore2.Controllers
             return View();
         }
 
+        public ActionResult ChangePassword()
+        {
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> LoginAction(UserLoginData model)
@@ -41,7 +47,7 @@ namespace MusicStore2.Controllers
                 return Json(new { success = false, message = "Date invalide." });
 
             string dataEmail = model.Email;
-            var response = await _authService.LoginAction(model,dataEmail);
+            UserAuthResp response = await _authService.LoginAction(model,dataEmail);
 
             if (!response.Status)
                 return Json(new { success = false, message = response.StatusMsg });
@@ -147,5 +153,20 @@ namespace MusicStore2.Controllers
 
             return RedirectToAction("Login");
         }
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> ChangePasswordAction(ChangePasswordDTO model)
+        {
+            if (!ModelState.IsValid)
+                return Json(new { success = false, message = "Date invalide pentru schimbarea parolei." });
+
+            var updateResult = await _authService.ChangeUserPassword(model.Email, model.NewPassword);
+            if (!updateResult.Status)
+                return Json(new { success = false, message = updateResult.StatusMsg });
+
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }

@@ -15,33 +15,33 @@ else
 {
     <table class="table">
         <thead>
-        <tr>
-            <th>Name</th>
-            <th>Artist</th>
-            <th>Price</th>
-            <th></th>
-        </tr>
+            <tr>
+                <th>Name</th>
+                <th>Artist</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
         </thead>
         <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.SongName</td>
-                <td>@item.ArtistName</td>
-                <td>$@item.Price</td>
-                <td>
-                    @using (Html.BeginForm("RemoveFromCart", "ShoppingCart", FormMethod.Post))
-                    {
-                        @Html.Hidden("productId", item.SongId)
-                        <button type="submit" class="btn btn-danger btn-sm">Remove</button>
-                    }
-                </td>
-            </tr>
-        }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.SongName</td>
+                    <td>@item.ArtistName</td>
+                    <td>$@item.Price</td>
+                    <td>
+                        @using (Html.BeginForm("RemoveFromCart", "ShoppingCart", FormMethod.Post))
+                        {
+                            @Html.Hidden("productId", item.SongId)
+                            <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                        }
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 
-    <form action="@Url.Action("Clear", "Cart")" method="post">
-        <button type="submit" class="btn btn-secondary">Clear Cart</button>
+    <form action="@Url.Action("ProceedToPayment", "ShoppingCart")" method="post">
+        <button type="submit" class="btn btn-success">Proceed to Payment</button>
     </form>
 }

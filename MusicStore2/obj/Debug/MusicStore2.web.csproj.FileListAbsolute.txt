@@ -260,7 +260,6 @@ D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Aut
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Autofac.Integration.Mvc.dll
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Autofac.xml
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Autofac.Integration.Mvc.xml
-D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\MusicStore2.dll.config
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\EntityFramework.SqlServer.dll
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\EntityFramework.SqlServer.xml
 C:\Users\Administrator\Documents\GitHub\MRSTW2\MusicStore2\bin\Autofac.dll
@@ -551,3 +550,4 @@ C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore2\obj\Debug\MusicStore2.web.csp
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore2\obj\Debug\MusicSto.A7862E5B.Up2Date
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore2\obj\Debug\MusicStore2.dll
 C:\Users\nicud\Documents\GitHub\MRSTW2\MusicStore2\obj\Debug\MusicStore2.pdb
+D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\MusicStore2.dll.config

@@ -1,30 +1,39 @@
-﻿
-    document.addEventListener('DOMContentLoaded', function() {
-    // Get selected plan from localStorage
-    const selectedPlan = JSON.parse(localStorage.getItem('selectedPlan'));
-    if (selectedPlan) {
-    document.getElementById('selectedPlanName').textContent = selectedPlan.name;
-    document.getElementById('selectedPlanPrice').textContent = `$${selectedPlan.price}/month`;
-}
+﻿document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('paymentForm').addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    // Card number formatting
-    document.getElementById('card-number').addEventListener('input', function(e) {
-    let value = e.target.value.replace(/\D/g, '');
-    let formattedValue = value.match(/.{1,4}/g)?.join(' ') || '';
-    e.target.value = formattedValue;
-});
+        const cardNumber = document.getElementById('card-number').value;
+        const cardHolder = document.getElementById('card-holder').value;
+        const expDate = document.getElementById('exp-date').value;
+        const cvv = document.getElementById('cvv').value;
 
-    // Expiry date formatting
-    document.getElementById('exp-date').addEventListener('input', function(e) {
-    let value = e.target.value.replace(/\D/g, '');
-    if (value.length >= 2) {
-    value = value.slice(0,2) + '/' + value.slice(2);
-}
-    e.target.value = value;
-});
+        if (cardNumber && cardHolder && expDate && cvv) {
+            const songFileNames = Array.from(document.querySelectorAll('input[name="song-file-name"]'))
+                .map(input => input.value)
+                .filter(fileName => fileName);
 
-    // CVV number only
-    document.getElementById('cvv').addEventListener('input', function(e) {
-    e.target.value = e.target.value.replace(/\D/g, '');
-});
+            if (songFileNames.length > 0) {
+                console.log('Attempting to download songs:', songFileNames);
+                alert('Payment successful! Songs will now start downloading.');
+
+                songFileNames.forEach((fileName, index) => {
+                    setTimeout(() => {
+                        const link = document.createElement('a');
+                        link.href = '/ShoppingCart/DownloadSong?fileName=' + encodeURIComponent(fileName);
+                        link.download = fileName;
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        console.log(`Triggered download for: ${fileName}`);
+                    }, index * 1000);
+                });
+
+            } else {
+                console.log('No song file names found.');
+                alert('No songs available for download. Check debug info.');
+            }
+        } else {
+            alert('Please fill all fields correctly.');
+        }
+    });
 });

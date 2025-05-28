@@ -14,7 +14,7 @@ namespace MusicStore2.Domain.Entities.User
 
         public int UserId { get; set; }
         public int ProductId { get; set; }
-
+        public string ProductName { get; set; }
        
         public virtual AppUser User { get; set; }
         public virtual ProductData Product { get; set; }
