@@ -16,5 +16,11 @@ namespace MusicStore.BusinessLogic
         {
             return await UserRegisterActionAsync(data, dataEmail);
         }
+        
+        public async Task<UserAuthResp> ChangeUserPassword(string email, string password)
+        {
+            return await UpdateUserPassword(email, password);
+        }
+
     }
 }

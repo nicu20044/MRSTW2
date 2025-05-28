@@ -105,3 +105,19 @@ document.getElementById("viewAllBtn").addEventListener("click", function () {
         });
 });
 
+function toggleDropdown() {
+    const menu = document.getElementById("dropdownMenu");
+    menu.classList.toggle("dropdown-menu-visible");
+    menu.classList.toggle("dropdown-menu-hidden");
+}
+
+// Ascunde meniul dacă dai click în afara lui
+document.addEventListener("click", function (event) {
+    const dropdown = document.querySelector(".custom-dropdown");
+    const menu = document.getElementById("dropdownMenu");
+
+    if (!dropdown.contains(event.target)) {
+        menu.classList.remove("dropdown-menu-visible");
+        menu.classList.add("dropdown-menu-hidden");
+    }
+});
