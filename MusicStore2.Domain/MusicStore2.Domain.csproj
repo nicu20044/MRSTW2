@@ -148,6 +148,8 @@
   <ItemGroup>
     <Compile Include="Entities\Cart\CartItem.cs" />
     <Compile Include="Entities\Product\ProductData.cs" />
+    <Compile Include="Entities\Subscription\PlanData.cs" />
+    <Compile Include="Entities\Subscription\SubscriptionData.cs" />
     <Compile Include="Entities\User\AppUser.cs" />
     <Compile Include="Entities\User\UserAuthResp.cs" />
     <Compile Include="Entities\User\UserCartItem.cs" />

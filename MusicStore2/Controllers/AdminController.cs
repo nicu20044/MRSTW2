@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -9,7 +10,9 @@ using MusicStore.BusinessLogic.Data;
 using MusicStore.BusinessLogic;
 using MusicStore.BusinessLogic.Interfaces;
 using MusicStore2.Domain.Entities.Product;
+using MusicStore2.Domain.Entities.Subscription;
 using MusicStore2.Domain.Entities.User;
+using MusicStore2.Models;
 
 namespace MusicStore2.Controllers
 {
@@ -17,12 +20,14 @@ namespace MusicStore2.Controllers
     {
         private readonly IProduct _product;
         private readonly IUser _user;
+        private readonly IPlan _plan;
 
         public AdminController()
         {
             var bl = new BusinessLogic();
             _product = bl.GetProductBl();
             _user = bl.GetUserBl();
+            _plan = bl.GetPlanBl();
         }
 
         
@@ -188,6 +193,80 @@ namespace MusicStore2.Controllers
             ViewBag.LatestSongs = latestSongs;
 
             return RedirectToAction("ManageContent");
+        }
+
+        
+        
+        public ActionResult PlansManagement()
+        {
+            var plans = _plan.GetAll();
+            return View(plans);
+        }
+        public ActionResult CreatePlan()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreatePlan(PlanDTO planDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var planData = new PlanData
+                {
+                    Id = planDto.Id,
+                    Name = planDto.Name,
+                    Price = planDto.Price,
+                    DurationDays = planDto.DurationDays
+                };
+
+                _plan.Create(planData);
+
+                return RedirectToAction("PlansManagement");
+            }
+
+            
+            return View(planDto);
+        }
+        public ActionResult Edit(int id)
+        {
+            if (id == null)
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+
+            var plan = _plan.GetPlan(id);
+            if (plan == null)
+                return HttpNotFound();
+
+            return View(plan);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(PlanData plan)
+        {
+            if (ModelState.IsValid)
+            {
+                _plan.Update(plan);
+                return RedirectToAction("Index");
+            }
+            return View(plan);
+        }
+        public ActionResult Delete(int id)
+        {
+            if (id == null)
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+
+            var plan = _plan.GetPlan(id);
+            if (plan == null)
+                return HttpNotFound();
+
+            return View(plan);
+        }
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            _plan.Delete(id);
+            return RedirectToAction("Index");
         }
     }
 }

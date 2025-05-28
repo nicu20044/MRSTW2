@@ -1,0 +1,61 @@
+﻿@model List<MusicStore2.Domain.Entities.Subscription.PlanData>
+
+@{
+    ViewBag.Title = "Plan Management";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5 text-light">
+    <h2 class="mb-4">Plan Management</h2>
+
+    <div class="mb-3">
+        <a href="@Url.Action("CreatePlan", "Admin")" class="btn btn-success">Add New Plan</a>
+    </div>
+
+    <table class="table table-dark table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price ($)</th>
+            <th>Duration (Days)</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var plan in Model)
+        {
+            <tr>
+                <td>@plan.Id</td>
+                <td>@plan.Name</td>
+                <td>@plan.Price.ToString("F2")</td>
+                <td>@plan.DurationDays</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Plan", new { id = plan.Id })" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="@Url.Action("Delete", "Plan", new { id = plan.Id })" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    body {
+        background-color: #121212;
+        color: #f0f0f0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+    .btn {
+        border-radius: 6px;
+    }
+
+    h2 {
+        color: #ffffff;
+    }
+</style>

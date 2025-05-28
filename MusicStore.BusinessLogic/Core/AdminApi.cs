@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MusicStore.BusinessLogic.Data;
 using MusicStore.BusinessLogic.Services;
 using MusicStore2.Domain.Entities.Product;
+using MusicStore2.Domain.Entities.Subscription;
 using MusicStore2.Domain.Entities.User;
 
 namespace MusicStore.BusinessLogic.Core
@@ -81,6 +82,54 @@ namespace MusicStore.BusinessLogic.Core
 
             _context.Users.Remove(entity);
             _context.SaveChanges();
+        }
+        
+        internal List<PlanData> GetAllPlans()
+        {
+            return _context.Plans.ToList();
+        }
+        
+        internal PlanData GetPlanById(int id)
+        {
+            return _context.Plans.Find(id);
+        }
+        
+        internal void CreatePlan(PlanData plan)
+        {
+            _context.Plans.Add(plan);
+            _context.SaveChanges();
+        }
+        
+        internal void UpdatePlan(PlanData plan)
+        {
+            var existingPlan = _context.Plans.Find(plan.Id);
+            if (existingPlan != null)
+            {
+                existingPlan.Name = plan.Name;
+                existingPlan.Price = plan.Price;
+                existingPlan.DurationDays = plan.DurationDays;
+
+                _context.SaveChanges();
+            }
+            else
+            {
+                throw new KeyNotFoundException("Plan not found");
+            }
+        }
+
+
+        internal void DeletePlan(int id)
+        {
+            var plan = _context.Plans.Find(id);
+            if (plan != null)
+            {
+                _context.Plans.Remove(plan);
+                _context.SaveChanges();
+            }
+            else
+            {
+                throw new KeyNotFoundException("Plan not found");
+            }
         }
 
         

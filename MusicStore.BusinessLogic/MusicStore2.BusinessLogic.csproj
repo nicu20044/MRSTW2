@@ -168,13 +168,17 @@
     <Compile Include="Data\AppDbContext.cs" />
     <Compile Include="EntityBL\AuthBL.cs" />
     <Compile Include="EntityBL\CartBL.cs" />
+    <Compile Include="EntityBL\PlanBl.cs" />
     <Compile Include="EntityBL\ProductBL.cs" />
     <Compile Include="EntityBL\SessionBl.cs" />
+    <Compile Include="EntityBL\SubscriptionBl.cs" />
     <Compile Include="EntityBL\UserBl.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\ICart.cs" />
+    <Compile Include="Interfaces\IPlan.cs" />
     <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Interfaces\ISession.cs" />
+    <Compile Include="Interfaces\ISubscription.cs" />
     <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.1.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
