@@ -180,9 +180,9 @@
     <Compile Include="Interfaces\ISession.cs" />
     <Compile Include="Interfaces\ISubscription.cs" />
     <Compile Include="Interfaces\IUser.cs" />
-    <Compile Include="Migrations\202505280908565_Newmiggg.cs" />
-    <Compile Include="Migrations\202505280908565_Newmiggg.Designer.cs">
-      <DependentUpon>202505280908565_Newmiggg.cs</DependentUpon>
+    <Compile Include="Migrations\202505281652305_newmigg.cs" />
+    <Compile Include="Migrations\202505281652305_newmigg.Designer.cs">
+      <DependentUpon>202505281652305_newmigg.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.1.AssemblyAttributes.cs" />
@@ -211,8 +211,8 @@
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202505280908565_Newmiggg.resx">
-      <DependentUpon>202505280908565_Newmiggg.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505281652305_newmigg.resx">
+      <DependentUpon>202505281652305_newmigg.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

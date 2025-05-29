@@ -14,12 +14,14 @@ namespace MusicStore.Web.Controllers
     {
         private readonly ICart _cart;
         private readonly IProduct _product;
+        private readonly IPlan _plan;
 
         public ShoppingCartController()
         {
             var bl = new BusinessLogic.BusinessLogic();
             _cart = bl.GetCartBl();
-            _product = bl.GetProductBl(); 
+            _product = bl.GetProductBl();
+            _plan = bl.GetPlanBl();
         }
 
         public async Task<ActionResult> ShoppingCart()
@@ -71,7 +73,6 @@ namespace MusicStore.Web.Controllers
         {
             return RedirectToAction("PaymentPage", "ShoppingCart");
         }
-
         public async Task<ActionResult> PaymentPage(int? planId)
         {
             var userId = Session["UserId"];
@@ -80,7 +81,7 @@ namespace MusicStore.Web.Controllers
 
             if (planId.HasValue)
             {
-                var plan = new BusinessLogic.BusinessLogic().GetPlanBl().GetPlan(planId.Value);
+                var plan = _plan.GetPlan(planId.Value);
                 if (plan == null)
                     return HttpNotFound();
 
@@ -98,6 +99,7 @@ namespace MusicStore.Web.Controllers
                 return View(cartItems);
             }
         }
+
 
 
         //download song

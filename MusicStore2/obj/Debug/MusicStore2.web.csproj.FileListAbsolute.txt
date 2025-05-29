@@ -316,7 +316,6 @@ D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\Sys
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Runtime.CompilerServices.Unsafe.xml
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Threading.Tasks.Extensions.xml
 D:\Universitate\Universitate Anul 2\Semestrul 2\TW\MusicShop\MusicStore2\bin\System.Web.Http.xml
-C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\MusicStore2.dll.config
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\MusicStore2.dll
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\MusicStore2.pdb
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\roslyn\csc.exe
@@ -399,7 +398,6 @@ C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\System.Web.Webpage
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\System.Web.Webpages.Razor.dll
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\WebGrease.dll
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\MusicStore.BusinessLogic.pdb
-C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\MusicStore.BusinessLogic.dll.config
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\MusicStore2.Domain.pdb
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\MusicStore2.Domain.dll.config
 C:\Users\Administrator\Documents\GitHub\MRSTW\MusicStore2\bin\Antlr3.Runtime.pdb
